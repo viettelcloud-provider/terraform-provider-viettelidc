@@ -7,7 +7,7 @@ description: |-
   Manages a V2 Neutron addressscope resource within OpenStack.
 ---
 
-# openstack\_networking\_addressscope\_v2
+# viettelidc\_networking\_addressscope\_v2
 
 Manages a V2 Neutron addressscope resource within OpenStack.
 

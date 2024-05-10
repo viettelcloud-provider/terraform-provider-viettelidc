@@ -7,7 +7,7 @@ description: |-
   Generate a TempURL for a Swift container and object.
 ---
 
-# openstack\_objectstorage\_tempurl\_v1
+# viettelidc\_objectstorage\_tempurl\_v1
 
 Use this resource to generate an OpenStack Object Storage temporary URL.
 

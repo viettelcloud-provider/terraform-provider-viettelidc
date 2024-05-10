@@ -7,7 +7,7 @@ description: |-
   Get information of an OpenStack Trunk.
 ---
 
-# openstack\_networking\_trunk\_v2
+# viettelidc\_networking\_trunk\_v2
 
 Use this data source to get the ID of an available OpenStack trunk.
 

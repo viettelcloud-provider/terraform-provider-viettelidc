@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Firewall Policy V2.
 ---
 
-# openstack\_fw\_policy\_v2
+# viettelidc\_fw\_policy\_v2
 
 Use this data source to get information of an available OpenStack firewall policy v2.
 

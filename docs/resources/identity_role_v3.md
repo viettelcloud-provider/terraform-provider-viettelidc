@@ -7,7 +7,7 @@ description: |-
   Manages a V3 Role resource within OpenStack Keystone.
 ---
 
-# openstack\_identity\_role\_v3
+# viettelidc\_identity\_role\_v3
 
 Manages a V3 Role resource within OpenStack Keystone.
 

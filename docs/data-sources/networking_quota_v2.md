@@ -7,7 +7,7 @@ description: |-
   Get information on a NEtworking Quota of a project.
 ---
 
-# openstack\_networking\_quota\_v2
+# viettelidc\_networking\_quota\_v2
 
 Use this data source to get the networking quota of an OpenStack project.
 

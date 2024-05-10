@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Keypair.
 ---
 
-# openstack\_compute\_keypair\_v2
+# viettelidc\_compute\_keypair\_v2
 
 Use this data source to get the ID and public key of an OpenStack keypair.
 

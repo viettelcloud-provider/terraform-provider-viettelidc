@@ -7,7 +7,7 @@ description: |-
   Manages a V3 Quality-Of-Servirce (qos) resource within OpenStack.
 ---
 
-# openstack\_blockstorage\_qos\_v3
+# viettelidc\_blockstorage\_qos\_v3
 
 Manages a V3 block storage Quality-Of-Servirce (qos) resource within OpenStack.
 

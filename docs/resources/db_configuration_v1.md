@@ -7,7 +7,7 @@ description: |-
   Manages a V1 DB configuration resource within OpenStack.
 ---
 
-# openstack\_db\_configuration\_v1
+# viettelidc\_db\_configuration\_v1
 
 Manages a V1 DB configuration resource within OpenStack.
 

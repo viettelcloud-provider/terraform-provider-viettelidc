@@ -7,7 +7,7 @@ description: |-
   Get authentication information from the current authenticated scope.
 ---
 
-# openstack\_identity\_auth\_scope\_v3
+# viettelidc\_identity\_auth\_scope\_v3
 
 Use this data source to get authentication information about the current
 auth scope in use. This can be used as self-discovery or introspection of

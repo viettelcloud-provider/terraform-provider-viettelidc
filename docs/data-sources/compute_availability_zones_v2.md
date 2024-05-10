@@ -7,7 +7,7 @@ description: |-
   Get a list of availability zones from OpenStack
 ---
 
-# openstack\_compute\_availability\_zones\_v2
+# viettelidc\_compute\_availability\_zones\_v2
 
 Use this data source to get a list of availability zones from OpenStack
 

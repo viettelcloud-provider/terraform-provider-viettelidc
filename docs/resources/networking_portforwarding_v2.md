@@ -7,7 +7,7 @@ description: |-
   Manages a V2 port forwarding resource within OpenStack.
 ---
 
-# openstack\_networking\_portforwarding_v2
+# viettelidc\_networking\_portforwarding_v2
 
 Manages a V2 portforwarding resource within OpenStack.
 

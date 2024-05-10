@@ -7,7 +7,7 @@ description: |-
   Manages a V2 Image member resource within OpenStack Glance.
 ---
 
-# openstack\_images\_image\_access\_v2
+# viettelidc\_images\_image\_access\_v2
 
 Manages members for the shared OpenStack Glance V2 Image within the source
 project, which owns the Image.

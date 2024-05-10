@@ -7,7 +7,7 @@ description: |-
   Manages a V2 Neutron IPSec site connection resource within OpenStack.
 ---
 
-# openstack\_vpnaas\_site\_connection\_v2
+# viettelidc\_vpnaas\_site\_connection\_v2
 
 Manages a V2 Neutron IPSec site connection resource within OpenStack.
 

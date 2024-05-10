@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Volume.
 ---
 
-# openstack\_blockstorage\_volume\_v2
+# viettelidc\_blockstorage\_volume\_v2
 
 Use this data source to get information about an existing volume.
 

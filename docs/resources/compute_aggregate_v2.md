@@ -7,7 +7,7 @@ description: |-
   Manages a Host Aggregate within Openstack Nova
 ---
 
-# openstack\_compute\_aggregate\_v2
+# viettelidc\_compute\_aggregate\_v2
 
 Manages a Host Aggregate within Openstack Nova.
 

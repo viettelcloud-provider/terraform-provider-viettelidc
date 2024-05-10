@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Magnum node group.
 ---
 
-# openstack\_containerinfra\_nodegroup\_v1
+# viettelidc\_containerinfra\_nodegroup\_v1
 
 Use this data source to get information of an available OpenStack Magnum node group.
 

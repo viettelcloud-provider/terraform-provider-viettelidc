@@ -7,7 +7,7 @@ description: |-
   Manages a V2 Neutron QoS minimum bandwidth rule resource within OpenStack.
 ---
 
-# openstack\_networking\_qos\_minimum\_bandwidth\_rule\_v2
+# viettelidc\_networking\_qos\_minimum\_bandwidth\_rule\_v2
 
 Manages a V2 Neutron QoS minimum bandwidth rule resource within OpenStack.
 

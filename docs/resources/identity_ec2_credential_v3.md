@@ -7,7 +7,7 @@ description: |-
   Manages a V3 EC2 Credential resource within OpenStack Keystone.
 ---
 
-# openstack\_identity\_ec2\_credential\_v3
+# viettelidc\_identity\_ec2\_credential\_v3
 
 Manages a V3 EC2 Credential resource within OpenStack Keystone.
 EC2 credentials in OpenStack are used to access S3 compatible Swift/RadosGW

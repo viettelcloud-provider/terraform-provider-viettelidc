@@ -7,7 +7,7 @@ description: |-
   Manages a V2 loadbalancer resource within OpenStack.
 ---
 
-# openstack\_lb\_loadbalancer\_v2
+# viettelidc\_lb\_loadbalancer\_v2
 
 Manages a V2 loadbalancer resource within OpenStack.
 

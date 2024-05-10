@@ -7,7 +7,7 @@ description: |-
   Manages a V3 volume type resource within OpenStack.
 ---
 
-# openstack\_blockstorage\_volume\_type\_v3
+# viettelidc\_blockstorage\_volume\_type\_v3
 
 Manages a V3 block storage volume type resource within OpenStack.
 

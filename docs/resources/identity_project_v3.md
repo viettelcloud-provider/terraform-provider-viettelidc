@@ -7,7 +7,7 @@ description: |-
   Manages a V3 Project resource within OpenStack Keystone.
 ---
 
-# openstack\_identity\_project\_v3
+# viettelidc\_identity\_project\_v3
 
 Manages a V3 Project resource within OpenStack Keystone.
 

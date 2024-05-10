@@ -7,7 +7,7 @@ description: |-
   Get information on a V1 Barbican secret resource within OpenStack.
 ---
 
-# openstack\_keymanager\_secret\_v1
+# viettelidc\_keymanager\_secret\_v1
 
 Use this data source to get the ID and the payload of an available Barbican
 secret

@@ -7,7 +7,7 @@ description: |-
   Manages a V2 members resource within OpenStack (batch members update).
 ---
 
-# openstack\_lb\_members\_v2
+# viettelidc\_lb\_members\_v2
 
 Manages a V2 members resource within OpenStack (batch members update).
 

@@ -7,7 +7,7 @@ description: |-
   Get information on Openstack Host Aggregate
 ---
 
-# openstack\_compute\_aggregate\_v2
+# viettelidc\_compute\_aggregate\_v2
 
 Use this data source to get information about host aggregates
 by name.

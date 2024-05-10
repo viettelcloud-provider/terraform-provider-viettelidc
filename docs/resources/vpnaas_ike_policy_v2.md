@@ -7,7 +7,7 @@ description: |-
   Manages a V2 Neutron IKE policy resource within OpenStack.
 ---
 
-# openstack\_vpnaas\_ike\_policy\_v2
+# viettelidc\_vpnaas\_ike\_policy\_v2
 
 Manages a V2 Neutron IKE policy resource within OpenStack.
 

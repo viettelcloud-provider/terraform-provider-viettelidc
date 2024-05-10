@@ -7,7 +7,7 @@ description: |-
   Get information on a V1 Barbican container resource within OpenStack.
 ---
 
-# openstack\_keymanager\_container\_v1
+# viettelidc\_keymanager\_container\_v1
 
 Use this data source to get the ID of an available Barbican container.
 

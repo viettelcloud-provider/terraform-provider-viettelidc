@@ -7,7 +7,7 @@ description: |-
   Manages a v2 firewall group resource within OpenStack.
 ---
 
-# openstack\_fw\_group\_v2
+# viettelidc\_fw\_group\_v2
 
 Manages a v2 firewall group resource within OpenStack.
 

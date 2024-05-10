@@ -7,7 +7,7 @@ description: |-
   Manages a V3 Application Credential resource within OpenStack Keystone.
 ---
 
-# openstack\_identity\_application\_credential\_v3
+# viettelidc\_identity\_application\_credential\_v3
 
 Manages a V3 Application Credential resource within OpenStack Keystone.
 

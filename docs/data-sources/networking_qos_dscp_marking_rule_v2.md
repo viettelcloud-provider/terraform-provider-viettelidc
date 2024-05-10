@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack QoS DSCP marking rule.
 ---
 
-# openstack\_networking\_qos\_dscp\_marking\_rule\_v2
+# viettelidc\_networking\_qos\_dscp\_marking\_rule\_v2
 
 Use this data source to get the ID of an available OpenStack QoS DSCP marking rule.
 

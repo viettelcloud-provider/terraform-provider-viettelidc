@@ -7,7 +7,7 @@ description: |-
   Manages a V3 quotaset resource within OpenStack.
 ---
 
-# openstack\_blockstorage\_quotaset\_v3
+# viettelidc\_blockstorage\_quotaset\_v3
 
 Manages a V3 block storage quotaset resource within OpenStack.
 

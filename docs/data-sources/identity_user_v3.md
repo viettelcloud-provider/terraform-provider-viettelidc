@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack User.
 ---
 
-# openstack\_identity\_user\_v3
+# viettelidc\_identity\_user\_v3
 
 Use this data source to get the ID of an OpenStack user.
 

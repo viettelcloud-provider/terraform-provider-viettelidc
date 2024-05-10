@@ -7,7 +7,7 @@ description: |-
   Manages a V3 Endpoint resource within OpenStack Keystone.
 ---
 
-# openstack\_identity\_endpoint\_v3
+# viettelidc\_identity\_endpoint\_v3
 
 Manages a V3 Endpoint resource within OpenStack Keystone.
 

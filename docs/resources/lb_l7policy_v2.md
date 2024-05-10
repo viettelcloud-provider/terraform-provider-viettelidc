@@ -7,7 +7,7 @@ description: |-
   Manages a V2 L7 Policy resource within OpenStack.
 ---
 
-# openstack\_lb\_l7policy\_v2
+# viettelidc\_lb\_l7policy\_v2
 
 Manages a Load Balancer L7 Policy resource within OpenStack.
 

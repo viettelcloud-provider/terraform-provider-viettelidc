@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Floating IP.
 ---
 
-# openstack\_networking\_floatingip\_v2
+# viettelidc\_networking\_floatingip\_v2
 
 Use this data source to get the ID of an available OpenStack floating IP.
 

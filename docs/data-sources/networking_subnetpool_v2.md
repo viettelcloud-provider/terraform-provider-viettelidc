@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Subnetpool.
 ---
 
-# openstack\_networking\_subnetpool\_v2
+# viettelidc\_networking\_subnetpool\_v2
 
 Use this data source to get the ID of an available OpenStack subnetpool.
 

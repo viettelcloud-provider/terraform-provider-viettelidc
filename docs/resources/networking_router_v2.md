@@ -7,7 +7,7 @@ description: |-
   Manages a V2 router resource within OpenStack.
 ---
 
-# openstack\_networking\_router\_v2
+# viettelidc\_networking\_router\_v2
 
 Manages a V2 router resource within OpenStack.
 

@@ -7,7 +7,7 @@ description: |-
   Get information of an OpenStack Port.
 ---
 
-# openstack\_networking\_port\_v2
+# viettelidc\_networking\_port\_v2
 
 Use this data source to get the ID of an available OpenStack port.
 

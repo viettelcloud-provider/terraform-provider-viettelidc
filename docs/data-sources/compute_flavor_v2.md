@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Flavor.
 ---
 
-# openstack\_compute\_flavor\_v2
+# viettelidc\_compute\_flavor\_v2
 
 Use this data source to get the ID of an available OpenStack flavor.
 

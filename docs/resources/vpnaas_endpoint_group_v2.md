@@ -7,7 +7,7 @@ description: |-
   Manages a V2 Neutron Endpoint Group resource within OpenStack.
 ---
 
-# openstack\_vpnaas\_endpoint\_group\_v2
+# viettelidc\_vpnaas\_endpoint\_group\_v2
 
 Manages a V2 Neutron Endpoint Group resource within OpenStack.
 

@@ -7,7 +7,7 @@ description: |-
   Manages a networking V2 trunk resource within OpenStack.
 ---
 
-# openstack\_networking\_trunk\_v2
+# viettelidc\_networking\_trunk\_v2
 
 Manages a networking V2 trunk resource within OpenStack.
 

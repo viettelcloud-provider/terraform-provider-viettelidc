@@ -7,7 +7,7 @@ description: |-
   Manages a V3 Service resource within OpenStack Keystone.
 ---
 
-# openstack\_identity\_service\_v3
+# viettelidc\_identity\_service\_v3
 
 Manages a V3 Service resource within OpenStack Keystone.
 

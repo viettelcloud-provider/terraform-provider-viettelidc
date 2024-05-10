@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Network.
 ---
 
-# openstack\_networking\_network\_v2
+# viettelidc\_networking\_network\_v2
 
 Use this data source to get the ID of an available OpenStack network.
 

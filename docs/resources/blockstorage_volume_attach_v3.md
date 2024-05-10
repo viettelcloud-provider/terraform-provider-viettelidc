@@ -7,7 +7,7 @@ description: |-
   Creates an attachment connection to a Block Storage volume
 ---
 
-# openstack\_blockstorage\_volume\_attach\_v3
+# viettelidc\_blockstorage\_volume\_attach\_v3
 
 ~> **Note:** This resource usually requires admin privileges.
 

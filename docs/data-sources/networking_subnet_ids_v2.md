@@ -7,7 +7,7 @@ description: |-
   Provides a list of Openstack Subnet IDs.
 ---
 
-# openstack\_networking\_subnet\_ids\_v2
+# viettelidc\_networking\_subnet\_ids\_v2
 
 Use this data source to get a list of Openstack Subnet IDs matching the
 specified criteria.

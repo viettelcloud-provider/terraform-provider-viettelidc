@@ -7,7 +7,7 @@ description: |-
   Manages a V3 Inherit Role assignment within OpenStack Keystone.
 ---
 
-# openstack\_identity\_inherit\_role\_assignment\_v3
+# viettelidc\_identity\_inherit\_role\_assignment\_v3
 
 Manages a V3 Inherit Role assignment within OpenStack Keystone. This uses the
 Openstack keystone `OS-INHERIT` api to created inherit roles within domains

@@ -7,7 +7,7 @@ description: |-
   Manages a V2 Neutron security group rule resource within OpenStack.
 ---
 
-# openstack\_networking\_secgroup\_rule\_v2
+# viettelidc\_networking\_secgroup\_rule\_v2
 
 Manages a V2 neutron security group rule resource within OpenStack.
 Unlike Nova security groups, neutron separates the group from the rules

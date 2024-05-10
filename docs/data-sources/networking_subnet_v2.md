@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Subnet.
 ---
 
-# openstack\_networking\_subnet\_v2
+# viettelidc\_networking\_subnet\_v2
 
 Use this data source to get the ID of an available OpenStack subnet.
 

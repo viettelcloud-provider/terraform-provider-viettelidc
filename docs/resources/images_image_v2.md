@@ -7,7 +7,7 @@ description: |-
   Manages a V2 Image resource within OpenStack Glance.
 ---
 
-# openstack\_images\_image\_v2
+# viettelidc\_images\_image\_v2
 
 Manages a V2 Image resource within OpenStack Glance.
 

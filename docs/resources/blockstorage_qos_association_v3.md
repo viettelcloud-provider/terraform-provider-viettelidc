@@ -7,7 +7,7 @@ description: |-
   Manages a V3 Qos association resource within OpenStack.
 ---
 
-# openstack\_blockstorage\_qos\_association\_v3
+# viettelidc\_blockstorage\_qos\_association\_v3
 
 Manages a V3 block storage Qos Association resource within OpenStack.
 

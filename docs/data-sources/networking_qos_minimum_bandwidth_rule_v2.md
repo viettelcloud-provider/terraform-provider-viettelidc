@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack QoS minimum bandwidth rule.
 ---
 
-# openstack\_networking\_qos\_minimum\_bandwidth\_rule\_v2
+# viettelidc\_networking\_qos\_minimum\_bandwidth\_rule\_v2
 
 Use this data source to get the ID of an available OpenStack QoS minimum bandwidth rule.
 

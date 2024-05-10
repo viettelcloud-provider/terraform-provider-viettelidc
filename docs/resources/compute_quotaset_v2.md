@@ -7,7 +7,7 @@ description: |-
   Manages a V2 compute quotaset resource within OpenStack.
 ---
 
-# openstack\_compute\_quotaset\_v2
+# viettelidc\_compute\_quotaset\_v2
 
 Manages a V2 compute quotaset resource within OpenStack.
 

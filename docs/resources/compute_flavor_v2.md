@@ -7,7 +7,7 @@ description: |-
   Manages a V2 flavor resource within OpenStack.
 ---
 
-# openstack\_compute\_flavor\_v2
+# viettelidc\_compute\_flavor\_v2
 
 Manages a V2 flavor resource within OpenStack.
 

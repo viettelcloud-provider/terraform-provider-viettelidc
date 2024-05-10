@@ -7,7 +7,7 @@ description: |-
   Get a list of Shared File System availability zones from OpenStack
 ---
 
-# openstack\_sharedfilesystem\_availability\_zones\_v2
+# viettelidc\_sharedfilesystem\_availability\_zones\_v2
 
 Use this data source to get a list of Shared File System availability zones
 from OpenStack

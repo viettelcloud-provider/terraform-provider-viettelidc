@@ -7,7 +7,7 @@ description: |-
   Get information on an Shared File System snapshot.
 ---
 
-# openstack\_sharedfilesystem\_snapshot\_v2
+# viettelidc\_sharedfilesystem\_snapshot\_v2
 
 Use this data source to get the ID of an available Shared File System snapshot.
 

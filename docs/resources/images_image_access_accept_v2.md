@@ -7,7 +7,7 @@ description: |-
   Manages a V2 Image membership proposal resource within OpenStack Glance.
 ---
 
-# openstack\_images\_image\_access\_accept\_v2
+# viettelidc\_images\_image\_access\_accept\_v2
 
 Manages memberships status for the shared OpenStack Glance V2 Image within the
 destination project, which has a member proposal.

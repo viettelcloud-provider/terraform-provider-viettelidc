@@ -7,7 +7,7 @@ description: |-
   Get information on Openstack Hypervisor
 ---
 
-# openstack\_compute\_hypervisor\_v2
+# viettelidc\_compute\_hypervisor\_v2
 
 Use this data source to get information about hypervisors
 by hostname.

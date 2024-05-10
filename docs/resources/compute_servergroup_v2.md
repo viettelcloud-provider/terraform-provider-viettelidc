@@ -7,7 +7,7 @@ description: |-
   Manages a V2 Server Group resource within OpenStack.
 ---
 
-# openstack\_compute\_servergroup\_v2
+# viettelidc\_compute\_servergroup\_v2
 
 Manages a V2 Server Group resource within OpenStack.
 

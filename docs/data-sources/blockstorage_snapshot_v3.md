@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Snapshot.
 ---
 
-# openstack\_blockstorage\_snapshot\_v3
+# viettelidc\_blockstorage\_snapshot\_v3
 
 Use this data source to get information about an existing snapshot.
 

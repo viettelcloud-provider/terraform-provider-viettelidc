@@ -7,7 +7,7 @@ description: |-
   Manages a V2 l7rule resource within OpenStack.
 ---
 
-# openstack\_lb\_l7rule\_v2
+# viettelidc\_lb\_l7rule\_v2
 
 Manages a V2 L7 Rule resource within OpenStack.
 

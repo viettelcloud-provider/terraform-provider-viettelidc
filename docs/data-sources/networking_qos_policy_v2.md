@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack QoS Policy.
 ---
 
-# openstack\_networking\_qos\_policy\_v2
+# viettelidc\_networking\_qos\_policy\_v2
 
 Use this data source to get the ID of an available OpenStack QoS policy.
 

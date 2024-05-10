@@ -7,7 +7,7 @@ description: |-
   Manages a V2 security group resource within OpenStack.
 ---
 
-# openstack\_compute\_secgroup\_v2
+# viettelidc\_compute\_secgroup\_v2
 
 Manages a V2 security group resource within OpenStack.
 

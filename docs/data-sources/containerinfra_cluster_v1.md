@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Magnum cluster.
 ---
 
-# openstack\_containerinfra\_cluster\_v1
+# viettelidc\_containerinfra\_cluster\_v1
 
 Use this data source to get the ID of an available OpenStack Magnum cluster.
 

@@ -7,7 +7,7 @@ description: |-
   Manages a V2 monitor resource within OpenStack.
 ---
 
-# openstack\_lb\_monitor\_v2
+# viettelidc\_lb\_monitor\_v2
 
 Manages a V2 monitor resource within OpenStack.
 

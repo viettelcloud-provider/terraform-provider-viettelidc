@@ -7,7 +7,7 @@ description: |-
   Manages a DNS zone Transfer request in the OpenStack DNS Service
 ---
 
-# openstack\_dns\_transfer\_request\_v2
+# viettelidc\_dns\_transfer\_request\_v2
 
 Manages a DNS zone transfer request in the OpenStack DNS Service.
 

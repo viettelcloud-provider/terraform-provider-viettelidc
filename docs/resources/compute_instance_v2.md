@@ -7,7 +7,7 @@ description: |-
   Manages a V2 VM instance resource within OpenStack.
 ---
 
-# openstack\_compute\_instance\_v2
+# viettelidc\_compute\_instance\_v2
 
 Manages a V2 VM instance resource within OpenStack.
 

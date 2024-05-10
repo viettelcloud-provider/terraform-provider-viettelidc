@@ -7,7 +7,7 @@ description: |-
   Creates a routing entry on a OpenStack V2 subnet.
 ---
 
-# openstack\_networking\_subnet\_route\_v2
+# viettelidc\_networking\_subnet\_route\_v2
 
 Creates a routing entry on a OpenStack V2 subnet.
 

@@ -7,7 +7,7 @@ description: |-
   Get information on a BlockStorage Quotaset v3 of a project.
 ---
 
-# openstack\_blockstorage\_quotaset\_v3
+# viettelidc\_blockstorage\_quotaset\_v3
 
 Use this data source to get the blockstorage quotaset v3 of an OpenStack project.
 

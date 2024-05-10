@@ -7,7 +7,7 @@ description: |-
   Get information on a Compute Limits of a project.
 ---
 
-# openstack\_compute\_limits\_v2
+# viettelidc\_compute\_limits\_v2
 
 Use this data source to get the compute limits of an OpenStack project.
 

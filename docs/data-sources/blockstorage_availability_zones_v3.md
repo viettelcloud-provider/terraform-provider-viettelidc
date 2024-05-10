@@ -7,7 +7,7 @@ description: |-
   Get a list of Block Storage availability zones from OpenStack
 ---
 
-# openstack\_blockstorage\_availability\_zones\_v3
+# viettelidc\_blockstorage\_availability\_zones\_v3
 
 Use this data source to get a list of Block Storage availability zones from OpenStack
 

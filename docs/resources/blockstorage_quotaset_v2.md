@@ -7,7 +7,7 @@ description: |-
   Manages a V2 quotaset resource within OpenStack.
 ---
 
-# openstack\_blockstorage\_quotaset\_v2
+# viettelidc\_blockstorage\_quotaset\_v2
 
 Manages a V2 block storage quotaset resource within OpenStack.
 

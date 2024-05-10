@@ -7,7 +7,7 @@ description: |-
   Get information on a Compute Quotaset of a project.
 ---
 
-# openstack\_compute\_quotaset\_v2
+# viettelidc\_compute\_quotaset\_v2
 
 Use this data source to get the compute quotaset of an OpenStack project.
 

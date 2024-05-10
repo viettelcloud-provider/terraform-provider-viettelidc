@@ -7,7 +7,7 @@ description: |-
   Manages a V3 group resource within OpenStack Keystone.
 ---
 
-# openstack\_identity\_group\_v3
+# viettelidc\_identity\_group\_v3
 
 Manages a V3 group resource within OpenStack Keystone.
 

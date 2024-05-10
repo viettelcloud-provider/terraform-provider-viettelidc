@@ -7,7 +7,7 @@ description: |-
   Configure a Shared File System share.
 ---
 
-# openstack\_sharedfilesystem\_share\_v2
+# viettelidc\_sharedfilesystem\_share\_v2
 
 Use this resource to configure a share.
 

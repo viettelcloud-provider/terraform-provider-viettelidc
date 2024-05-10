@@ -7,7 +7,7 @@ description: |-
   Manages a v1 firewall resource within OpenStack.
 ---
 
-# openstack\_fw\_firewall\_v1
+# viettelidc\_fw\_firewall\_v1
 
 Manages a v1 firewall resource within OpenStack.
 

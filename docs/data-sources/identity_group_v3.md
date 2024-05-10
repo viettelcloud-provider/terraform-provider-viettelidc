@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Group.
 ---
 
-# openstack\_identity\_group\_v3
+# viettelidc\_identity\_group\_v3
 
 Use this data source to get the ID of an OpenStack group.
 

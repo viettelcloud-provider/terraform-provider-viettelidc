@@ -7,7 +7,7 @@ description: |-
   Manages a V1 stack resource within OpenStack.
 ---
 
-# openstack\_orchestration\_stack\_v1
+# viettelidc\_orchestration\_stack\_v1
 
 Manages a V1 stack resource within OpenStack.
 

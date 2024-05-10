@@ -7,7 +7,7 @@ description: |-
   Get information on an Shared File System share.
 ---
 
-# openstack\_sharedfilesystem\_share\_v2
+# viettelidc\_sharedfilesystem\_share\_v2
 
 Use this data source to get the ID of an available Shared File System share.
 

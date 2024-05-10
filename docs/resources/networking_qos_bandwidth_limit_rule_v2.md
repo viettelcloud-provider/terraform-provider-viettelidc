@@ -7,7 +7,7 @@ description: |-
   Manages a V2 Neutron QoS bandwidth limit rule resource within OpenStack.
 ---
 
-# openstack\_networking\_qos\_bandwidth\_limit\_rule\_v2
+# viettelidc\_networking\_qos\_bandwidth\_limit\_rule\_v2
 
 Manages a V2 Neutron QoS bandwidth limit rule resource within OpenStack.
 

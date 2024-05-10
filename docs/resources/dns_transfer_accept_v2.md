@@ -7,7 +7,7 @@ description: |-
   Manages a DNS zone Transfer accept in the OpenStack DNS Service
 ---
 
-# openstack\_dns\_transfer\_accept\_v2
+# viettelidc\_dns\_transfer\_accept\_v2
 
 Manages a DNS zone transfer accept in the OpenStack DNS Service.
 

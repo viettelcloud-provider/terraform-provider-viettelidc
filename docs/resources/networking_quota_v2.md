@@ -7,7 +7,7 @@ description: |-
   Manages a V2 networking quota resource within OpenStack.
 ---
 
-# openstack\_networking\_quota\_v2
+# viettelidc\_networking\_quota\_v2
 
 Manages a V2 networking quota resource within OpenStack.
 

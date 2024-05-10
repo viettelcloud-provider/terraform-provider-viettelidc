@@ -7,7 +7,7 @@ description: |-
   Configure a Shared File System share access list.
 ---
 
-# openstack\_sharedfilesystem\_share\_access\_v2
+# viettelidc\_sharedfilesystem\_share\_access\_v2
 
 Use this resource to control the share access lists.
 

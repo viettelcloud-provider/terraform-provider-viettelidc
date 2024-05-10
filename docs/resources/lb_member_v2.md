@@ -7,7 +7,7 @@ description: |-
   Manages a V2 member resource within OpenStack.
 ---
 
-# openstack\_lb\_member\_v2
+# viettelidc\_lb\_member\_v2
 
 Manages a V2 member resource within OpenStack.
 

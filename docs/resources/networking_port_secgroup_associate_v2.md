@@ -7,7 +7,7 @@ description: |-
   Manages a V2 port's security groups within OpenStack.
 ---
 
-# openstack\_networking\_port\_secgroup\_associate\_v2
+# viettelidc\_networking\_port\_secgroup\_associate\_v2
 
 Manages a V2 port's security groups within OpenStack. Useful, when the port was
 created not by Terraform (e.g. Manila or LBaaS). It should not be used, when the

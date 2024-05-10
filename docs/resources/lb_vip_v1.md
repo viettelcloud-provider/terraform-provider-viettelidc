@@ -7,7 +7,7 @@ description: |-
   Manages a V1 load balancer vip resource within OpenStack.
 ---
 
-# openstack\_lb\_vip\_v1
+# viettelidc\_lb\_vip\_v1
 
 Manages a V1 load balancer vip resource within OpenStack.
 

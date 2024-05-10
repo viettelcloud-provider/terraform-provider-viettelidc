@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Image.
 ---
 
-# openstack\_images\_image\_v2
+# viettelidc\_images\_image\_v2
 
 Use this data source to get the ID of an available OpenStack image.
 

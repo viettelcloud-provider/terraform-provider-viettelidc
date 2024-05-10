@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Security Group.
 ---
 
-# openstack\_networking\_secgroup\_v2
+# viettelidc\_networking\_secgroup\_v2
 
 Use this data source to get the ID of an available OpenStack security group.
 

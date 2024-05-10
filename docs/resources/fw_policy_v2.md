@@ -7,7 +7,7 @@ description: |-
   Manages a v2 firewall policy resource within OpenStack.
 ---
 
-# openstack\_fw\_policy\_v2
+# viettelidc\_fw\_policy\_v2
 
 Manages a v2 firewall policy resource within OpenStack.
 

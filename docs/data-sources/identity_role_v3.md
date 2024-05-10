@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Role.
 ---
 
-# openstack\_identity\_role\_v3
+# viettelidc\_identity\_role\_v3
 
 Use this data source to get the ID of an OpenStack role.
 

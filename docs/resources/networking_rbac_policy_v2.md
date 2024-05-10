@@ -7,7 +7,7 @@ description: |-
   Creates an RBAC policy for an OpenStack V2 resource.
 ---
 
-# openstack\_networking\_rbac\_policy\_v2
+# viettelidc\_networking\_rbac\_policy\_v2
 
 The RBAC policy resource contains functionality for working with Neutron RBAC
 Policies. Role-Based Access Control (RBAC) policy framework enables both

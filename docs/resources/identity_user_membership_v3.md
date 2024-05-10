@@ -7,7 +7,7 @@ description: |-
   Manages a user membership to group V3 resource within OpenStack.
 ---
 
-# openstack\_identity\_user\_membership\_v3
+# viettelidc\_identity\_user\_membership\_v3
 
 Manages a user membership to group V3 resource within OpenStack.
 

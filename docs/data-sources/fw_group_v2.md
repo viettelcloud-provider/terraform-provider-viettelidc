@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack Firewall Group V2.
 ---
 
-# openstack\_fw\_group\_v2
+# viettelidc\_fw\_group\_v2
 
 Use this data source to get information of an available OpenStack firewall group v2.
 

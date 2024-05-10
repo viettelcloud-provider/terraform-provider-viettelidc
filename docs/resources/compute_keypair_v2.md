@@ -7,7 +7,7 @@ description: |-
   Manages a V2 keypair resource within OpenStack.
 ---
 
-# openstack\_compute\_keypair\_v2
+# viettelidc\_compute\_keypair\_v2
 
 Manages a V2 keypair resource within OpenStack.
 

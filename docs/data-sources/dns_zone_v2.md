@@ -7,7 +7,7 @@ description: |-
   Get information on an OpenStack DNS Zone.
 ---
 
-# openstack\_dns\_zone\_v2
+# viettelidc\_dns\_zone\_v2
 
 Use this data source to get the ID of an available OpenStack DNS zone.
 

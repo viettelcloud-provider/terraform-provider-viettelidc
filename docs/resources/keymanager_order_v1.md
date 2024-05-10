@@ -7,7 +7,7 @@ description: |-
   Manages a V1 Barbican order resource within OpenStack.
 ---
 
-# openstack\_keymanager\_order\_v1
+# viettelidc\_keymanager\_order\_v1
 
 Manages a V1 Barbican order resource within OpenStack.
 

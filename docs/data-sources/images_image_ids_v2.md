@@ -7,7 +7,7 @@ description: |-
   Provides a list of Openstack Image IDs
 ---
 
-# openstack\_images\_image\_ids\_v2
+# viettelidc\_images\_image\_ids\_v2
 
 Use this data source to get a list of Openstack Image IDs matching the
 specified criteria.

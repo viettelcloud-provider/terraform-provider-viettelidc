@@ -7,7 +7,7 @@ description: |-
   Manages a V1 Barbican secret resource within OpenStack.
 ---
 
-# openstack\_keymanager\_secret\_v1
+# viettelidc\_keymanager\_secret\_v1
 
 Manages a V1 Barbican secret resource within OpenStack.
 
