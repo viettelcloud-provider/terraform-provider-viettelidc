@@ -9,7 +9,7 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
-	"github.com/viettelidc-provider-openstack/terraform-provider-viettelidc/viettelidc/internal/pathorcontents"
+	"github.com/viettelcloud-provider/terraform-provider-viettelidc/viettelidc/internal/pathorcontents"
 
 	"github.com/gophercloud/gophercloud"
 	"github.com/gophercloud/utils/terraform/auth"
