@@ -1,7 +1,7 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: openstack_identity_role_v3"
+page_title: "OpenStack: viettelidc_identity_role_v3"
 sidebar_current: "docs-openstack-datasource-identity-role-v3"
 description: |-
   Get information on an OpenStack Role.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an OpenStack role.
 ## Example Usage
 
 ```hcl
-data "openstack_identity_role_v3" "admin" {
+data "viettelidc_identity_role_v3" "admin" {
   name = "admin"
 }
 ```

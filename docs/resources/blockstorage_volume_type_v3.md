@@ -1,7 +1,7 @@
 ---
 subcategory: "Block Storage / Cinder"
 layout: "openstack"
-page_title: "OpenStack: openstack_blockstorage_volume_type_v3"
+page_title: "OpenStack: viettelidc_blockstorage_volume_type_v3"
 sidebar_current: "docs-openstack-resource-blockstorage-volume-type-v3"
 description: |-
   Manages a V3 volume type resource within OpenStack.
@@ -17,7 +17,7 @@ Manages a V3 block storage volume type resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_blockstorage_volume_type_v3" "volume_type_1" {
+resource "viettelidc_blockstorage_volume_type_v3" "volume_type_1" {
   name        = "volume_type_1"
   description = "Volume type 1"
   extra_specs = {
@@ -62,5 +62,5 @@ The following attributes are exported:
 Volume types can be imported using the `volume_type_id`, e.g.
 
 ```
-$ terraform import openstack_blockstorage_volume_type_v3.volume_type_1 941793f0-0a34-4bc4-b72e-a6326ae58283
+$ terraform import viettelidc_blockstorage_volume_type_v3.volume_type_1 941793f0-0a34-4bc4-b72e-a6326ae58283
 ```

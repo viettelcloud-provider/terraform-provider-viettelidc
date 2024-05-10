@@ -1,7 +1,7 @@
 ---
 subcategory: "Deprecated"
 layout: "openstack"
-page_title: "OpenStack: openstack_blockstorage_volume_v2"
+page_title: "OpenStack: viettelidc_blockstorage_volume_v2"
 sidebar_current: "docs-openstack-resource-blockstorage-volume-v2"
 description: |-
   Manages a V2 volume resource within OpenStack.
@@ -14,7 +14,7 @@ Manages a V2 volume resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_blockstorage_volume_v2" "volume_1" {
+resource "viettelidc_blockstorage_volume_v2" "volume_1" {
   region      = "RegionOne"
   name        = "volume_1"
   description = "first test volume"
@@ -113,5 +113,5 @@ The following attributes are exported:
 Volumes can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_blockstorage_volume_v2.volume_1 ea257959-eeb1-4c10-8d33-26f0409a755d
+$ terraform import viettelidc_blockstorage_volume_v2.volume_1 ea257959-eeb1-4c10-8d33-26f0409a755d
 ```

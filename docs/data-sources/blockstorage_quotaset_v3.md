@@ -1,7 +1,7 @@
 ---
 subcategory: "Block Storage / Cinder"
 layout: "openstack"
-page_title: "OpenStack: openstack_blockstorage_quotaset_v3"
+page_title: "OpenStack: viettelidc_blockstorage_quotaset_v3"
 sidebar_current: "docs-openstack-datasource-blockstorage-quotaset-v3"
 description: |-
   Get information on a BlockStorage Quotaset v3 of a project.
@@ -14,7 +14,7 @@ Use this data source to get the blockstorage quotaset v3 of an OpenStack project
 ## Example Usage
 
 ```hcl
-data "openstack_blockstorage_quotaset_v3" "quota" {
+data "viettelidc_blockstorage_quotaset_v3" "quota" {
   project_id = "2e367a3d29f94fd988e6ec54e305ec9d"
 }
 ```

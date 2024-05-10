@@ -1,7 +1,7 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: openstack_identity_ec2_credential_v3"
+page_title: "OpenStack: viettelidc_identity_ec2_credential_v3"
 sidebar_current: "docs-openstack-resource-identity-ec2-credential-v3"
 description: |-
   Manages a V3 EC2 Credential resource within OpenStack Keystone.
@@ -22,7 +22,7 @@ in state](https://www.terraform.io/docs/language/state/sensitive-data.html).
 ### EC2 credential in current project scope
 
 ```hcl
-resource "openstack_identity_ec2_credential_v3" "ec2_key1" {}
+resource "viettelidc_identity_ec2_credential_v3" "ec2_key1" {}
 ```
 
 ### EC2 credential in pre-defined project scope
@@ -31,7 +31,7 @@ This allows administrative users to create EC2 credentials for a scope different
 from the current auth scope.
 
 ```hcl
-resource "openstack_identity_ec2_credential_v3" "ec2_key1" {
+resource "viettelidc_identity_ec2_credential_v3" "ec2_key1" {
     project_id = "f7ac731cc11f40efbc03a9f9e1d1d21f"
 }
 ```
@@ -67,5 +67,5 @@ The following attributes are exported:
 EC2 Credentials can be imported using the `access`, e.g.
 
 ```
-$ terraform import openstack_identity_ec2_credential_v3.ec2_cred_1 2d0ac4a2f81b4b0f9513ee49e780647d
+$ terraform import viettelidc_identity_ec2_credential_v3.ec2_cred_1 2d0ac4a2f81b4b0f9513ee49e780647d
 ```

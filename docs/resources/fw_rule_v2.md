@@ -1,7 +1,7 @@
 ---
 subcategory: "FWaaS / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_fw_rule_v2"
+page_title: "OpenStack: viettelidc_fw_rule_v2"
 sidebar_current: "docs-openstack-resource-fw-rule-v2"
 description: |-
   Manages a v2 firewall rule resource within OpenStack.
@@ -16,7 +16,7 @@ Manages a v2 firewall rule resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_fw_rule_v2" "rule_2" {
+resource "viettelidc_fw_rule_v2" "rule_2" {
   name             = "firewall_rule"
   description      = "drop TELNET traffic"
   action           = "deny"
@@ -112,5 +112,5 @@ The following attributes are exported:
 Firewall Rules can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_fw_rule_v2.rule_1 8dbc0c28-e49c-463f-b712-5c5d1bbac327
+$ terraform import viettelidc_fw_rule_v2.rule_1 8dbc0c28-e49c-463f-b712-5c5d1bbac327
 ```

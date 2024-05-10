@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: openstack_compute_keypair_v2"
+page_title: "OpenStack: viettelidc_compute_keypair_v2"
 sidebar_current: "docs-openstack-resource-compute-keypair-v2"
 description: |-
   Manages a V2 keypair resource within OpenStack.
@@ -22,7 +22,7 @@ to the system where Terraform will be run.
 ### Import an Existing Public Key
 
 ```hcl
-resource "openstack_compute_keypair_v2" "test-keypair" {
+resource "viettelidc_compute_keypair_v2" "test-keypair" {
   name       = "my-keypair"
   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAjpC1hwiOCCmKEWxJ4qzTTsJbKzndLotBCz5PcwtUnflmU+gHJtWMZKpuEGVi29h0A/+ydKek1O18k10Ff+4tyFjiHDQAnOfgWf7+b1yK+qDip3X1C0UPMbwHlTfSGWLGZqd9LvEFx9k3h/M+VtMvwR1lJ9LUyTAImnNjWG7TaIPmui30HvM2UiFEmqkr4ijq45MyX2+fLIePLRIF61p4whjHAQYufqyno3BS48icQb4p6iVEZPo4AE2o9oIyQvj2mx4dk5Y8CgSETOZTYDOR3rU2fZTRDRgPJDH9FWvQjF5tA0p3d9CoWWd2s6GKKbfoUIi8R/Db1BSPJwkqB"
 }
@@ -31,7 +31,7 @@ resource "openstack_compute_keypair_v2" "test-keypair" {
 ### Generate a Public/Private Key Pair
 
 ```hcl
-resource "openstack_compute_keypair_v2" "test-keypair" {
+resource "viettelidc_compute_keypair_v2" "test-keypair" {
   name = "my-keypair"
 }
 ```
@@ -75,5 +75,5 @@ The following attributes are exported:
 Keypairs can be imported using the `name`, e.g.
 
 ```
-$ terraform import openstack_compute_keypair_v2.my-keypair test-keypair
+$ terraform import viettelidc_compute_keypair_v2.my-keypair test-keypair
 ```

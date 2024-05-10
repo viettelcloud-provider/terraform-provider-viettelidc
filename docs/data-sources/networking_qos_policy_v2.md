@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_networking_qos_policy_v2"
+page_title: "OpenStack: viettelidc_networking_qos_policy_v2"
 sidebar_current: "docs-openstack-datasource-networking-qos-policy-v2"
 description: |-
   Get information on an OpenStack QoS Policy.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an available OpenStack QoS policy.
 ## Example Usage
 
 ```hcl
-data "openstack_networking_qos_policy_v2" "qos_policy_1" {
+data "viettelidc_networking_qos_policy_v2" "qos_policy_1" {
   name = "qos_policy_1"
 }
 ```

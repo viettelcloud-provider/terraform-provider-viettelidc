@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: openstack_compute_quotaset_v2"
+page_title: "OpenStack: viettelidc_compute_quotaset_v2"
 sidebar_current: "docs-openstack-datasource-compute-quotaset-v2"
 description: |-
   Get information on a Compute Quotaset of a project.
@@ -14,7 +14,7 @@ Use this data source to get the compute quotaset of an OpenStack project.
 ## Example Usage
 
 ```hcl
-data "openstack_compute_quotaset_v2" "quota" {
+data "viettelidc_compute_quotaset_v2" "quota" {
   project_id = "2e367a3d29f94fd988e6ec54e305ec9d"
 }
 ```

@@ -1,7 +1,7 @@
 ---
 subcategory: "VPNaaS / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_vpnaas_endpoint_group_v2"
+page_title: "OpenStack: viettelidc_vpnaas_endpoint_group_v2"
 sidebar_current: "docs-openstack-resource-vpnaas-endpoint-group-v2"
 description: |-
   Manages a V2 Neutron Endpoint Group resource within OpenStack.
@@ -14,7 +14,7 @@ Manages a V2 Neutron Endpoint Group resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_vpnaas_endpoint_group_v2" "group_1" {
+resource "viettelidc_vpnaas_endpoint_group_v2" "group_1" {
   name = "Group 1"
   type = "cidr"
   endpoints = ["10.2.0.0/24",
@@ -66,5 +66,5 @@ The following attributes are exported:
 Groups can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_vpnaas_endpoint_group_v2.group_1 832cb7f3-59fe-40cf-8f64-8350ffc03272
+$ terraform import viettelidc_vpnaas_endpoint_group_v2.group_1 832cb7f3-59fe-40cf-8f64-8350ffc03272
 ```

@@ -14,31 +14,31 @@ Use this resource to configure a share.
 ## Example Usage
 
 ```hcl
-resource "openstack_networking_network_v2" "network_1" {
+resource "viettelidc_networking_network_v2" "network_1" {
   name           = "network_1"
   admin_state_up = "true"
 }
 
-resource "openstack_networking_subnet_v2" "subnet_1" {
+resource "viettelidc_networking_subnet_v2" "subnet_1" {
   name       = "subnet_1"
   cidr       = "192.168.199.0/24"
   ip_version = 4
-  network_id = openstack_networking_network_v2.network_1.id
+  network_id = viettelidc_networking_network_v2.network_1.id
 }
 
-resource "openstack_sharedfilesystem_sharenetwork_v2" "sharenetwork_1" {
+resource "viettelidc_sharedfilesystem_sharenetwork_v2" "sharenetwork_1" {
   name              = "test_sharenetwork"
   description       = "test share network with security services"
-  neutron_net_id    = openstack_networking_network_v2.network_1.id
-  neutron_subnet_id = openstack_networking_subnet_v2.subnet_1.id
+  neutron_net_id    = viettelidc_networking_network_v2.network_1.id
+  neutron_subnet_id = viettelidc_networking_subnet_v2.subnet_1.id
 }
 
-resource "openstack_sharedfilesystem_share_v2" "share_1" {
+resource "viettelidc_sharedfilesystem_share_v2" "share_1" {
   name             = "nfs_share"
   description      = "test share description"
   share_proto      = "NFS"
   size             = 1
-  share_network_id = openstack_sharedfilesystem_sharenetwork_v2.sharenetwork_1.id
+  share_network_id = viettelidc_sharedfilesystem_sharenetwork_v2.sharenetwork_1.id
 }
 ```
 
@@ -111,5 +111,5 @@ The following arguments are supported:
 This resource can be imported by specifying the ID of the share:
 
 ```
-$ terraform import openstack_sharedfilesystem_share_v2.share_1 id
+$ terraform import viettelidc_sharedfilesystem_share_v2.share_1 id
 ```

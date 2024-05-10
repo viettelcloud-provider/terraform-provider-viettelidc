@@ -1,7 +1,7 @@
 ---
 subcategory: "Load Balancing as a Service / Octavia"
 layout: "openstack"
-page_title: "OpenStack: openstack_lb_l7rule_v2"
+page_title: "OpenStack: viettelidc_lb_l7rule_v2"
 sidebar_current: "docs-openstack-resource-lb-l7rule-v2"
 description: |-
   Manages a V2 l7rule resource within OpenStack.
@@ -14,48 +14,48 @@ Manages a V2 L7 Rule resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_networking_network_v2" "network_1" {
+resource "viettelidc_networking_network_v2" "network_1" {
   name           = "network_1"
   admin_state_up = "true"
 }
 
-resource "openstack_networking_subnet_v2" "subnet_1" {
+resource "viettelidc_networking_subnet_v2" "subnet_1" {
   name       = "subnet_1"
   cidr       = "192.168.199.0/24"
   ip_version = 4
-  network_id = openstack_networking_network_v2.network_1.id
+  network_id = viettelidc_networking_network_v2.network_1.id
 }
 
-resource "openstack_lb_loadbalancer_v2" "loadbalancer_1" {
+resource "viettelidc_lb_loadbalancer_v2" "loadbalancer_1" {
   name          = "loadbalancer_1"
-  vip_subnet_id = openstack_networking_subnet_v2.subnet_1.id
+  vip_subnet_id = viettelidc_networking_subnet_v2.subnet_1.id
 }
 
-resource "openstack_lb_listener_v2" "listener_1" {
+resource "viettelidc_lb_listener_v2" "listener_1" {
   name            = "listener_1"
   protocol        = "HTTP"
   protocol_port   = 8080
-  loadbalancer_id = openstack_lb_loadbalancer_v2.loadbalancer_1.id
+  loadbalancer_id = viettelidc_lb_loadbalancer_v2.loadbalancer_1.id
 }
 
-resource "openstack_lb_pool_v2" "pool_1" {
+resource "viettelidc_lb_pool_v2" "pool_1" {
   name            = "pool_1"
   protocol        = "HTTP"
   lb_method       = "ROUND_ROBIN"
-  loadbalancer_id = openstack_lb_loadbalancer_v2.loadbalancer_1.id
+  loadbalancer_id = viettelidc_lb_loadbalancer_v2.loadbalancer_1.id
 }
 
-resource "openstack_lb_l7policy_v2" "l7policy_1" {
+resource "viettelidc_lb_l7policy_v2" "l7policy_1" {
   name         = "test"
   action       = "REDIRECT_TO_URL"
   description  = "test description"
   position     = 1
-  listener_id  = openstack_lb_listener_v2.listener_1.id
+  listener_id  = viettelidc_lb_listener_v2.listener_1.id
   redirect_url = "http://www.example.com"
 }
 
-resource "openstack_lb_l7rule_v2" "l7rule_1" {
-  l7policy_id  = openstack_lb_l7policy_v2.l7policy_1.id
+resource "viettelidc_lb_l7rule_v2" "l7rule_1" {
+  l7policy_id  = viettelidc_lb_l7policy_v2.l7policy_1.id
   type         = "PATH"
   compare_type = "EQUAL_TO"
   value        = "/api"
@@ -120,5 +120,5 @@ Load Balancer L7 Rule can be imported using the L7 Policy ID and L7 Rule ID
 separated by a slash, e.g.:
 
 ```
-$ terraform import openstack_lb_l7rule_v2.l7rule_1 e0bd694a-abbe-450e-b329-0931fd1cc5eb/4086b0c9-b18c-4d1c-b6b8-4c56c3ad2a9e
+$ terraform import viettelidc_lb_l7rule_v2.l7rule_1 e0bd694a-abbe-450e-b329-0931fd1cc5eb/4086b0c9-b18c-4d1c-b6b8-4c56c3ad2a9e
 ```

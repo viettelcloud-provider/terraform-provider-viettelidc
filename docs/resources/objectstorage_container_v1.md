@@ -1,7 +1,7 @@
 ---
 subcategory: "Object Storage / Swift"
 layout: "openstack"
-page_title: "OpenStack: openstack_objectstorage_container_v1"
+page_title: "OpenStack: viettelidc_objectstorage_container_v1"
 sidebar_current: "docs-openstack-resource-objectstorage-container-v1"
 description: |-
   Manages a V1 container resource within OpenStack.
@@ -16,7 +16,7 @@ Manages a V1 container resource within OpenStack.
 ### Basic Container
 
 ```hcl
-resource "openstack_objectstorage_container_v1" "container_1" {
+resource "viettelidc_objectstorage_container_v1" "container_1" {
   region = "RegionOne"
   name   = "tf-test-container-1"
 
@@ -32,7 +32,7 @@ resource "openstack_objectstorage_container_v1" "container_1" {
 ### Basic Container with legacy versioning
 
 ```hcl
-resource "openstack_objectstorage_container_v1" "container_1" {
+resource "viettelidc_objectstorage_container_v1" "container_1" {
   region = "RegionOne"
   name   = "tf-test-container-1"
 
@@ -54,7 +54,7 @@ resource "openstack_objectstorage_container_v1" "container_1" {
 ```hcl
 # Requires that a user know the object name they are attempting to download
 
-resource "openstack_objectstorage_container_v1" "container_1" {
+resource "viettelidc_objectstorage_container_v1" "container_1" {
   region = "RegionOne"
   name   = "tf-test-container-1"
 
@@ -67,7 +67,7 @@ resource "openstack_objectstorage_container_v1" "container_1" {
 ```hcl
 # Any user can read any object, and list all objects in the container
 
-resource "openstack_objectstorage_container_v1" "container_1" {
+resource "viettelidc_objectstorage_container_v1" "container_1" {
   region = "RegionOne"
   name   = "tf-test-container-1"
 
@@ -78,18 +78,18 @@ resource "openstack_objectstorage_container_v1" "container_1" {
 ### Write-Only Access for a User
 
 ```hcl
-data "openstack_identity_auth_scope_v3" "current" {
+data "viettelidc_identity_auth_scope_v3" "current" {
   name = "current"
 }
 
 # The named user can only upload objects, not read objects or list the container
 
-resource "openstack_objectstorage_container_v1" "container_1" {
+resource "viettelidc_objectstorage_container_v1" "container_1" {
   region = "RegionOne"
   name   = "tf-test-container-1"
 
   container_read  = ".r:-${var.username}"
-  container_write = "${data.openstack_identity_auth_scope_v3.current.project_id}:${var.username}"
+  container_write = "${data.viettelidc_identity_auth_scope_v3.current.project_id}:${var.username}"
 }
 ```
 
@@ -174,5 +174,5 @@ Some attributes can't be imported :
 So you'll have to `terraform plan` and `terraform apply` after the import to fix those missing attributes.
 
 ```
-$ terraform import openstack_objectstorage_container_v1.container_1 container_name
+$ terraform import viettelidc_objectstorage_container_v1.container_1 container_name
 ```

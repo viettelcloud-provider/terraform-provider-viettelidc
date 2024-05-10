@@ -1,7 +1,7 @@
 ---
 subcategory: "Container Infra / Magnum"
 layout: "openstack"
-page_title: "OpenStack: openstack_containerinfra_clustertemplate_v1"
+page_title: "OpenStack: viettelidc_containerinfra_clustertemplate_v1"
 sidebar_current: "docs-openstack-resource-containerinfra-clustertemplate-v1"
 description: |-
   Manages a V1 Magnum cluster template resource within OpenStack.
@@ -16,7 +16,7 @@ Manages a V1 Magnum cluster template resource within OpenStack.
 ### Create a Cluster template
 
 ```hcl
-resource "openstack_containerinfra_clustertemplate_v1" "clustertemplate_1" {
+resource "viettelidc_containerinfra_clustertemplate_v1" "clustertemplate_1" {
   name                  = "clustertemplate_1"
   image                 = "Fedora-Atomic-27"
   coe                   = "kubernetes"
@@ -207,5 +207,5 @@ The following attributes are exported:
 Cluster templates can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_containerinfra_clustertemplate_v1.clustertemplate_1 b9a45c5c-cd03-4958-82aa-b80bf93cb922
+$ terraform import viettelidc_containerinfra_clustertemplate_v1.clustertemplate_1 b9a45c5c-cd03-4958-82aa-b80bf93cb922
 ```

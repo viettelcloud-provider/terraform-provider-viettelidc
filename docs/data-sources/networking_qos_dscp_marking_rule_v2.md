@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_networking_qos_dscp_marking_rule_v2"
+page_title: "OpenStack: viettelidc_networking_qos_dscp_marking_rule_v2"
 sidebar_current: "docs-openstack-datasource-networking-qos-dscp-marking-rule-v2"
 description: |-
   Get information on an OpenStack QoS DSCP marking rule.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an available OpenStack QoS DSCP marking ru
 ## Example Usage
 
 ```hcl
-data "openstack_networking_qos_dscp_marking_rule_v2" "qos_dscp_marking_rule_1" {
+data "viettelidc_networking_qos_dscp_marking_rule_v2" "qos_dscp_marking_rule_1" {
   dscp_mark = 26
 }
 ```

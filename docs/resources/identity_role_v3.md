@@ -1,7 +1,7 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: openstack_identity_role_v3"
+page_title: "OpenStack: viettelidc_identity_role_v3"
 sidebar_current: "docs-openstack-resource-identity-role-v3"
 description: |-
   Manages a V3 Role resource within OpenStack Keystone.
@@ -17,7 +17,7 @@ this resource.
 ## Example Usage
 
 ```hcl
-resource "openstack_identity_role_v3" "role_1" {
+resource "viettelidc_identity_role_v3" "role_1" {
   name = "role_1"
 }
 ```
@@ -47,5 +47,5 @@ The following attributes are exported:
 Roles can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_identity_role_v3.role_1 89c60255-9bd6-460c-822a-e2b959ede9d2
+$ terraform import viettelidc_identity_role_v3.role_1 89c60255-9bd6-460c-822a-e2b959ede9d2
 ```

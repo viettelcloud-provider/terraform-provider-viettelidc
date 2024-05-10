@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: openstack_compute_keypair_v2"
+page_title: "OpenStack: viettelidc_compute_keypair_v2"
 sidebar_current: "docs-openstack-datasource-compute-keypair-v2"
 description: |-
   Get information on an OpenStack Keypair.
@@ -14,7 +14,7 @@ Use this data source to get the ID and public key of an OpenStack keypair.
 ## Example Usage
 
 ```hcl
-data "openstack_compute_keypair_v2" "kp" {
+data "viettelidc_compute_keypair_v2" "kp" {
   name = "sand"
 }
 ```

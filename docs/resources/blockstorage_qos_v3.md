@@ -1,7 +1,7 @@
 ---
 subcategory: "Block Storage / Cinder"
 layout: "openstack"
-page_title: "OpenStack: openstack_blockstorage_qos_v3"
+page_title: "OpenStack: viettelidc_blockstorage_qos_v3"
 sidebar_current: "docs-openstack-resource-blockstorage-qos-v3"
 description: |-
   Manages a V3 Quality-Of-Servirce (qos) resource within OpenStack.
@@ -17,7 +17,7 @@ Manages a V3 block storage Quality-Of-Servirce (qos) resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_blockstorage_qos_v3" "qos" {
+resource "viettelidc_blockstorage_qos_v3" "qos" {
   name = "foo"
   consumer = "back-end"
   specs = {
@@ -58,5 +58,5 @@ The following attributes are exported:
 Qos can be imported using the `qos_id`, e.g.
 
 ```
-$ terraform import openstack_blockstorage_qos_v3.qos 941793f0-0a34-4bc4-b72e-a6326ae58283
+$ terraform import viettelidc_blockstorage_qos_v3.qos 941793f0-0a34-4bc4-b72e-a6326ae58283
 ```

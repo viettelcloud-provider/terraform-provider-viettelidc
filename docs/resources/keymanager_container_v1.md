@@ -1,7 +1,7 @@
 ---
 subcategory: "Key Manager / Barbican"
 layout: "openstack"
-page_title: "OpenStack: openstack_keymanager_container_v1"
+page_title: "OpenStack: viettelidc_keymanager_container_v1"
 sidebar_current: "docs-openstack-resource-keymanager-container-v1"
 description: |-
   Manages a V1 Barbican container resource within OpenStack.
@@ -18,62 +18,62 @@ Manages a V1 Barbican container resource within OpenStack.
 The container with the TLS certificates, which can be used by the loadbalancer HTTPS listener.
 
 ```hcl
-resource "openstack_keymanager_secret_v1" "certificate_1" {
+resource "viettelidc_keymanager_secret_v1" "certificate_1" {
   name                 = "certificate"
   payload              = file("cert.pem")
   secret_type          = "certificate"
   payload_content_type = "text/plain"
 }
 
-resource "openstack_keymanager_secret_v1" "private_key_1" {
+resource "viettelidc_keymanager_secret_v1" "private_key_1" {
   name                 = "private_key"
   payload              = file("cert-key.pem")
   secret_type          = "private"
   payload_content_type = "text/plain"
 }
 
-resource "openstack_keymanager_secret_v1" "intermediate_1" {
+resource "viettelidc_keymanager_secret_v1" "intermediate_1" {
   name                 = "intermediate"
   payload              = file("intermediate-ca.pem")
   secret_type          = "certificate"
   payload_content_type = "text/plain"
 }
 
-resource "openstack_keymanager_container_v1" "tls_1" {
+resource "viettelidc_keymanager_container_v1" "tls_1" {
   name = "tls"
   type = "certificate"
 
   secret_refs {
     name       = "certificate"
-    secret_ref = openstack_keymanager_secret_v1.certificate_1.secret_ref
+    secret_ref = viettelidc_keymanager_secret_v1.certificate_1.secret_ref
   }
 
   secret_refs {
     name       = "private_key"
-    secret_ref = openstack_keymanager_secret_v1.private_key_1.secret_ref
+    secret_ref = viettelidc_keymanager_secret_v1.private_key_1.secret_ref
   }
 
   secret_refs {
     name       = "intermediates"
-    secret_ref = openstack_keymanager_secret_v1.intermediate_1.secret_ref
+    secret_ref = viettelidc_keymanager_secret_v1.intermediate_1.secret_ref
   }
 }
 
-data "openstack_networking_subnet_v2" "subnet_1" {
+data "viettelidc_networking_subnet_v2" "subnet_1" {
   name = "my-subnet"
 }
 
-resource "openstack_lb_loadbalancer_v2" "lb_1" {
+resource "viettelidc_lb_loadbalancer_v2" "lb_1" {
   name          = "loadbalancer"
-  vip_subnet_id = data.openstack_networking_subnet_v2.subnet_1.id
+  vip_subnet_id = data.viettelidc_networking_subnet_v2.subnet_1.id
 }
 
-resource "openstack_lb_listener_v2" "listener_1" {
+resource "viettelidc_lb_listener_v2" "listener_1" {
   name                      = "https"
   protocol                  = "TERMINATED_HTTPS"
   protocol_port             = 443
-  loadbalancer_id           = openstack_lb_loadbalancer_v2.lb_1.id
-  default_tls_container_ref = openstack_keymanager_container_v1.tls_1.container_ref
+  loadbalancer_id           = viettelidc_lb_loadbalancer_v2.lb_1.id
+  default_tls_container_ref = viettelidc_keymanager_container_v1.tls_1.container_ref
 }
 ```
 
@@ -82,23 +82,23 @@ resource "openstack_lb_listener_v2" "listener_1" {
 ~> **Note** Only read ACLs are supported
 
 ```hcl
-resource "openstack_keymanager_container_v1" "tls_1" {
+resource "viettelidc_keymanager_container_v1" "tls_1" {
   name = "tls"
   type = "certificate"
 
   secret_refs {
     name       = "certificate"
-    secret_ref = openstack_keymanager_secret_v1.certificate_1.secret_ref
+    secret_ref = viettelidc_keymanager_secret_v1.certificate_1.secret_ref
   }
 
   secret_refs {
     name       = "private_key"
-    secret_ref = openstack_keymanager_secret_v1.private_key_1.secret_ref
+    secret_ref = viettelidc_keymanager_secret_v1.private_key_1.secret_ref
   }
 
   secret_refs {
     name       = "intermediates"
-    secret_ref = openstack_keymanager_secret_v1.intermediate_1.secret_ref
+    secret_ref = viettelidc_keymanager_secret_v1.intermediate_1.secret_ref
   }
 
   acl {
@@ -179,5 +179,5 @@ The `consumers` block supports:
 Containers can be imported using the container id (the last part of the container reference), e.g.:
 
 ```
-$ terraform import openstack_keymanager_container_v1.container_1 0c6cd26a-c012-4d7b-8034-057c0f1c2953
+$ terraform import viettelidc_keymanager_container_v1.container_1 0c6cd26a-c012-4d7b-8034-057c0f1c2953
 ```

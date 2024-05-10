@@ -1,7 +1,7 @@
 ---
 subcategory: "Key Manager / Barbican"
 layout: "openstack"
-page_title: "OpenStack: openstack_keymanager_container_v1"
+page_title: "OpenStack: viettelidc_keymanager_container_v1"
 sidebar_current: "docs-openstack-datasource-keymanager-container-v1"
 description: |-
   Get information on a V1 Barbican container resource within OpenStack.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an available Barbican container.
 ## Example Usage
 
 ```hcl
-data "openstack_keymanager_container_v1" "example" {
+data "viettelidc_keymanager_container_v1" "example" {
   name = "my_container"
 }
 ```

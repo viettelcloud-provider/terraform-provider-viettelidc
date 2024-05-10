@@ -1,7 +1,7 @@
 ---
 subcategory: "Deprecated"
 layout: "openstack"
-page_title: "OpenStack: openstack_lb_pool_v1"
+page_title: "OpenStack: viettelidc_lb_pool_v1"
 sidebar_current: "docs-openstack-resource-lb-pool-v1"
 description: |-
   Manages a V1 load balancer pool resource within OpenStack.
@@ -14,7 +14,7 @@ Manages a V1 load balancer pool resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_lb_pool_v1" "pool_1" {
+resource "viettelidc_lb_pool_v1" "pool_1" {
   name        = "tf_test_lb_pool"
   protocol    = "HTTP"
   subnet_id   = "12345"
@@ -27,18 +27,18 @@ resource "openstack_lb_pool_v1" "pool_1" {
 ## Complete Load Balancing Stack Example
 
 ```
-resource "openstack_networking_network_v2" "network_1" {
+resource "viettelidc_networking_network_v2" "network_1" {
   name           = "network_1"
   admin_state_up = "true"
 }
 
-resource "openstack_networking_subnet_v2" "subnet_1" {
-  network_id = openstack_networking_network_v2.network_1.id
+resource "viettelidc_networking_subnet_v2" "subnet_1" {
+  network_id = viettelidc_networking_network_v2.network_1.id
   cidr       = "192.168.199.0/24"
   ip_version = 4
 }
 
-resource "openstack_compute_secgroup_v2" "secgroup_1" {
+resource "viettelidc_compute_secgroup_v2" "secgroup_1" {
   name        = "secgroup_1"
   description = "Rules for secgroup_1"
 
@@ -57,25 +57,25 @@ resource "openstack_compute_secgroup_v2" "secgroup_1" {
   }
 }
 
-resource "openstack_compute_instance_v2" "instance_1" {
+resource "viettelidc_compute_instance_v2" "instance_1" {
   name            = "instance_1"
-  security_groups = ["default", openstack_compute_secgroup_v2.secgroup_1.name]
+  security_groups = ["default", viettelidc_compute_secgroup_v2.secgroup_1.name]
 
   network {
-    uuid = openstack_networking_network_v2.network_1.id
+    uuid = viettelidc_networking_network_v2.network_1.id
   }
 }
 
-resource "openstack_compute_instance_v2" "instance_2" {
+resource "viettelidc_compute_instance_v2" "instance_2" {
   name            = "instance_2"
-  security_groups = ["default", openstack_compute_secgroup_v2.secgroup_1.name]
+  security_groups = ["default", viettelidc_compute_secgroup_v2.secgroup_1.name]
 
   network {
-    uuid = openstack_networking_network_v2.network_1.id
+    uuid = viettelidc_networking_network_v2.network_1.id
   }
 }
 
-resource "openstack_lb_monitor_v1" "monitor_1" {
+resource "viettelidc_lb_monitor_v1" "monitor_1" {
   type           = "TCP"
   delay          = 30
   timeout        = 5
@@ -83,32 +83,32 @@ resource "openstack_lb_monitor_v1" "monitor_1" {
   admin_state_up = "true"
 }
 
-resource "openstack_lb_pool_v1" "pool_1" {
+resource "viettelidc_lb_pool_v1" "pool_1" {
   name        = "pool_1"
   protocol    = "TCP"
-  subnet_id   = openstack_networking_subnet_v2.subnet_1.id
+  subnet_id   = viettelidc_networking_subnet_v2.subnet_1.id
   lb_method   = "ROUND_ROBIN"
-  monitor_ids = [openstack_lb_monitor_v1.monitor_1.id]
+  monitor_ids = [viettelidc_lb_monitor_v1.monitor_1.id]
 }
 
-resource "openstack_lb_member_v1" "member_1" {
-  pool_id = openstack_lb_pool_v1.pool_1.id
-  address = openstack_compute_instance_v2.instance_1.access_ip_v4
+resource "viettelidc_lb_member_v1" "member_1" {
+  pool_id = viettelidc_lb_pool_v1.pool_1.id
+  address = viettelidc_compute_instance_v2.instance_1.access_ip_v4
   port    = 80
 }
 
-resource "openstack_lb_member_v1" "member_2" {
-  pool_id = openstack_lb_pool_v1.pool_1.id
-  address = openstack_compute_instance_v2.instance_2.access_ip_v4
+resource "viettelidc_lb_member_v1" "member_2" {
+  pool_id = viettelidc_lb_pool_v1.pool_1.id
+  address = viettelidc_compute_instance_v2.instance_2.access_ip_v4
   port    = 80
 }
 
-resource "openstack_lb_vip_v1" "vip_1" {
+resource "viettelidc_lb_vip_v1" "vip_1" {
   name      = "vip_1"
-  subnet_id = openstack_networking_subnet_v2.subnet_1.id
+  subnet_id = viettelidc_networking_subnet_v2.subnet_1.id
   protocol  = "TCP"
   port      = 80
-  pool_id   = openstack_lb_pool_v1.pool_1.id
+  pool_id   = viettelidc_lb_pool_v1.pool_1.id
 }
 ```
 
@@ -147,7 +147,7 @@ The following arguments are supported:
 * `member` - (Optional) An existing node to add to the pool. Changing this
     updates the members of the pool. The member object structure is documented
     below. Please note that the `member` block is deprecated in favor of the
-    `openstack_lb_member_v1` resource.
+    `viettelidc_lb_member_v1` resource.
 
 The `member` block supports:
 
@@ -180,12 +180,12 @@ The following attributes are exported:
 
 ## Notes
 
-The `member` block is deprecated in favor of the `openstack_lb_member_v1` resource.
+The `member` block is deprecated in favor of the `viettelidc_lb_member_v1` resource.
 
 ## Import
 
 Load Balancer Pools can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_lb_pool_v1.pool_1 b255e6ba-02ad-43e6-8951-3428ca26b713
+$ terraform import viettelidc_lb_pool_v1.pool_1 b255e6ba-02ad-43e6-8951-3428ca26b713
 ```

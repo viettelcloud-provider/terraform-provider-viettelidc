@@ -1,7 +1,7 @@
 ---
 subcategory: "Block Storage / Cinder"
 layout: "openstack"
-page_title: "OpenStack: openstack_blockstorage_volume_v3"
+page_title: "OpenStack: viettelidc_blockstorage_volume_v3"
 sidebar_current: "docs-openstack-datasource-blockstorage-volume-v3"
 description: |-
   Get information on an OpenStack Volume.
@@ -14,7 +14,7 @@ Use this data source to get information about an existing volume.
 ## Example Usage
 
 ```hcl
-data "openstack_blockstorage_volume_v3" "volume_1" {
+data "viettelidc_blockstorage_volume_v3" "volume_1" {
   name = "volume_1"
 }
 ```

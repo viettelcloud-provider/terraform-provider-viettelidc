@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_networking_trunk_v2"
+page_title: "OpenStack: viettelidc_networking_trunk_v2"
 sidebar_current: "docs-openstack-datasource-networking-trunk-v2"
 description: |-
   Get information of an OpenStack Trunk.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an available OpenStack trunk.
 ## Example Usage
 
 ```hcl
-data "openstack_networking_trunk_v2" "trunk_1" {
+data "viettelidc_networking_trunk_v2" "trunk_1" {
   name = "trunk_1"
 }
 ```

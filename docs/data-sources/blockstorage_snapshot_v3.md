@@ -1,7 +1,7 @@
 ---
 subcategory: "Block Storage / Cinder"
 layout: "openstack"
-page_title: "OpenStack: openstack_blockstorage_snapshot_v3"
+page_title: "OpenStack: viettelidc_blockstorage_snapshot_v3"
 sidebar_current: "docs-openstack-datasource-blockstorage-snapshot-v3"
 description: |-
   Get information on an OpenStack Snapshot.
@@ -14,7 +14,7 @@ Use this data source to get information about an existing snapshot.
 ## Example Usage
 
 ```hcl
-data "openstack_blockstorage_snapshot_v3" "snapshot_1" {
+data "viettelidc_blockstorage_snapshot_v3" "snapshot_1" {
   name        = "snapshot_1"
   most_recent = true
 }

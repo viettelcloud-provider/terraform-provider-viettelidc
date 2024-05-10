@@ -1,7 +1,7 @@
 ---
 subcategory: "Shared Filesystem / Manila"
 layout: "openstack"
-page_title: "OpenStack: openstack_sharedfilesystem_sharenetwork_v2"
+page_title: "OpenStack: viettelidc_sharedfilesystem_sharenetwork_v2"
 sidebar_current: "docs-openstack-datasource-sharedfilesystem-sharenetwork-v2"
 description: |-
   Get information on an Shared File System share network.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an available Shared File System share netw
 ## Example Usage
 
 ```hcl
-data "openstack_sharedfilesystem_sharenetwork_v2" "sharenetwork_1" {
+data "viettelidc_sharedfilesystem_sharenetwork_v2" "sharenetwork_1" {
   name = "sharenetwork_1"
 }
 ```

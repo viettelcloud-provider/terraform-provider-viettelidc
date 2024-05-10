@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: openstack_compute_servergroup_v2"
+page_title: "OpenStack: viettelidc_compute_servergroup_v2"
 sidebar_current: "docs-openstack-resource-compute-servergroup-v2"
 description: |-
   Manages a V2 Server Group resource within OpenStack.
@@ -16,7 +16,7 @@ Manages a V2 Server Group resource within OpenStack.
 ### Compute service API version 2.63 or below:
 
 ```hcl
-resource "openstack_compute_servergroup_v2" "test-sg" {
+resource "viettelidc_compute_servergroup_v2" "test-sg" {
   name     = "my-sg"
   policies = ["anti-affinity"]
 }
@@ -25,7 +25,7 @@ resource "openstack_compute_servergroup_v2" "test-sg" {
 ### Compute service API version 2.64 or above:
 
 ```hcl
-resource "openstack_compute_servergroup_v2" "test-sg" {
+resource "viettelidc_compute_servergroup_v2" "test-sg" {
   name     = "my-sg"
   policies = ["anti-affinity"]
   rules {
@@ -87,5 +87,5 @@ The following attributes are exported:
 Server Groups can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_compute_servergroup_v2.test-sg 1bc30ee9-9d5b-4c30-bdd5-7f1e663f5edf
+$ terraform import viettelidc_compute_servergroup_v2.test-sg 1bc30ee9-9d5b-4c30-bdd5-7f1e663f5edf
 ```

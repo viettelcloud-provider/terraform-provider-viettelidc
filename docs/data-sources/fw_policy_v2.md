@@ -1,7 +1,7 @@
 ---
 subcategory: "FWaaS / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_fw_policy_v2"
+page_title: "OpenStack: viettelidc_fw_policy_v2"
 sidebar_current: "docs-openstack-datasource-fw-policy-v2"
 description: |-
   Get information on an OpenStack Firewall Policy V2.
@@ -14,7 +14,7 @@ Use this data source to get information of an available OpenStack firewall polic
 ## Example Usage
 
 ```hcl
-data "openstack_fw_policy_v2" "policy" {
+data "viettelidc_fw_policy_v2" "policy" {
   name = "tf_test_policy"
 }
 ```

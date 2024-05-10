@@ -1,7 +1,7 @@
 ---
 subcategory: "Container Infra / Magnum"
 layout: "openstack"
-page_title: "OpenStack: openstack_containerinfra_cluster_v1"
+page_title: "OpenStack: viettelidc_containerinfra_cluster_v1"
 sidebar_current: "docs-openstack-resource-containerinfra-cluster-v1"
 description: |-
   Manages a V1 Magnum cluster resource within OpenStack.
@@ -20,7 +20,7 @@ state](https://www.terraform.io/docs/language/state/sensitive-data.html).
 ### Create a Cluster
 
 ```hcl
-resource "openstack_containerinfra_cluster_v1" "cluster_1" {
+resource "viettelidc_containerinfra_cluster_v1" "cluster_1" {
   name                = "cluster_1"
   cluster_template_id = "b9a45c5c-cd03-4958-82aa-b80bf93cb922"
   master_count        = 3
@@ -133,5 +133,5 @@ The following attributes are exported:
 Clusters can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_containerinfra_cluster_v1.cluster_1 ce0f9463-dd25-474b-9fe8-94de63e5e42b
+$ terraform import viettelidc_containerinfra_cluster_v1.cluster_1 ce0f9463-dd25-474b-9fe8-94de63e5e42b
 ```

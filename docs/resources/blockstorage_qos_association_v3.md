@@ -1,7 +1,7 @@
 ---
 subcategory: "Block Storage / Cinder"
 layout: "openstack"
-page_title: "OpenStack: openstack_blockstorage_qos_association_v3"
+page_title: "OpenStack: viettelidc_blockstorage_qos_association_v3"
 sidebar_current: "docs-openstack-resource-blockstorage-qos-association-v3"
 description: |-
   Manages a V3 Qos association resource within OpenStack.
@@ -17,7 +17,7 @@ Manages a V3 block storage Qos Association resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_blockstorage_qos_v3" "qos" {
+resource "viettelidc_blockstorage_qos_v3" "qos" {
   name = "%s"
   consumer = "front-end"
   specs = {
@@ -25,13 +25,13 @@ resource "openstack_blockstorage_qos_v3" "qos" {
   }
 }
 
-resource "openstack_blockstorage_volume_type_v3" "volume_type" {
+resource "viettelidc_blockstorage_volume_type_v3" "volume_type" {
   name = "%s"
 }
 
-resource "openstack_blockstorage_qos_association_v3" "qos_association" {
-  qos_id         = openstack_blockstorage_qos_v3.qos.id
-  volume_type_id = openstack_blockstorage_volume_type_v3.volume_type.id
+resource "viettelidc_blockstorage_qos_association_v3" "qos_association" {
+  qos_id         = viettelidc_blockstorage_qos_v3.qos.id
+  volume_type_id = viettelidc_blockstorage_volume_type_v3.volume_type.id
 }
 
 ```
@@ -63,5 +63,5 @@ The following attributes are exported:
 Qos association can be imported using the `qos_id/volume_type_id`, e.g.
 
 ```
-$ terraform import openstack_blockstorage_qos_association_v3.qos_association 941793f0-0a34-4bc4-b72e-a6326ae58283/ea257959-eeb1-4c10-8d33-26f0409a755d
+$ terraform import viettelidc_blockstorage_qos_association_v3.qos_association 941793f0-0a34-4bc4-b72e-a6326ae58283/ea257959-eeb1-4c10-8d33-26f0409a755d
 ```

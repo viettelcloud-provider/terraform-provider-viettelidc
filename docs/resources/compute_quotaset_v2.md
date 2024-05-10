@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: openstack_compute_quotaset_v2"
+page_title: "OpenStack: viettelidc_compute_quotaset_v2"
 sidebar_current: "docs-openstack-resource-compute-quotaset-v2"
 description: |-
   Manages a V2 compute quotaset resource within OpenStack.
@@ -22,12 +22,12 @@ Manages a V2 compute quotaset resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_identity_project_v3" "project_1" {
+resource "viettelidc_identity_project_v3" "project_1" {
   name = project_1
 }
 
-resource "openstack_compute_quotaset_v2" "quotaset_1" {
-  project_id           = openstack_identity_project_v3.project_1.id
+resource "viettelidc_compute_quotaset_v2" "quotaset_1" {
+  project_id           = viettelidc_identity_project_v3.project_1.id
   key_pairs            = 10
   ram                  = 40960
   cores                = 32
@@ -116,5 +116,5 @@ The following attributes are exported:
 Quotasets can be imported using the `project_id/region_name`, e.g.
 
 ```
-$ terraform import openstack_compute_quotaset_v2.quotaset_1 2a0f2240-c5e6-41de-896d-e80d97428d6b/region_1
+$ terraform import viettelidc_compute_quotaset_v2.quotaset_1 2a0f2240-c5e6-41de-896d-e80d97428d6b/region_1
 ```

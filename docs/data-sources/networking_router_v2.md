@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_networking_router_v2"
+page_title: "OpenStack: viettelidc_networking_router_v2"
 sidebar_current: "docs-openstack-datasource-networking-router-v2"
 description: |-
   Get information on an OpenStack Floating IP.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an available OpenStack router.
 ## Example Usage
 
 ```hcl
-data "openstack_networking_router_v2" "router" {
+data "viettelidc_networking_router_v2" "router" {
   name = "router_1"
 }
 ```

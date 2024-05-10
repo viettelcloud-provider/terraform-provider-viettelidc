@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: openstack_compute_hypervisor_v2"
+page_title: "OpenStack: viettelidc_compute_hypervisor_v2"
 sidebar_current: "docs-openstack-datasource-compute-hypervisor-v2"
 description: |-
   Get information on Openstack Hypervisor
@@ -15,7 +15,7 @@ by hostname.
 ## Example Usage
 
 ```hcl
-data "openstack_compute_hypervisor_v2" "host01" {
+data "viettelidc_compute_hypervisor_v2" "host01" {
   hostname = "host01"
 }
 ```

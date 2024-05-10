@@ -1,7 +1,7 @@
 ---
 subcategory: "Databases / Trove"
 layout: "openstack"
-page_title: "OpenStack: openstack_db_user_v1"
+page_title: "OpenStack: viettelidc_db_user_v1"
 sidebar_current: "docs-openstack-resource-db-user-v1"
 description: |-
   Manages a V1 database user resource within OpenStack.
@@ -20,9 +20,9 @@ state](https://www.terraform.io/docs/language/state/sensitive-data.html).
 ### User
 
 ```hcl
-resource "openstack_db_user_v1" "basic" {
+resource "viettelidc_db_user_v1" "basic" {
   name         = "basic"
-  instance_id  = openstack_db_instance_v1.basic.id
+  instance_id  = viettelidc_db_instance_v1.basic.id
   password     = "password"
   databases    = ["testdb"]
 }

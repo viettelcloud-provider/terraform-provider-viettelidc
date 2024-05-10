@@ -1,7 +1,7 @@
 ---
 subcategory: "Deprecated"
 layout: "openstack"
-page_title: "OpenStack: openstack_fw_policy_v1"
+page_title: "OpenStack: viettelidc_fw_policy_v1"
 sidebar_current: "docs-openstack-datasource-fw-policy-v1"
 description: |-
   Get information on an OpenStack Firewall Policy.
@@ -14,7 +14,7 @@ Use this data source to get firewall policy information of an available OpenStac
 ## Example Usage
 
 ```hcl
-data "openstack_fw_policy_v1" "policy" {
+data "viettelidc_fw_policy_v1" "policy" {
   name = "tf_test_policy"
 }
 ```

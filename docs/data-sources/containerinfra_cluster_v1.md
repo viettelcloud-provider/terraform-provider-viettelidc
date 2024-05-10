@@ -1,7 +1,7 @@
 ---
 subcategory: "Container Infra / Magnum"
 layout: "openstack"
-page_title: "OpenStack: openstack_containerinfra_cluster_v1"
+page_title: "OpenStack: viettelidc_containerinfra_cluster_v1"
 sidebar_current: "docs-openstack-datasource-containerinfra-cluster-v1"
 description: |-
   Get information on an OpenStack Magnum cluster.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an available OpenStack Magnum cluster.
 ## Example Usage
 
 ```hcl
-data "openstack_containerinfra_cluster_v1" "cluster_1" {
+data "viettelidc_containerinfra_cluster_v1" "cluster_1" {
   name = "cluster_1"
 }
 ```

@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_networking_subnet_route_v2"
+page_title: "OpenStack: viettelidc_networking_subnet_route_v2"
 sidebar_current: "docs-openstack-resource-networking-subnet-route-v2"
 description: |-
   Creates a routing entry on a OpenStack V2 subnet.
@@ -14,24 +14,24 @@ Creates a routing entry on a OpenStack V2 subnet.
 ## Example Usage
 
 ```hcl
-resource "openstack_networking_router_v2" "router_1" {
+resource "viettelidc_networking_router_v2" "router_1" {
   name           = "router_1"
   admin_state_up = "true"
 }
 
-resource "openstack_networking_network_v2" "network_1" {
+resource "viettelidc_networking_network_v2" "network_1" {
   name           = "network_1"
   admin_state_up = "true"
 }
 
-resource "openstack_networking_subnet_v2" "subnet_1" {
-  network_id = openstack_networking_network_v2.network_1.id
+resource "viettelidc_networking_subnet_v2" "subnet_1" {
+  network_id = viettelidc_networking_network_v2.network_1.id
   cidr       = "192.168.199.0/24"
   ip_version = 4
 }
 
-resource "openstack_networking_subnet_route_v2" "subnet_route_1" {
-  subnet_id        = openstack_networking_subnet_v2.subnet_1.id
+resource "viettelidc_networking_subnet_route_v2" "subnet_route_1" {
+  subnet_id        = viettelidc_networking_subnet_v2.subnet_1.id
   destination_cidr = "10.0.1.0/24"
   next_hop         = "192.168.199.254"
 }
@@ -71,5 +71,5 @@ The following attributes are exported:
 Routing entries can be imported using a combined ID using the following format: ``<subnet_id>-route-<destination_cidr>-<next_hop>``
 
 ```
-$ terraform import openstack_networking_subnet_route_v2.subnet_route_1 686fe248-386c-4f70-9f6c-281607dad079-route-10.0.1.0/24-192.168.199.25
+$ terraform import viettelidc_networking_subnet_route_v2.subnet_route_1 686fe248-386c-4f70-9f6c-281607dad079-route-10.0.1.0/24-192.168.199.25
 ```

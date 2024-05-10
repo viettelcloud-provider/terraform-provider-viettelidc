@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_networking_secgroup_v2"
+page_title: "OpenStack: viettelidc_networking_secgroup_v2"
 sidebar_current: "docs-openstack-resource-networking-secgroup-v2"
 description: |-
   Manages a V2 Neutron security group resource within OpenStack.
@@ -16,7 +16,7 @@ and also allows an admin to target a specific tenant_id.
 ## Example Usage
 
 ```hcl
-resource "openstack_networking_secgroup_v2" "secgroup_1" {
+resource "viettelidc_networking_secgroup_v2" "secgroup_1" {
   name        = "secgroup_1"
   description = "My neutron security group"
 }
@@ -66,16 +66,16 @@ managed by Terraform, set `delete_default_rules` to `true` and then create
 separate security group rules such as the following:
 
 ```hcl
-resource "openstack_networking_secgroup_rule_v2" "secgroup_rule_v4" {
+resource "viettelidc_networking_secgroup_rule_v2" "secgroup_rule_v4" {
   direction         = "egress"
   ethertype         = "IPv4"
-  security_group_id = openstack_networking_secgroup_v2.secgroup.id
+  security_group_id = viettelidc_networking_secgroup_v2.secgroup.id
 }
 
-resource "openstack_networking_secgroup_rule_v2" "secgroup_rule_v6" {
+resource "viettelidc_networking_secgroup_rule_v2" "secgroup_rule_v6" {
   direction         = "egress"
   ethertype         = "IPv6"
-  security_group_id = openstack_networking_secgroup_v2.secgroup.id
+  security_group_id = viettelidc_networking_secgroup_v2.secgroup.id
 }
 ```
 
@@ -90,5 +90,5 @@ is moot).
 Security Groups can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_networking_secgroup_v2.secgroup_1 38809219-5e8a-4852-9139-6f461c90e8bc
+$ terraform import viettelidc_networking_secgroup_v2.secgroup_1 38809219-5e8a-4852-9139-6f461c90e8bc
 ```

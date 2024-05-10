@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: openstack_compute_instance_v2"
+page_title: "OpenStack: viettelidc_compute_instance_v2"
 sidebar_current: "docs-openstack-resource-compute-instance-v2"
 description: |-
   Manages a V2 VM instance resource within OpenStack.
@@ -20,7 +20,7 @@ state](https://www.terraform.io/docs/language/state/sensitive-data.html).
 ### Basic Instance
 
 ```hcl
-resource "openstack_compute_instance_v2" "basic" {
+resource "viettelidc_compute_instance_v2" "basic" {
   name            = "basic"
   image_id        = "ad091b52-742f-469e-8f3c-fd81cadf0743"
   flavor_id       = "3"
@@ -40,12 +40,12 @@ resource "openstack_compute_instance_v2" "basic" {
 ### Instance With Attached Volume
 
 ```hcl
-resource "openstack_blockstorage_volume_v3" "myvol" {
+resource "viettelidc_blockstorage_volume_v3" "myvol" {
   name = "myvol"
   size = 1
 }
 
-resource "openstack_compute_instance_v2" "myinstance" {
+resource "viettelidc_compute_instance_v2" "myinstance" {
   name            = "myinstance"
   image_id        = "ad091b52-742f-469e-8f3c-fd81cadf0743"
   flavor_id       = "3"
@@ -57,16 +57,16 @@ resource "openstack_compute_instance_v2" "myinstance" {
   }
 }
 
-resource "openstack_compute_volume_attach_v2" "attached" {
-  instance_id = openstack_compute_instance_v2.myinstance.id
-  volume_id   = openstack_blockstorage_volume_v3.myvol.id
+resource "viettelidc_compute_volume_attach_v2" "attached" {
+  instance_id = viettelidc_compute_instance_v2.myinstance.id
+  volume_id   = viettelidc_blockstorage_volume_v3.myvol.id
 }
 ```
 
 ### Boot From Volume
 
 ```hcl
-resource "openstack_compute_instance_v2" "boot-from-volume" {
+resource "viettelidc_compute_instance_v2" "boot-from-volume" {
   name            = "boot-from-volume"
   flavor_id       = "3"
   key_pair        = "my_key_pair_name"
@@ -90,20 +90,20 @@ resource "openstack_compute_instance_v2" "boot-from-volume" {
 ### Boot From an Existing Volume
 
 ```hcl
-resource "openstack_blockstorage_volume_v3" "myvol" {
+resource "viettelidc_blockstorage_volume_v3" "myvol" {
   name     = "myvol"
   size     = 5
   image_id = "<image-id>"
 }
 
-resource "openstack_compute_instance_v2" "boot-from-volume" {
+resource "viettelidc_compute_instance_v2" "boot-from-volume" {
   name            = "bootfromvolume"
   flavor_id       = "3"
   key_pair        = "my_key_pair_name"
   security_groups = ["default"]
 
   block_device {
-    uuid                  = openstack_blockstorage_volume_v3.myvol.id
+    uuid                  = viettelidc_blockstorage_volume_v3.myvol.id
     source_type           = "volume"
     boot_index            = 0
     destination_type      = "volume"
@@ -119,7 +119,7 @@ resource "openstack_compute_instance_v2" "boot-from-volume" {
 ### Boot Instance, Create Volume, and Attach Volume as a Block Device
 
 ```hcl
-resource "openstack_compute_instance_v2" "instance_1" {
+resource "viettelidc_compute_instance_v2" "instance_1" {
   name            = "instance_1"
   image_id        = "<image-id>"
   flavor_id       = "3"
@@ -147,12 +147,12 @@ resource "openstack_compute_instance_v2" "instance_1" {
 ### Boot Instance and Attach Existing Volume as a Block Device
 
 ```hcl
-resource "openstack_blockstorage_volume_v3" "volume_1" {
+resource "viettelidc_blockstorage_volume_v3" "volume_1" {
   name = "volume_1"
   size = 1
 }
 
-resource "openstack_compute_instance_v2" "instance_1" {
+resource "viettelidc_compute_instance_v2" "instance_1" {
   name            = "instance_1"
   image_id        = "<image-id>"
   flavor_id       = "3"
@@ -168,7 +168,7 @@ resource "openstack_compute_instance_v2" "instance_1" {
   }
 
   block_device {
-    uuid                  = openstack_blockstorage_volume_v3.volume_1.id
+    uuid                  = viettelidc_blockstorage_volume_v3.volume_1.id
     source_type           = "volume"
     destination_type      = "volume"
     boot_index            = 1
@@ -180,11 +180,11 @@ resource "openstack_compute_instance_v2" "instance_1" {
 ### Instance With Multiple Networks
 
 ```hcl
-resource "openstack_networking_floatingip_v2" "myip" {
+resource "viettelidc_networking_floatingip_v2" "myip" {
   pool = "my_pool"
 }
 
-resource "openstack_compute_instance_v2" "multi-net" {
+resource "viettelidc_compute_instance_v2" "multi-net" {
   name            = "multi-net"
   image_id        = "ad091b52-742f-469e-8f3c-fd81cadf0743"
   flavor_id       = "3"
@@ -200,17 +200,17 @@ resource "openstack_compute_instance_v2" "multi-net" {
   }
 }
 
-resource "openstack_compute_floatingip_associate_v2" "myip" {
-  floating_ip = openstack_networking_floatingip_v2.myip.address
-  instance_id = openstack_compute_instance_v2.multi-net.id
-  fixed_ip    = openstack_compute_instance_v2.multi-net.network.1.fixed_ip_v4
+resource "viettelidc_compute_floatingip_associate_v2" "myip" {
+  floating_ip = viettelidc_networking_floatingip_v2.myip.address
+  instance_id = viettelidc_compute_instance_v2.multi-net.id
+  fixed_ip    = viettelidc_compute_instance_v2.multi-net.network.1.fixed_ip_v4
 }
 ```
 
 ### Instance With Personality
 
 ```hcl
-resource "openstack_compute_instance_v2" "personality" {
+resource "viettelidc_compute_instance_v2" "personality" {
   name            = "personality"
   image_id        = "ad091b52-742f-469e-8f3c-fd81cadf0743"
   flavor_id       = "3"
@@ -231,7 +231,7 @@ resource "openstack_compute_instance_v2" "personality" {
 ### Instance with Multiple Ephemeral Disks
 
 ```hcl
-resource "openstack_compute_instance_v2" "multi-eph" {
+resource "viettelidc_compute_instance_v2" "multi-eph" {
   name            = "multi_eph"
   image_id        = "ad091b52-742f-469e-8f3c-fd81cadf0743"
   flavor_id       = "3"
@@ -268,7 +268,7 @@ resource "openstack_compute_instance_v2" "multi-eph" {
 ### Instance with Boot Disk and Swap Disk
 
 ```hcl
-resource "openstack_compute_flavor_v2" "flavor-with-swap" {
+resource "viettelidc_compute_flavor_v2" "flavor-with-swap" {
   name  = "flavor-with-swap"
   ram   = "8096"
   vcpus = "2"
@@ -276,9 +276,9 @@ resource "openstack_compute_flavor_v2" "flavor-with-swap" {
   swap  = "4096"
 }
 
-resource "openstack_compute_instance_v2" "vm-swap" {
+resource "viettelidc_compute_instance_v2" "vm-swap" {
   name            = "vm_swap"
-  flavor_id       = openstack_compute_flavor_v2.flavor-with-swap.id
+  flavor_id       = viettelidc_compute_flavor_v2.flavor-with-swap.id
   key_pair        = "my_key_pair_name"
   security_groups = ["default"]
 
@@ -304,7 +304,7 @@ resource "openstack_compute_instance_v2" "vm-swap" {
 ### Instance with User Data (cloud-init)
 
 ```hcl
-resource "openstack_compute_instance_v2" "instance_1" {
+resource "viettelidc_compute_instance_v2" "instance_1" {
   name            = "basic"
   image_id        = "ad091b52-742f-469e-8f3c-fd81cadf0743"
   flavor_id       = "3"
@@ -574,7 +574,7 @@ The following example shows how to create an instance with multiple ephemeral
 disks:
 
 ```hcl
-resource "openstack_compute_instance_v2" "foo" {
+resource "viettelidc_compute_instance_v2" "foo" {
   name            = "terraform-test"
   security_groups = ["default"]
 
@@ -615,13 +615,13 @@ security groups and not their IDs.
 Note the following example:
 
 ```hcl
-resource "openstack_networking_secgroup_v2" "sg_1" {
+resource "viettelidc_networking_secgroup_v2" "sg_1" {
   name = "sg_1"
 }
 
-resource "openstack_compute_instance_v2" "foo" {
+resource "viettelidc_compute_instance_v2" "foo" {
   name            = "terraform-test"
-  security_groups = [openstack_networking_secgroup_v2.sg_1.name]
+  security_groups = [viettelidc_networking_secgroup_v2.sg_1.name]
 }
 ```
 
@@ -649,7 +649,7 @@ information. Therefore, in order for a Provisioner to connect to an Instance
 via it's network Port, customize the `connection` information:
 
 ```hcl
-resource "openstack_networking_port_v2" "port_1" {
+resource "viettelidc_networking_port_v2" "port_1" {
   name           = "port_1"
   admin_state_up = "true"
 
@@ -661,16 +661,16 @@ resource "openstack_networking_port_v2" "port_1" {
   ]
 }
 
-resource "openstack_compute_instance_v2" "instance_1" {
+resource "viettelidc_compute_instance_v2" "instance_1" {
   name = "instance_1"
 
   network {
-    port = openstack_networking_port_v2.port_1.id
+    port = viettelidc_networking_port_v2.port_1.id
   }
 
   connection {
     user        = "root"
-    host        = openstack_networking_port_v2.port_1.fixed_ip.0.ip_address
+    host        = viettelidc_networking_port_v2.port_1.fixed_ip.0.ip_address
     private_key = "~/path/to/key"
   }
 
@@ -696,15 +696,15 @@ with a `network` block. Not specifying a network will result in the following
 error:
 
 ```
-* openstack_compute_instance_v2.instance: Error creating OpenStack server:
+* viettelidc_compute_instance_v2.instance: Error creating OpenStack server:
 Expected HTTP response code [201 202] when accessing [POST https://example.com:8774/v2.1/servers], but got 409 instead
 {"conflictingRequest": {"message": "Multiple possible networks found, use a Network ID to be more specific.", "code": 409}}
 ```
 
-* If you intend to use the `openstack_compute_interface_attach_v2` resource,
+* If you intend to use the `viettelidc_compute_interface_attach_v2` resource,
 you still need to make sure one of the above points is satisfied. An instance
 cannot be created without a valid network configuration even if you intend to
-use `openstack_compute_interface_attach_v2` after the instance has been created.
+use `viettelidc_compute_interface_attach_v2` after the instance has been created.
 
 ## Importing instances
 
@@ -720,7 +720,7 @@ and one network interface.
 Your configuration would look like the following:
 
 ```hcl
-resource "openstack_compute_instance_v2" "basic_instance" {
+resource "viettelidc_compute_instance_v2" "basic_instance" {
   name            = "basic"
   flavor_id       = "<flavor_id>"
   key_pair        = "<keyname>"
@@ -735,7 +735,7 @@ resource "openstack_compute_instance_v2" "basic_instance" {
 ```
 Then you execute
 ```
-terraform import openstack_compute_instance_v2.basic_instance instance_id
+terraform import viettelidc_compute_instance_v2.basic_instance instance_id
 ```
 
 ### Importing an instance with multiple emphemeral disks
@@ -758,7 +758,7 @@ and 3 network interfaces.
 Examples
 
 ```hcl
-resource "openstack_compute_instance_v2" "boot-from-volume" {
+resource "viettelidc_compute_instance_v2" "boot-from-volume" {
   name            = "boot-from-volume"
   flavor_id       = "<flavor_id"
   key_pair        = "<keyname>"
@@ -799,10 +799,10 @@ configuration accordingly.
 We have an instance with two block storage volumes, one bootable and one
 non-bootable.
 Note that we only configure the bootable device as block_device.
-The other volumes can be specified as `openstack_blockstorage_volume_v3`
+The other volumes can be specified as `viettelidc_blockstorage_volume_v3`
 
 ```hcl
-resource "openstack_compute_instance_v2" "instance_2" {
+resource "viettelidc_compute_instance_v2" "instance_2" {
   name            = "instance_2"
   image_id        = "<image_id>"
   flavor_id       = "<flavor_id>"
@@ -821,22 +821,22 @@ resource "openstack_compute_instance_v2" "instance_2" {
     name = "<network_name>"
   }
 }
-resource "openstack_blockstorage_volume_v3" "volume_1" {
+resource "viettelidc_blockstorage_volume_v3" "volume_1" {
   size = 1
   name = "<vol_name>"
 }
-resource "openstack_compute_volume_attach_v2" "va_1" {
-  volume_id   = openstack_blockstorage_volume_v3.volume_1.id
-  instance_id = openstack_compute_instance_v2.instance_2.id
+resource "viettelidc_compute_volume_attach_v2" "va_1" {
+  volume_id   = viettelidc_blockstorage_volume_v3.volume_1.id
+  instance_id = viettelidc_compute_instance_v2.instance_2.id
 }
 ```
 To import the instance outlined in the above configuration
 do the following:
 
 ```
-terraform import openstack_compute_instance_v2.instance_2 instance_id
-import openstack_blockstorage_volume_v3.volume_1 volume_id
-terraform import openstack_compute_volume_attach_v2.va_1
+terraform import viettelidc_compute_instance_v2.instance_2 instance_id
+import viettelidc_blockstorage_volume_v3.volume_1 volume_id
+terraform import viettelidc_compute_volume_attach_v2.va_1
 instance_id/volume_id
 ```
 

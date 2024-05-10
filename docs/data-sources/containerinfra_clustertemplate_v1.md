@@ -1,7 +1,7 @@
 ---
 subcategory: "Container Infra / Magnum"
 layout: "openstack"
-page_title: "OpenStack: openstack_containerinfra_clustertemplate_v1"
+page_title: "OpenStack: viettelidc_containerinfra_clustertemplate_v1"
 sidebar_current: "docs-openstack-datasource-containerinfra-clustertemplate-v1"
 description: |-
   Get information on an OpenStack Magnum cluster template.
@@ -15,7 +15,7 @@ template.
 ## Example Usage
 
 ```hcl
-data "openstack_containerinfra_clustertemplate_v1" "clustertemplate_1" {
+data "viettelidc_containerinfra_clustertemplate_v1" "clustertemplate_1" {
   name = "clustertemplate_1"
 }
 ```

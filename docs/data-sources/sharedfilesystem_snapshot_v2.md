@@ -1,7 +1,7 @@
 ---
 subcategory: "Shared Filesystem / Manila"
 layout: "openstack"
-page_title: "OpenStack: openstack_sharedfilesystem_snapshot_v2"
+page_title: "OpenStack: viettelidc_sharedfilesystem_snapshot_v2"
 sidebar_current: "docs-openstack-datasource-sharedfilesystem-snapshot-v2"
 description: |-
   Get information on an Shared File System snapshot.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an available Shared File System snapshot.
 ## Example Usage
 
 ```hcl
-data "openstack_sharedfilesystem_snapshot_v2" "snapshot_1" {
+data "viettelidc_sharedfilesystem_snapshot_v2" "snapshot_1" {
   name = "snapshot_1"
 }
 ```

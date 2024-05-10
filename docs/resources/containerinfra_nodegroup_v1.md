@@ -1,7 +1,7 @@
 ---
 subcategory: "Container Infra / Magnum"
 layout: "openstack"
-page_title: "OpenStack: openstack_containerinfra_cluster_v1"
+page_title: "OpenStack: viettelidc_containerinfra_cluster_v1"
 sidebar_current: "docs-openstack-resource-containerinfra-cluster-v1"
 description: |-
   Manages a V1 Magnum node group resource within OpenStack.
@@ -16,7 +16,7 @@ Manages a V1 Magnum node group resource within OpenStack.
 ### Create a Nodegroup
 
 ```hcl
-resource "openstack_containerinfra_nodegroup_v1" "nodegroup_1" {
+resource "viettelidc_containerinfra_nodegroup_v1" "nodegroup_1" {
   name                = "nodegroup_1"
   cluster_id          = "b9a45c5c-cd03-4958-82aa-b80bf93cb922"
   node_count          = 5
@@ -96,5 +96,5 @@ The following attributes are exported:
 Node groups can be imported using the `id` (cluster_id/nodegroup_id), e.g.
 
 ```
-$ terraform import openstack_containerinfra_nodegroup_v1.nodegroup_1 b9a45c5c-cd03-4958-82aa-b80bf93cb922/ce0f9463-dd25-474b-9fe8-94de63e5e42b
+$ terraform import viettelidc_containerinfra_nodegroup_v1.nodegroup_1 b9a45c5c-cd03-4958-82aa-b80bf93cb922/ce0f9463-dd25-474b-9fe8-94de63e5e42b
 ```

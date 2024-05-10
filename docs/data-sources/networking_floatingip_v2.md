@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_networking_floatingip_v2"
+page_title: "OpenStack: viettelidc_networking_floatingip_v2"
 sidebar_current: "docs-openstack-datasource-networking-floatingip-v2"
 description: |-
   Get information on an OpenStack Floating IP.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an available OpenStack floating IP.
 ## Example Usage
 
 ```hcl
-data "openstack_networking_floatingip_v2" "floatingip_1" {
+data "viettelidc_networking_floatingip_v2" "floatingip_1" {
   address = "192.168.0.4"
 }
 ```

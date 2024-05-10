@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_networking_secgroup_v2"
+page_title: "OpenStack: viettelidc_networking_secgroup_v2"
 sidebar_current: "docs-openstack-datasource-networking-secgroup-v2"
 description: |-
   Get information on an OpenStack Security Group.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an available OpenStack security group.
 ## Example Usage
 
 ```hcl
-data "openstack_networking_secgroup_v2" "secgroup" {
+data "viettelidc_networking_secgroup_v2" "secgroup" {
   name = "tf_test_secgroup"
 }
 ```

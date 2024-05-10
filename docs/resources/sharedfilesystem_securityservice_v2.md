@@ -25,7 +25,7 @@ Minimum supported Manila microversion is 2.7.
 ## Example Usage
 
 ```hcl
-resource "openstack_sharedfilesystem_securityservice_v2" "securityservice_1" {
+resource "viettelidc_sharedfilesystem_securityservice_v2" "securityservice_1" {
   name        = "security"
   description = "created by terraform"
   type        = "active_directory"
@@ -91,5 +91,5 @@ The following arguments are supported:
 This resource can be imported by specifying the ID of the security service:
 
 ```
-$ terraform import openstack_sharedfilesystem_securityservice_v2.securityservice_1 id
+$ terraform import viettelidc_sharedfilesystem_securityservice_v2.securityservice_1 id
 ```

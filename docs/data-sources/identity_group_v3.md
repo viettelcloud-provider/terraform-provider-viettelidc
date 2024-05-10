@@ -1,7 +1,7 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: openstack_identity_group_v3"
+page_title: "OpenStack: viettelidc_identity_group_v3"
 sidebar_current: "docs-openstack-datasource-identity-group-v3"
 description: |-
   Get information on an OpenStack Group.
@@ -17,7 +17,7 @@ this resource.
 ## Example Usage
 
 ```hcl
-data "openstack_identity_group_v3" "admins" {
+data "viettelidc_identity_group_v3" "admins" {
   name = "admins"
 }
 ```

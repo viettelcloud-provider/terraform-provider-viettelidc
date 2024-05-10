@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: openstack_compute_interface_attach_v2"
+page_title: "OpenStack: viettelidc_compute_interface_attach_v2"
 sidebar_current: "docs-openstack-resource-compute-interface-attach-v2"
 description: |-
   Attaches a Network Interface to an Instance.
@@ -17,19 +17,19 @@ Compute (Nova) v2 API.
 ### Basic Attachment
 
 ```hcl
-resource "openstack_networking_network_v2" "network_1" {
+resource "viettelidc_networking_network_v2" "network_1" {
   name           = "network_1"
   admin_state_up = "true"
 }
 
-resource "openstack_compute_instance_v2" "instance_1" {
+resource "viettelidc_compute_instance_v2" "instance_1" {
   name            = "instance_1"
   security_groups = ["default"]
 }
 
-resource "openstack_compute_interface_attach_v2" "ai_1" {
-  instance_id = openstack_compute_instance_v2.instance_1.id
-  network_id  = openstack_networking_port_v2.network_1.id
+resource "viettelidc_compute_interface_attach_v2" "ai_1" {
+  instance_id = viettelidc_compute_instance_v2.instance_1.id
+  network_id  = viettelidc_networking_port_v2.network_1.id
 }
 
 ```
@@ -37,19 +37,19 @@ resource "openstack_compute_interface_attach_v2" "ai_1" {
 ### Attachment Specifying a Fixed IP
 
 ```hcl
-resource "openstack_networking_network_v2" "network_1" {
+resource "viettelidc_networking_network_v2" "network_1" {
   name           = "network_1"
   admin_state_up = "true"
 }
 
-resource "openstack_compute_instance_v2" "instance_1" {
+resource "viettelidc_compute_instance_v2" "instance_1" {
   name            = "instance_1"
   security_groups = ["default"]
 }
 
-resource "openstack_compute_interface_attach_v2" "ai_1" {
-  instance_id = openstack_compute_instance_v2.instance_1.id
-  network_id  = openstack_networking_port_v2.network_1.id
+resource "viettelidc_compute_interface_attach_v2" "ai_1" {
+  instance_id = viettelidc_compute_instance_v2.instance_1.id
+  network_id  = viettelidc_networking_port_v2.network_1.id
   fixed_ip    = "10.0.10.10"
 }
 
@@ -59,26 +59,26 @@ resource "openstack_compute_interface_attach_v2" "ai_1" {
 ### Attachment Using an Existing Port
 
 ```hcl
-resource "openstack_networking_network_v2" "network_1" {
+resource "viettelidc_networking_network_v2" "network_1" {
   name           = "network_1"
   admin_state_up = "true"
 }
 
-resource "openstack_networking_port_v2" "port_1" {
+resource "viettelidc_networking_port_v2" "port_1" {
   name           = "port_1"
-  network_id     = openstack_networking_network_v2.network_1.id
+  network_id     = viettelidc_networking_network_v2.network_1.id
   admin_state_up = "true"
 }
 
 
-resource "openstack_compute_instance_v2" "instance_1" {
+resource "viettelidc_compute_instance_v2" "instance_1" {
   name            = "instance_1"
   security_groups = ["default"]
 }
 
-resource "openstack_compute_interface_attach_v2" "ai_1" {
-  instance_id = openstack_compute_instance_v2.instance_1.id
-  port_id     = openstack_networking_port_v2.port_1.id
+resource "viettelidc_compute_interface_attach_v2" "ai_1" {
+  instance_id = viettelidc_compute_instance_v2.instance_1.id
+  port_id     = viettelidc_networking_port_v2.port_1.id
 }
 
 ```
@@ -86,27 +86,27 @@ resource "openstack_compute_interface_attach_v2" "ai_1" {
 ### Attaching Multiple Interfaces
 
 ```hcl
-resource "openstack_networking_network_v2" "network_1" {
+resource "viettelidc_networking_network_v2" "network_1" {
   name           = "network_1"
   admin_state_up = "true"
 }
 
-resource "openstack_networking_port_v2" "ports" {
+resource "viettelidc_networking_port_v2" "ports" {
   count          = 2
   name           = format("port-%02d", count.index + 1)
-  network_id     = openstack_networking_network_v2.network_1.id
+  network_id     = viettelidc_networking_network_v2.network_1.id
   admin_state_up = "true"
 }
 
-resource "openstack_compute_instance_v2" "instance_1" {
+resource "viettelidc_compute_instance_v2" "instance_1" {
   name            = "instance_1"
   security_groups = ["default"]
 }
 
-resource "openstack_compute_interface_attach_v2" "attachments" {
+resource "viettelidc_compute_interface_attach_v2" "attachments" {
   count       = 2
-  port_id     = openstack_networking_port_v2.ports[count.index].id
-  instance_id = openstack_compute_instance_v2.instance_1.id
+  port_id     = viettelidc_networking_port_v2.ports[count.index].id
+  instance_id = viettelidc_compute_instance_v2.instance_1.id
 }
 ```
 
@@ -118,31 +118,31 @@ If you want to ensure that the ports are attached in a given order, create
 explicit dependencies between the ports, such as:
 
 ```hcl
-resource "openstack_networking_network_v2" "network_1" {
+resource "viettelidc_networking_network_v2" "network_1" {
   name           = "network_1"
   admin_state_up = "true"
 }
 
-resource "openstack_networking_port_v2" "ports" {
+resource "viettelidc_networking_port_v2" "ports" {
   count          = 2
   name           = format("port-%02d", count.index + 1)
-  network_id     = openstack_networking_network_v2.network_1.id
+  network_id     = viettelidc_networking_network_v2.network_1.id
   admin_state_up = "true"
 }
 
-resource "openstack_compute_instance_v2" "instance_1" {
+resource "viettelidc_compute_instance_v2" "instance_1" {
   name            = "instance_1"
   security_groups = ["default"]
 }
 
-resource "openstack_compute_interface_attach_v2" "ai_1" {
-  instance_id = openstack_compute_instance_v2.instance_1.id
-  port_id     = openstack_networking_port_v2.ports[0].id
+resource "viettelidc_compute_interface_attach_v2" "ai_1" {
+  instance_id = viettelidc_compute_instance_v2.instance_1.id
+  port_id     = viettelidc_networking_port_v2.ports[0].id
 }
 
-resource "openstack_compute_interface_attach_v2" "ai_2" {
-  instance_id = openstack_compute_instance_v2.instance_1.id
-  port_id     = openstack_networking_port_v2.ports[1].id
+resource "viettelidc_compute_interface_attach_v2" "ai_2" {
+  instance_id = viettelidc_compute_instance_v2.instance_1.id
+  port_id     = viettelidc_networking_port_v2.ports[1].id
 }
 ```
 
@@ -181,5 +181,5 @@ Interface Attachments can be imported using the Instance ID and Port ID
 separated by a slash, e.g.
 
 ```
-$ terraform import openstack_compute_interface_attach_v2.ai_1 89c60255-9bd6-460c-822a-e2b959ede9d2/45670584-225f-46c3-b33e-6707b589b666
+$ terraform import viettelidc_compute_interface_attach_v2.ai_1 89c60255-9bd6-460c-822a-e2b959ede9d2/45670584-225f-46c3-b33e-6707b589b666
 ```

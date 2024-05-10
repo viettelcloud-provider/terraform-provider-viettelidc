@@ -1,7 +1,7 @@
 ---
 subcategory: "Key Manager / Barbican"
 layout: "openstack"
-page_title: "OpenStack: openstack_keymanager_order_v1"
+page_title: "OpenStack: viettelidc_keymanager_order_v1"
 sidebar_current: "docs-openstack-resource-keymanager-order-v1"
 description: |-
   Manages a V1 Barbican order resource within OpenStack.
@@ -16,7 +16,7 @@ Manages a V1 Barbican order resource within OpenStack.
 ### Symmetric key order
 
 ```hcl
-resource "openstack_keymanager_order_v1" "order_1" {
+resource "viettelidc_keymanager_order_v1" "order_1" {
   type = "key"
   meta {
     algorithm  = "aes"
@@ -30,7 +30,7 @@ resource "openstack_keymanager_order_v1" "order_1" {
 ### Asymmetric key pair order
 
 ```hcl
-resource "openstack_keymanager_order_v1" "order_1" {
+resource "viettelidc_keymanager_order_v1" "order_1" {
   type = "asymmetric"
   meta {
     algorithm  = "rsa"
@@ -89,5 +89,5 @@ The following attributes are exported:
 Orders can be imported using the order id (the last part of the order reference), e.g.:
 
 ```
-$ terraform import openstack_keymanager_order_v1.order_1 0c6cd26a-c012-4d7b-8034-057c0f1c2953
+$ terraform import viettelidc_keymanager_order_v1.order_1 0c6cd26a-c012-4d7b-8034-057c0f1c2953
 ```

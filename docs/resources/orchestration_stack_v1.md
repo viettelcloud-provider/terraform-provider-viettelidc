@@ -1,7 +1,7 @@
 ---
 subcategory: "Orchestration / Heat"
 layout: "openstack"
-page_title: "OpenStack: openstack_orchestration_stack_v1"
+page_title: "OpenStack: viettelidc_orchestration_stack_v1"
 sidebar_current: "docs-openstack-resource-orchestration-stack-v1"
 description: |-
   Manages a V1 stack resource within OpenStack.
@@ -14,7 +14,7 @@ Manages a V1 stack resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_orchestration_stack_v1" "stack_1" {
+resource "viettelidc_orchestration_stack_v1" "stack_1" {
   name = "stack_1"
   parameters = {
 	length = 4
@@ -92,5 +92,5 @@ The following attributes are exported:
 stacks can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_orchestration_stack_v1.stack_1 ea257959-eeb1-4c10-8d33-26f0409a755d
+$ terraform import viettelidc_orchestration_stack_v1.stack_1 ea257959-eeb1-4c10-8d33-26f0409a755d
 ```

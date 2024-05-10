@@ -1,7 +1,7 @@
 ---
 subcategory: "VPNaaS / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_vpnaas_ipsec_policy_v2"
+page_title: "OpenStack: viettelidc_vpnaas_ipsec_policy_v2"
 sidebar_current: "docs-openstack-resource-vpnaas-ipsec-policy-v2"
 description: |-
   Manages a V2 Neutron IPSec policy resource within OpenStack.
@@ -14,7 +14,7 @@ Manages a V2 Neutron IPSec policy resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_vpnaas_ipsec_policy_v2" "policy_1" {
+resource "viettelidc_vpnaas_ipsec_policy_v2" "policy_1" {
   name = "my_policy"
 }
 ```
@@ -84,5 +84,5 @@ The following attributes are exported:
 Policies can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_vpnaas_ipsec_policy_v2.policy_1 832cb7f3-59fe-40cf-8f64-8350ffc03272
+$ terraform import viettelidc_vpnaas_ipsec_policy_v2.policy_1 832cb7f3-59fe-40cf-8f64-8350ffc03272
 ```

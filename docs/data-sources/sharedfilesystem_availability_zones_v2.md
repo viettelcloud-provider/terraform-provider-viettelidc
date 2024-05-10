@@ -1,7 +1,7 @@
 ---
 subcategory: "Shared Filesystem / Manila"
 layout: "openstack"
-page_title: "OpenStack: openstack_sharedfilesystem_availability_zones_v2"
+page_title: "OpenStack: viettelidc_sharedfilesystem_availability_zones_v2"
 sidebar_current: "docs-openstack-datasource-sharedfilesystem-availability-zones-v2"
 description: |-
   Get a list of Shared File System availability zones from OpenStack
@@ -15,7 +15,7 @@ from OpenStack
 ## Example Usage
 
 ```hcl
-data "openstack_sharedfilesystem_availability_zones_v2" "zones" {}
+data "viettelidc_sharedfilesystem_availability_zones_v2" "zones" {}
 ```
 
 ## Argument Reference

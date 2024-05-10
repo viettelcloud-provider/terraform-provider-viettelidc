@@ -1,7 +1,7 @@
 ---
 subcategory: "Key Manager / Barbican"
 layout: "openstack"
-page_title: "OpenStack: openstack_keymanager_secret_v1"
+page_title: "OpenStack: viettelidc_keymanager_secret_v1"
 sidebar_current: "docs-openstack-resource-keymanager-secret-v1"
 description: |-
   Manages a V1 Barbican secret resource within OpenStack.
@@ -21,7 +21,7 @@ state](https://www.terraform.io/docs/language/state/sensitive-data.html).
 ### Simple secret
 
 ```hcl
-resource "openstack_keymanager_secret_v1" "secret_1" {
+resource "viettelidc_keymanager_secret_v1" "secret_1" {
   algorithm            = "aes"
   bit_length           = 256
   mode                 = "cbc"
@@ -45,7 +45,7 @@ won't be detected as a state change, e.g. changing plain text payload from
 `password ` to `password` won't recreate the secret.
 
 ```hcl
-resource "openstack_keymanager_secret_v1" "secret_1" {
+resource "viettelidc_keymanager_secret_v1" "secret_1" {
   name                     = "password"
   payload                  = base64encode("password with the whitespace at the end ")
   secret_type              = "passphrase"
@@ -57,7 +57,7 @@ resource "openstack_keymanager_secret_v1" "secret_1" {
 ### Secret with the expiration date
 
 ```hcl
-resource "openstack_keymanager_secret_v1" "secret_1" {
+resource "viettelidc_keymanager_secret_v1" "secret_1" {
   name                 = "certificate"
   payload              = file("certificate.pem")
   secret_type          = "certificate"
@@ -77,7 +77,7 @@ resource "openstack_keymanager_secret_v1" "secret_1" {
 ~> **Note** Only read ACLs are supported
 
 ```hcl
-resource "openstack_keymanager_secret_v1" "secret_1" {
+resource "viettelidc_keymanager_secret_v1" "secret_1" {
   name                 = "certificate"
   payload              = file("certificate.pem")
   secret_type          = "certificate"
@@ -170,5 +170,5 @@ The following attributes are exported:
 Secrets can be imported using the secret id (the last part of the secret reference), e.g.:
 
 ```
-$ terraform import openstack_keymanager_secret_v1.secret_1 8a7a79c2-cf17-4e65-b2ae-ddc8bfcf6c74
+$ terraform import viettelidc_keymanager_secret_v1.secret_1 8a7a79c2-cf17-4e65-b2ae-ddc8bfcf6c74
 ```
