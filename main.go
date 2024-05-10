@@ -4,10 +4,10 @@ import (
 	"flag"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
-	"github.com/viettelidc-provider-openstack/terraform-provider-viettelidc/viettelidc"
+	"github.com/viettelcloud-provider/terraform-provider-viettelidc/viettelidc"
 )
 
-const providerAddr = "registry.terraform.io/viettelidc-provider-openstack/viettelidc"
+const providerAddr = "registry.terraform.io/viettelcloud-provider/viettelidc"
 
 func main() {
 	// added debugMode to enable debugging for provider per https://www.terraform.io/plugin/sdkv2/debugging
