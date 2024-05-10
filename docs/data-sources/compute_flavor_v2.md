@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: openstack_compute_flavor_v2"
+page_title: "OpenStack: viettelidc_compute_flavor_v2"
 sidebar_current: "docs-openstack-datasource-compute-flavor-v2"
 description: |-
   Get information on an OpenStack Flavor.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an available OpenStack flavor.
 ## Example Usage
 
 ```hcl
-data "openstack_compute_flavor_v2" "small" {
+data "viettelidc_compute_flavor_v2" "small" {
   vcpus = 1
   ram   = 512
 }

@@ -1,7 +1,7 @@
 ---
 subcategory: "FWaaS / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_fw_group_v2"
+page_title: "OpenStack: viettelidc_fw_group_v2"
 sidebar_current: "docs-openstack-resource-fw-group-v2"
 description: |-
   Manages a v2 firewall group resource within OpenStack.
@@ -16,7 +16,7 @@ Manages a v2 firewall group resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_fw_rule_v2" "rule_1" {
+resource "viettelidc_fw_rule_v2" "rule_1" {
   name             = "firewall_rule_2"
   description      = "drop TELNET traffic"
   action           = "deny"
@@ -25,7 +25,7 @@ resource "openstack_fw_rule_v2" "rule_1" {
   enabled          = "true"
 }
 
-resource "openstack_fw_rule_v2" "rule_2" {
+resource "viettelidc_fw_rule_v2" "rule_2" {
   name             = "firewall_rule_1"
   description      = "drop NTP traffic"
   action           = "deny"
@@ -34,26 +34,26 @@ resource "openstack_fw_rule_v2" "rule_2" {
   enabled          = "false"
 }
 
-resource "openstack_fw_policy_v2" "policy_1" {
+resource "viettelidc_fw_policy_v2" "policy_1" {
   name = "firewall_ingress_policy"
 
   rules = [
-    openstack_fw_rule_v2.rule_1.id,
+    viettelidc_fw_rule_v2.rule_1.id,
   ]
 }
 
-resource "openstack_fw_policy_v2" "policy_2" {
+resource "viettelidc_fw_policy_v2" "policy_2" {
   name = "firewall_egress_policy"
 
   rules = [
-    openstack_fw_rule_v2.rule_2.id,
+    viettelidc_fw_rule_v2.rule_2.id,
   ]
 }
 
-resource "openstack_fw_group_v2" "group_1" {
+resource "viettelidc_fw_group_v2" "group_1" {
   name      = "firewall_group"
-  ingress_firewall_policy_id = openstack_fw_policy_v2.policy_1.id
-  egress_firewall_policy_id = openstack_fw_policy_v2.policy_2.id
+  ingress_firewall_policy_id = viettelidc_fw_policy_v2.policy_1.id
+  egress_firewall_policy_id = viettelidc_fw_policy_v2.policy_2.id
 }
 ```
 
@@ -125,5 +125,5 @@ The following attributes are exported:
 Firewall groups can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_fw_group_v2.group_1 c9e39fb2-ce20-46c8-a964-25f3898c7a97
+$ terraform import viettelidc_fw_group_v2.group_1 c9e39fb2-ce20-46c8-a964-25f3898c7a97
 ```

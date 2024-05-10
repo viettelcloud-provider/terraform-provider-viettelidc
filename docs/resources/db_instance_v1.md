@@ -1,7 +1,7 @@
 ---
 subcategory: "Databases / Trove"
 layout: "openstack"
-page_title: "OpenStack: openstack_db_instance_v1"
+page_title: "OpenStack: viettelidc_db_instance_v1"
 sidebar_current: "docs-openstack-resource-db-instance-v1"
 description: |-
   Manages a V1 DB instance resource within OpenStack.
@@ -20,7 +20,7 @@ state](https://www.terraform.io/docs/language/state/sensitive-data.html).
 ### Instance
 
 ```hcl
-resource "openstack_db_instance_v1" "test" {
+resource "viettelidc_db_instance_v1" "test" {
   region    = "region-test"
   name      = "test"
   flavor_id = "31792d21-c355-4587-9290-56c1ed0ca376"

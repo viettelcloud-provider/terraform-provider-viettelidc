@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_networking_portforwarding_v2"
+page_title: "OpenStack: viettelidc_networking_portforwarding_v2"
 sidebar_current: "docs-openstack-resource-networking-portforwarding-v2"
 description: |-
   Manages a V2 port forwarding resource within OpenStack.
@@ -16,7 +16,7 @@ Manages a V2 portforwarding resource within OpenStack.
 ### Simple portforwarding
 
 ```hcl
-resource "openstack_networking_portforwarding_v2" "pf_1" {
+resource "viettelidc_networking_portforwarding_v2" "pf_1" {
   floatingip_id    = "7a52eb59-7d47-415d-a884-046666a6fbae"
   external_port    = 7233
   internal_port    = 25

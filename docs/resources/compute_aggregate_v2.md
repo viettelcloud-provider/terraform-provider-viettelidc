@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: openstack_compute_aggregate_v2"
+page_title: "OpenStack: viettelidc_compute_aggregate_v2"
 sidebar_current: "docs-openstack-resource-compute-aggregate-v2"
 description: |-
   Manages a Host Aggregate within Openstack Nova
@@ -16,7 +16,7 @@ Manages a Host Aggregate within Openstack Nova.
 ### Full example
 
 ```hcl
-resource "openstack_compute_aggregate_v2" "dell_servers" {
+resource "viettelidc_compute_aggregate_v2" "dell_servers" {
   region = "RegionOne"
   name   = "dell_servers"
   zone   = "nova"
@@ -33,7 +33,7 @@ resource "openstack_compute_aggregate_v2" "dell_servers" {
 ### Minimum required example
 
 ```hcl
-resource "openstack_compute_aggregate_v2" "test" {
+resource "viettelidc_compute_aggregate_v2" "test" {
   name = "test"
 }
 ```
@@ -58,7 +58,7 @@ The following arguments are supported:
 
 You can import an existing Host Aggregate by their ID.
 ```
-$ terraform import openstack_compute_aggregate_v2.myaggregate 24
+$ terraform import viettelidc_compute_aggregate_v2.myaggregate 24
 ```
 
 The ID can be obtained with an openstack command:

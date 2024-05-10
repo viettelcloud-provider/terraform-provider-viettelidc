@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: openstack_compute_floatingip_associate_v2"
+page_title: "OpenStack: viettelidc_compute_floatingip_associate_v2"
 sidebar_current: "docs-openstack-resource-compute-floatingip-associate-v2"
 description: |-
   Associate a floating IP to an instance
@@ -16,7 +16,7 @@ Associate a floating IP to an instance.
 ### Automatically detect the correct network
 
 ```hcl
-resource "openstack_compute_instance_v2" "instance_1" {
+resource "viettelidc_compute_instance_v2" "instance_1" {
   name            = "instance_1"
   image_id        = "ad091b52-742f-469e-8f3c-fd81cadf0743"
   flavor_id       = 3
@@ -24,20 +24,20 @@ resource "openstack_compute_instance_v2" "instance_1" {
   security_groups = ["default"]
 }
 
-resource "openstack_networking_floatingip_v2" "fip_1" {
+resource "viettelidc_networking_floatingip_v2" "fip_1" {
   pool = "my_pool"
 }
 
-resource "openstack_compute_floatingip_associate_v2" "fip_1" {
-  floating_ip = openstack_networking_floatingip_v2.fip_1.address
-  instance_id = openstack_compute_instance_v2.instance_1.id
+resource "viettelidc_compute_floatingip_associate_v2" "fip_1" {
+  floating_ip = viettelidc_networking_floatingip_v2.fip_1.address
+  instance_id = viettelidc_compute_instance_v2.instance_1.id
 }
 ```
 
 ### Explicitly set the network to attach to
 
 ```hcl
-resource "openstack_compute_instance_v2" "instance_1" {
+resource "viettelidc_compute_instance_v2" "instance_1" {
   name            = "instance_1"
   image_id        = "ad091b52-742f-469e-8f3c-fd81cadf0743"
   flavor_id       = 3
@@ -53,14 +53,14 @@ resource "openstack_compute_instance_v2" "instance_1" {
   }
 }
 
-resource "openstack_networking_floatingip_v2" "fip_1" {
+resource "viettelidc_networking_floatingip_v2" "fip_1" {
   pool = "my_pool"
 }
 
-resource "openstack_compute_floatingip_associate_v2" "fip_1" {
-  floating_ip = openstack_networking_floatingip_v2.fip_1.address
-  instance_id = openstack_compute_instance_v2.instance_1.id
-  fixed_ip    = openstack_compute_instance_v2.instance_1.network.1.fixed_ip_v4
+resource "viettelidc_compute_floatingip_associate_v2" "fip_1" {
+  floating_ip = viettelidc_networking_floatingip_v2.fip_1.address
+  instance_id = viettelidc_compute_instance_v2.instance_1.id
+  fixed_ip    = viettelidc_compute_instance_v2.instance_1.network.1.fixed_ip_v4
 }
 ```
 
@@ -99,5 +99,5 @@ This resource can be imported by specifying all three arguments, separated
 by a forward slash:
 
 ```
-$ terraform import openstack_compute_floatingip_associate_v2.fip_1 floating_ip/instance_id/fixed_ip
+$ terraform import viettelidc_compute_floatingip_associate_v2.fip_1 floating_ip/instance_id/fixed_ip
 ```

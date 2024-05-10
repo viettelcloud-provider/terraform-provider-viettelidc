@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_networking_quota_v2"
+page_title: "OpenStack: viettelidc_networking_quota_v2"
 sidebar_current: "docs-openstack-datasource-networking-quota-v2"
 description: |-
   Get information on a NEtworking Quota of a project.
@@ -14,7 +14,7 @@ Use this data source to get the networking quota of an OpenStack project.
 ## Example Usage
 
 ```hcl
-data "openstack_networking_quota_v2" "quota" {
+data "viettelidc_networking_quota_v2" "quota" {
   project_id = "2e367a3d29f94fd988e6ec54e305ec9d"
 }
 ```

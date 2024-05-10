@@ -1,7 +1,7 @@
 ---
 subcategory: "Object Storage / Swift"
 layout: "openstack"
-page_title: "OpenStack: openstack_objectstorage_object_v1"
+page_title: "OpenStack: viettelidc_objectstorage_object_v1"
 sidebar_current: "docs-openstack-resource-objectstorage-object-v1"
 description: |-
   Manages a V1 container object resource within OpenStack.
@@ -16,7 +16,7 @@ Manages a V1 container object resource within OpenStack.
 ### Example with simple content
 
 ```hcl
-resource "openstack_objectstorage_container_v1" "container_1" {
+resource "viettelidc_objectstorage_container_v1" "container_1" {
   region = "RegionOne"
   name   = "tf-test-container-1"
 
@@ -27,9 +27,9 @@ resource "openstack_objectstorage_container_v1" "container_1" {
   content_type = "application/json"
 }
 
-resource "openstack_objectstorage_object_v1" "doc_1" {
+resource "viettelidc_objectstorage_object_v1" "doc_1" {
   region         = "RegionOne"
-  container_name = openstack_objectstorage_container_v1.container_1.name
+  container_name = viettelidc_objectstorage_container_v1.container_1.name
   name           = "test/default.json"
   metadata {
     test = "true"
@@ -48,7 +48,7 @@ JSON
 ### Example with content from file
 
 ```hcl
-resource "openstack_objectstorage_container_v1" "container_1" {
+resource "viettelidc_objectstorage_container_v1" "container_1" {
   region = "RegionOne"
   name   = "tf-test-container-1"
 
@@ -59,9 +59,9 @@ resource "openstack_objectstorage_container_v1" "container_1" {
   content_type = "application/json"
 }
 
-resource "openstack_objectstorage_object_v1" "doc_1" {
+resource "viettelidc_objectstorage_object_v1" "doc_1" {
   region         = "RegionOne"
-  container_name = openstack_objectstorage_container_v1.container_1.name
+  container_name = viettelidc_objectstorage_container_v1.container_1.name
   name           = "test/default.json"
   metadata {
     test = "true"

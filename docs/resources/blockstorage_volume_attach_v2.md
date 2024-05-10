@@ -1,7 +1,7 @@
 ---
 subcategory: "Deprecated"
 layout: "openstack"
-page_title: "OpenStack: openstack_blockstorage_volume_attach_v2"
+page_title: "OpenStack: viettelidc_blockstorage_volume_attach_v2"
 sidebar_current: "docs-openstack-resource-blockstorage-volume-attach-v2"
 description: |-
   Creates an attachment connection to a Block Storage volume
@@ -12,7 +12,7 @@ description: |-
 ~> **Note:** This resource usually requires admin privileges.
 
 ~> **Note:** This resource does not actually attach a volume to an instance.
-Please use the `openstack_compute_volume_attach_v2` resource for that.
+Please use the `viettelidc_compute_volume_attach_v2` resource for that.
 
 ~> **Note:** All arguments including the `data` computed attribute will be
 stored in the raw state as plain-text. [Read more about sensitive data in
@@ -29,13 +29,13 @@ different cloud provider.
 ## Example Usage
 
 ```hcl
-resource "openstack_blockstorage_volume_v2" "volume_1" {
+resource "viettelidc_blockstorage_volume_v2" "volume_1" {
   name = "volume_1"
   size = 1
 }
 
-resource "openstack_blockstorage_volume_attach_v2" "va_1" {
-  volume_id  = openstack_blockstorage_volume_v2.volume_1.id
+resource "viettelidc_blockstorage_volume_attach_v2" "va_1" {
+  volume_id  = viettelidc_blockstorage_volume_v2.volume_1.id
   device     = "auto"
   host_name  = "devstack"
   ip_address = "192.168.255.10"

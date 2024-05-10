@@ -38,7 +38,7 @@ provider "openstack" {
 }
 
 # Create a web server
-resource "openstack_compute_instance_v2" "test-server" {
+resource "viettelidc_compute_instance_v2" "test-server" {
   # ...
 }
 ```
@@ -298,7 +298,7 @@ provider "openstack" {
 instances as shown below:
 
 ```
-resource "openstack_compute_instance_v2" "my_instance" {
+resource "viettelidc_compute_instance_v2" "my_instance" {
   name      = "my_instance"
   region    = "DFW"
   image_id  = "fabe045f-43f8-4991-9e6c-5cabd617538c"
@@ -421,7 +421,7 @@ environment variables:
 The following additional environment variables might be required depending on
 the feature or bug you're testing:
 
-* `OS_DB_ENVIRONMENT` - Required if you're working on the `openstack_db_*`
+* `OS_DB_ENVIRONMENT` - Required if you're working on the `viettelidc_db_*`
   resources. Set this value to "1" to enable testing these resources.
 
 * `OS_DB_DATASTORE_VERSION` - Required if you need to set a Trove/Database
@@ -430,26 +430,26 @@ the feature or bug you're testing:
 * `OS_DB_DATASTORE_TYPE` - Required if you need to set a Trove/Database
   datastore type.
 
-* `OS_DNS_ENVIRONMENT` - Required if you're working on the `openstack_dns_*`
+* `OS_DNS_ENVIRONMENT` - Required if you're working on the `viettelidc_dns_*`
   resources. Set this value to "1" to enable testing these resources.
 
 * `OS_SWIFT_ENVIRONMENT` - Required if you're working on an
-  `openstack_objectstorage_*` resource. Set this value to "1" to enable testing
+  `viettelidc_objectstorage_*` resource. Set this value to "1" to enable testing
   these resources.
 
-* `OS_LB_ENVIRONMENT` - Required if you're working on the `openstack_lb_*`
+* `OS_LB_ENVIRONMENT` - Required if you're working on the `viettelidc_lb_*`
   resources. Set this value to "1" to enable testing these resources.
 
-* `OS_FW_ENVIRONMENT` - Required if you're working on the `openstack_fw_*`
+* `OS_FW_ENVIRONMENT` - Required if you're working on the `viettelidc_fw_*`
   resources. Set this value to "1" to enable testing these resources.
 
-* `OS_VPN_ENVIRONMENT` - Required if your'e working on the `openstack_vpn_*`
+* `OS_VPN_ENVIRONMENT` - Required if your'e working on the `viettelidc_vpn_*`
   resources. Set this value to "1" to enable testing these resources.
 
-* `OS_SFS_ENVIRONMENT` - Required if your'e working on the `openstack_openstack_sharedfilesystem_*`
+* `OS_SFS_ENVIRONMENT` - Required if your'e working on the `viettelidc_viettelidc_sharedfilesystem_*`
   resources. Set this value to "1" to enable testing these resources.
 
-* `OS_HYPERVISOR_HOSTNAME` - Required if you're working on the `openstack_compute_hypervisor_v2`
+* `OS_HYPERVISOR_HOSTNAME` - Required if you're working on the `viettelidc_compute_hypervisor_v2`
   data source. Set this value to one valid hypervisor hostname to test this data source.
 
 We recommend only running the acceptance tests related to the feature or bug

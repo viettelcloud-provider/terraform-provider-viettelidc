@@ -1,7 +1,7 @@
 ---
 subcategory: "Block Storage / Cinder"
 layout: "openstack"
-page_title: "OpenStack: openstack_blockstorage_availability_zones_v3"
+page_title: "OpenStack: viettelidc_blockstorage_availability_zones_v3"
 sidebar_current: "docs-openstack-datasource-blockstorage-availability-zones-v3"
 description: |-
   Get a list of Block Storage availability zones from OpenStack
@@ -14,7 +14,7 @@ Use this data source to get a list of Block Storage availability zones from Open
 ## Example Usage
 
 ```hcl
-data "openstack_blockstorage_availability_zones_v3" "zones" {}
+data "viettelidc_blockstorage_availability_zones_v3" "zones" {}
 ```
 
 ## Argument Reference

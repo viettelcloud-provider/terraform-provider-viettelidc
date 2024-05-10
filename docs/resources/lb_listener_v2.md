@@ -1,7 +1,7 @@
 ---
 subcategory: "Load Balancing as a Service / Octavia"
 layout: "openstack"
-page_title: "OpenStack: openstack_lb_listener_v2"
+page_title: "OpenStack: viettelidc_lb_listener_v2"
 sidebar_current: "docs-openstack-resource-lb-listener-v2"
 description: |-
   Manages a V2 listener resource within OpenStack.
@@ -17,7 +17,7 @@ Please ensure your Openstack cloud supports the required [minor version](../#oct
 ## Example Usage
 
 ```hcl
-resource "openstack_lb_listener_v2" "listener_1" {
+resource "viettelidc_lb_listener_v2" "listener_1" {
   protocol        = "HTTP"
   protocol_port   = 8080
   loadbalancer_id = "d9415786-5f1a-428b-b35f-2f1523e146d2"
@@ -120,5 +120,5 @@ The following attributes are exported:
 Load Balancer Listener can be imported using the Listener ID, e.g.:
 
 ```
-$ terraform import openstack_lb_listener_v2.listener_1 b67ce64e-8b26-405d-afeb-4a078901f15a
+$ terraform import viettelidc_lb_listener_v2.listener_1 b67ce64e-8b26-405d-afeb-4a078901f15a
 ```

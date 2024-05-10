@@ -1,7 +1,7 @@
 ---
 subcategory: "Deprecated"
 layout: "openstack"
-page_title: "OpenStack: openstack_blockstorage_quotaset_v2"
+page_title: "OpenStack: viettelidc_blockstorage_quotaset_v2"
 sidebar_current: "docs-openstack-resource-blockstorage-quotaset-v2"
 description: |-
   Manages a V2 quotaset resource within OpenStack.
@@ -22,12 +22,12 @@ Manages a V2 block storage quotaset resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_identity_project_v3" "project_1" {
+resource "viettelidc_identity_project_v3" "project_1" {
   name = project_1
 }
 
-resource "openstack_blockstorage_quotaset_v2" "quotaset_1" {
-  project_id           = openstack_identity_project_v3.project_1.id
+resource "viettelidc_blockstorage_quotaset_v2" "quotaset_1" {
+  project_id           = viettelidc_identity_project_v3.project_1.id
   volumes              = 10
   snapshots            = 4
   gigabytes            = 100
@@ -99,5 +99,5 @@ The following attributes are exported:
 Quotasets can be imported using the `project_id/region`, e.g.
 
 ```
-$ terraform import openstack_blockstorage_quotaset_v2.quotaset_1 2a0f2240-c5e6-41de-896d-e80d97428d6b/region_1
+$ terraform import viettelidc_blockstorage_quotaset_v2.quotaset_1 2a0f2240-c5e6-41de-896d-e80d97428d6b/region_1
 ```

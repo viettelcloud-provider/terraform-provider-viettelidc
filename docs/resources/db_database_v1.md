@@ -1,7 +1,7 @@
 ---
 subcategory: "Databases / Trove"
 layout: "openstack"
-page_title: "OpenStack: openstack_db_database_v1"
+page_title: "OpenStack: viettelidc_db_database_v1"
 sidebar_current: "docs-openstack-resource-db-database-v1"
 description: |-
   Manages a V1 database resource within OpenStack.
@@ -16,9 +16,9 @@ Manages a V1 DB database resource within OpenStack.
 ### Database
 
 ```hcl
-resource "openstack_db_database_v1" "mydb" {
+resource "viettelidc_db_database_v1" "mydb" {
   name        = "mydb"
-  instance_id = openstack_db_instance_v1.basic.id
+  instance_id = viettelidc_db_instance_v1.basic.id
 }
 ```
 
@@ -43,5 +43,5 @@ The following attributes are exported:
 Databases can be imported by using `instance-id/db-name`, e.g.
 
 ```
-$ terraform import openstack_db_database_v1.mydb 7b9e3cd3-00d9-449c-b074-8439f8e274fa/mydb
+$ terraform import viettelidc_db_database_v1.mydb 7b9e3cd3-00d9-449c-b074-8439f8e274fa/mydb
 ```

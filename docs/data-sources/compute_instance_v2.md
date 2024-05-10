@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: openstack_compute_instance_v2"
+page_title: "OpenStack: viettelidc_compute_instance_v2"
 sidebar_current: "docs-openstack-datasource-compute-instance-v2"
 description: |-
   Get information on an OpenStack Instance
@@ -14,7 +14,7 @@ Use this data source to get the details of a running server
 ## Example Usage
 
 ```hcl
-data "openstack_compute_instance_v2" "instance" {
+data "viettelidc_compute_instance_v2" "instance" {
   # Randomly generated UUID, for demonstration purposes
   id = "2ba26dc6-a12d-4889-8f25-794ea5bf4453"
 }

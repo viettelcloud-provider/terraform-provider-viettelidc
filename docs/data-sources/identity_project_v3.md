@@ -1,7 +1,7 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: openstack_identity_project_v3"
+page_title: "OpenStack: viettelidc_identity_project_v3"
 sidebar_current: "docs-openstack-datasource-identity-project-v3"
 description: |-
   Get information on an OpenStack Project.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an OpenStack project.
 ## Example Usage
 
 ```hcl
-data "openstack_identity_project_v3" "project_1" {
+data "viettelidc_identity_project_v3" "project_1" {
   name = "demo"
 }
 ```

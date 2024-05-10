@@ -1,7 +1,7 @@
 ---
 subcategory: "Object Storage / Swift"
 layout: "openstack"
-page_title: "OpenStack: openstack_objectstorage_tempurl_v1"
+page_title: "OpenStack: viettelidc_objectstorage_tempurl_v1"
 sidebar_current: "docs-openstack-resource-objectstorage-tempurl-v1"
 description: |-
   Generate a TempURL for a Swift container and object.
@@ -20,22 +20,22 @@ a new ID and URL.
 ## Example Usage
 
 ```hcl
-resource "openstack_objectstorage_container_v1" "container_1" {
+resource "viettelidc_objectstorage_container_v1" "container_1" {
   name = "test"
   metadata = {
     Temp-URL-Key = "testkey"
   }
 }
 
-resource "openstack_objectstorage_object_v1" "object_1" {
-  container_name = openstack_objectstorage_container_v1.container_1.name
+resource "viettelidc_objectstorage_object_v1" "object_1" {
+  container_name = viettelidc_objectstorage_container_v1.container_1.name
   name           = "test"
   content        = "Hello, world!"
 }
 
-resource "openstack_objectstorage_tempurl_v1" "obj_tempurl" {
-  container = openstack_objectstorage_container_v1.container_1.name
-  object    = openstack_objectstorage_object_v1.object_1.name
+resource "viettelidc_objectstorage_tempurl_v1" "obj_tempurl" {
+  container = viettelidc_objectstorage_container_v1.container_1.name
+  object    = viettelidc_objectstorage_object_v1.object_1.name
   method    = "post"
   ttl       = 20
 }

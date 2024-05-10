@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_networking_trunk_v2"
+page_title: "OpenStack: viettelidc_networking_trunk_v2"
 sidebar_current: "docs-openstack-resource-networking-trunk-v2"
 description: |-
   Manages a networking V2 trunk resource within OpenStack.
@@ -14,58 +14,58 @@ Manages a networking V2 trunk resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_networking_network_v2" "network_1" {
+resource "viettelidc_networking_network_v2" "network_1" {
   name           = "network_1"
   admin_state_up = "true"
 }
 
-resource "openstack_networking_subnet_v2" "subnet_1" {
+resource "viettelidc_networking_subnet_v2" "subnet_1" {
   name        = "subnet_1"
-  network_id  = openstack_networking_network_v2.network_1.id
+  network_id  = viettelidc_networking_network_v2.network_1.id
   cidr        = "192.168.1.0/24"
   ip_version  = 4
   enable_dhcp = true
   no_gateway  = true
 }
 
-resource "openstack_networking_port_v2" "parent_port_1" {
+resource "viettelidc_networking_port_v2" "parent_port_1" {
   depends_on = [
-    "openstack_networking_subnet_v2.subnet_1",
+    "viettelidc_networking_subnet_v2.subnet_1",
   ]
 
   name           = "parent_port_1"
-  network_id     = openstack_networking_network_v2.network_1.id
+  network_id     = viettelidc_networking_network_v2.network_1.id
   admin_state_up = "true"
 }
 
-resource "openstack_networking_port_v2" "subport_1" {
+resource "viettelidc_networking_port_v2" "subport_1" {
   depends_on = [
-    "openstack_networking_subnet_v2.subnet_1",
+    "viettelidc_networking_subnet_v2.subnet_1",
   ]
 
   name           = "subport_1"
-  network_id     = openstack_networking_network_v2.network_1.id
+  network_id     = viettelidc_networking_network_v2.network_1.id
   admin_state_up = "true"
 }
 
-resource "openstack_networking_trunk_v2" "trunk_1" {
+resource "viettelidc_networking_trunk_v2" "trunk_1" {
   name           = "trunk_1"
   admin_state_up = "true"
-  port_id        = openstack_networking_port_v2.parent_port_1.id
+  port_id        = viettelidc_networking_port_v2.parent_port_1.id
 
   sub_port {
-    port_id           = openstack_networking_port_v2.subport_1.id
+    port_id           = viettelidc_networking_port_v2.subport_1.id
     segmentation_id   = 1
     segmentation_type = "vlan"
   }
 }
 
-resource "openstack_compute_instance_v2" "instance_1" {
+resource "viettelidc_compute_instance_v2" "instance_1" {
   name            = "instance_1"
   security_groups = ["default"]
 
   network {
-    port = openstack_networking_trunk_v2.trunk_1.port_id
+    port = viettelidc_networking_trunk_v2.trunk_1.port_id
   }
 }
 ```

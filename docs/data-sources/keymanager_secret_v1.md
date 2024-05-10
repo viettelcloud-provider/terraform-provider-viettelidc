@@ -1,7 +1,7 @@
 ---
 subcategory: "Key Manager / Barbican"
 layout: "openstack"
-page_title: "OpenStack: openstack_keymanager_secret_v1"
+page_title: "OpenStack: viettelidc_keymanager_secret_v1"
 sidebar_current: "docs-openstack-datasource-keymanager-secret-v1"
 description: |-
   Get information on a V1 Barbican secret resource within OpenStack.
@@ -20,7 +20,7 @@ in state](https://www.terraform.io/docs/language/state/sensitive-data.html).
 ## Example Usage
 
 ```hcl
-data "openstack_keymanager_secret_v1" "example" {
+data "viettelidc_keymanager_secret_v1" "example" {
   mode        = "cbc"
   secret_type = "passphrase"
 }
@@ -72,7 +72,7 @@ For example, to get a passphrase a Secret with CBC moda, that will expire in
 January of 2020:
 
 ```hcl
-data "openstack_keymanager_secret_v1" "date_filter_example" {
+data "viettelidc_keymanager_secret_v1" "date_filter_example" {
   mode              = "cbc"
   secret_type       = "passphrase"
   expiration_filter = "gt:2020-01-01T00:00:00Z"

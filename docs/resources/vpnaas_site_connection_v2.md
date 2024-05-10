@@ -1,7 +1,7 @@
 ---
 subcategory: "VPNaaS / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_vpnaas_site_connection_v2"
+page_title: "OpenStack: viettelidc_vpnaas_site_connection_v2"
 sidebar_current: "docs-openstack-resource-vpnaas-site-connection-v2"
 description: |-
   Manages a V2 Neutron IPSec site connection resource within OpenStack.
@@ -14,15 +14,15 @@ Manages a V2 Neutron IPSec site connection resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_vpnaas_site_connection_v2" "conn_1" {
+resource "viettelidc_vpnaas_site_connection_v2" "conn_1" {
   name              = "connection_1"
-  ikepolicy_id      = openstack_vpnaas_ike_policy_v2.policy_2.id
-  ipsecpolicy_id    = openstack_vpnaas_ipsec_policy_v2.policy_1.id
-  vpnservice_id     = openstack_vpnaas_service_v2.service_1.id
+  ikepolicy_id      = viettelidc_vpnaas_ike_policy_v2.policy_2.id
+  ipsecpolicy_id    = viettelidc_vpnaas_ipsec_policy_v2.policy_1.id
+  vpnservice_id     = viettelidc_vpnaas_service_v2.service_1.id
   psk               = "secret"
   peer_address      = "192.168.10.1"
-  local_ep_group_id = openstack_vpnaas_endpoint_group_v2.group_2.id
-  peer_ep_group_id  = openstack_vpnaas_endpoint_group_v2.group_1.id
+  local_ep_group_id = viettelidc_vpnaas_endpoint_group_v2.group_2.id
+  peer_ep_group_id  = viettelidc_vpnaas_endpoint_group_v2.group_1.id
   dpd {
     action   = "restart"
     timeout  = 42
@@ -129,5 +129,5 @@ The following attributes are exported:
 Site Connections can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_vpnaas_site_connection_v2.conn_1 832cb7f3-59fe-40cf-8f64-8350ffc03272
+$ terraform import viettelidc_vpnaas_site_connection_v2.conn_1 832cb7f3-59fe-40cf-8f64-8350ffc03272
 ```

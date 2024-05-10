@@ -1,7 +1,7 @@
 ---
 subcategory: "DNS / Designate"
 layout: "openstack"
-page_title: "OpenStack: openstack_dns_transfer_accept_v2"
+page_title: "OpenStack: viettelidc_dns_transfer_accept_v2"
 sidebar_current: "docs-openstack-resource-dns-transfer-accept-v2"
 description: |-
   Manages a DNS zone Transfer accept in the OpenStack DNS Service
@@ -16,7 +16,7 @@ Manages a DNS zone transfer accept in the OpenStack DNS Service.
 ### Automatically detect the correct network
 
 ```hcl
-resource "openstack_dns_zone_v2" "example_zone" {
+resource "viettelidc_dns_zone_v2" "example_zone" {
   name        = "example.com."
   email       = "jdoe@example.com"
   description = "An example zone"
@@ -24,14 +24,14 @@ resource "openstack_dns_zone_v2" "example_zone" {
   type        = "PRIMARY"
 }
 
-resource "openstack_dns_transfer_request_v2" "request_1" {
-  zone_id           = openstack_dns_zone_v2.example_zone.id
+resource "viettelidc_dns_transfer_request_v2" "request_1" {
+  zone_id           = viettelidc_dns_zone_v2.example_zone.id
   description       = "a transfer accept"
 }
 
-resource "openstack_dns_transfer_accept_v2" "accept_1" {
-  zone_transfer_request_id = openstack_dns_transfer_request_v2.request_1.id
-  key                      = openstack_dns_transfer_request_v2.request_1.key
+resource "viettelidc_dns_transfer_accept_v2" "accept_1" {
+  zone_transfer_request_id = viettelidc_dns_transfer_request_v2.request_1.id
+  key                      = viettelidc_dns_transfer_request_v2.request_1.key
 }
 
 ```
@@ -70,5 +70,5 @@ The following attributes are exported:
 This resource can be imported by specifying the transferAccept ID:
 
 ```
-$ terraform import openstack_dns_transfer_accept_v2.accept_1 accept_id
+$ terraform import viettelidc_dns_transfer_accept_v2.accept_1 accept_id
 ```

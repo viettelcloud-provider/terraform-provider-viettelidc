@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_networking_qos_minimum_bandwidth_rule_v2"
+page_title: "OpenStack: viettelidc_networking_qos_minimum_bandwidth_rule_v2"
 sidebar_current: "docs-openstack-datasource-networking-qos-minimum-bandwidth-rule-v2"
 description: |-
   Get information on an OpenStack QoS minimum bandwidth rule.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an available OpenStack QoS minimum bandwid
 ## Example Usage
 
 ```hcl
-data "openstack_networking_qos_minimum_bandwidth_rule_v2" "qos_min_bw_rule_1" {
+data "viettelidc_networking_qos_minimum_bandwidth_rule_v2" "qos_min_bw_rule_1" {
   min_kbps = 2000
 }
 ```

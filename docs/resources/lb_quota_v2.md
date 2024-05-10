@@ -1,7 +1,7 @@
 ---
 subcategory: "Load Balancing as a Service / Octavia"
 layout: "openstack"
-page_title: "OpenStack: openstack_lb_quota_v2"
+page_title: "OpenStack: viettelidc_lb_quota_v2"
 sidebar_current: "docs-openstack-resource-lb-quota-v2"
 description: |-
   Manages a V2 quota resource within OpenStack.
@@ -27,12 +27,12 @@ Please ensure your Openstack cloud supports the required [minor version](../#oct
 ## Example Usage
 
 ```hcl
-resource "openstack_identity_project_v3" "project_1" {
+resource "viettelidc_identity_project_v3" "project_1" {
   name = "project_1"
 }
 
-resource "openstack_lb_quota_v2" "quota_1" {
-  project_id     = openstack_identity_project_v3.project_1.id
+resource "viettelidc_lb_quota_v2" "quota_1" {
+  project_id     = viettelidc_identity_project_v3.project_1.id
   loadbalancer   = 6
   listener       = 7
   member         = 8
@@ -96,5 +96,5 @@ Quotas can be imported using the `project_id/region_name`, where region_name is 
 one defined is the Openstack credentials that are in use. E.g.
 
 ```
-$ terraform import openstack_lb_quota_v2.quota_1 2a0f2240-c5e6-41de-896d-e80d97428d6b/region_1
+$ terraform import viettelidc_lb_quota_v2.quota_1 2a0f2240-c5e6-41de-896d-e80d97428d6b/region_1
 ```

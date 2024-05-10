@@ -1,7 +1,7 @@
 ---
 subcategory: "DNS / Designate"
 layout: "openstack"
-page_title: "OpenStack: openstack_dns_recordset_v2"
+page_title: "OpenStack: viettelidc_dns_recordset_v2"
 sidebar_current: "docs-openstack-resource-dns-recordset-v2"
 description: |-
   Manages a DNS record set in the OpenStack DNS Service
@@ -16,7 +16,7 @@ Manages a DNS record set in the OpenStack DNS Service.
 ### Automatically detect the correct network
 
 ```hcl
-resource "openstack_dns_zone_v2" "example_zone" {
+resource "viettelidc_dns_zone_v2" "example_zone" {
   name        = "example.com."
   email       = "email2@example.com"
   description = "a zone"
@@ -24,8 +24,8 @@ resource "openstack_dns_zone_v2" "example_zone" {
   type        = "PRIMARY"
 }
 
-resource "openstack_dns_recordset_v2" "rs_example_com" {
-  zone_id     = openstack_dns_zone_v2.example_zone.id
+resource "viettelidc_dns_recordset_v2" "rs_example_com" {
+  zone_id     = viettelidc_dns_zone_v2.example_zone.id
   name        = "rs.example.com."
   description = "An example record set"
   ttl         = 3000
@@ -87,5 +87,5 @@ This resource can be imported by specifying the zone ID and recordset ID,
 separated by a forward slash.
 
 ```
-$ terraform import openstack_dns_recordset_v2.recordset_1 zone_id/recordset_id
+$ terraform import viettelidc_dns_recordset_v2.recordset_1 zone_id/recordset_id
 ```

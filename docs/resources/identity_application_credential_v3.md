@@ -1,7 +1,7 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: openstack_identity_application_credential_v3"
+page_title: "OpenStack: viettelidc_identity_application_credential_v3"
 sidebar_current: "docs-openstack-resource-identity-application-credential-v3"
 description: |-
   Manages a V3 Application Credential resource within OpenStack Keystone.
@@ -18,7 +18,7 @@ in state](https://www.terraform.io/docs/language/state/sensitive-data.html).
 ~> **Note:** An Application Credential is created within the authenticated user
 project scope and is not visible by an admin or other accounts.
 The Application Credential visibility is similar to
-[`openstack_compute_keypair_v2`](compute_keypair_v2.html).
+[`viettelidc_compute_keypair_v2`](compute_keypair_v2.html).
 
 ## Example Usage
 
@@ -27,7 +27,7 @@ The Application Credential visibility is similar to
 Application credential below will have only one `swiftoperator` role.
 
 ```hcl
-resource "openstack_identity_application_credential_v3" "swift" {
+resource "viettelidc_identity_application_credential_v3" "swift" {
   name        = "swift"
   description = "Swift technical application credential"
   secret      = "supersecret"
@@ -45,14 +45,14 @@ imposed as a safeguard to prevent a compromised application credential from
 regenerating itself. Disabling this restriction poses an inherent added risk.
 
 ```hcl
-resource "openstack_identity_application_credential_v3" "unrestricted" {
+resource "viettelidc_identity_application_credential_v3" "unrestricted" {
   name         = "unrestricted"
   description  = "Unrestricted application credential"
   unrestricted = true
 }
 
 output "application_credential_secret" {
-  value = openstack_identity_application_credential_v3.unrestricted.secret
+  value = viettelidc_identity_application_credential_v3.unrestricted.secret
 }
 ```
 
@@ -62,7 +62,7 @@ output "application_credential_secret" {
 starting from [Train](https://releases.openstack.org/train/highlights.html#keystone-identity-service) release.
 
 ```hcl
-resource "openstack_identity_application_credential_v3" "monitoring" {
+resource "viettelidc_identity_application_credential_v3" "monitoring" {
   name        = "monitoring"
   expires_at  = "2019-02-13T12:12:12Z"
 
@@ -158,5 +158,5 @@ The following attributes are exported:
 Application Credentials can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_identity_application_credential_v3.application_credential_1 c17304b7-0953-4738-abb0-67005882b0a0
+$ terraform import viettelidc_identity_application_credential_v3.application_credential_1 c17304b7-0953-4738-abb0-67005882b0a0
 ```

@@ -1,7 +1,7 @@
 ---
 subcategory: "FWaaS / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_fw_rule_v2"
+page_title: "OpenStack: viettelidc_fw_rule_v2"
 sidebar_current: "docs-openstack-datasource-fw-rule-v2"
 description: |-
   Get information on an OpenStack Firewall Rule V2.
@@ -14,7 +14,7 @@ Use this data source to get information of an available OpenStack firewall rule 
 ## Example Usage
 
 ```hcl
-data "openstack_fw_rule_v2" "rule" {
+data "viettelidc_fw_rule_v2" "rule" {
   name = "tf_test_rule"
 }
 ```

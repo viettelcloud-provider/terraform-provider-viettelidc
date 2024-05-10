@@ -1,7 +1,7 @@
 ---
 subcategory: "Load Balancing as a Service / Octavia"
 layout: "openstack"
-page_title: "OpenStack: openstack_lb_member_v2"
+page_title: "OpenStack: viettelidc_lb_member_v2"
 sidebar_current: "docs-openstack-resource-lb-member-v2"
 description: |-
   Manages a V2 member resource within OpenStack.
@@ -14,7 +14,7 @@ Manages a V2 member resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_lb_member_v2" "member_1" {
+resource "viettelidc_lb_member_v2" "member_1" {
   pool_id       = "935685fb-a896-40f9-9ff4-ae531a3a00fe"
   address       = "192.168.199.23"
   protocol_port = 8080
@@ -87,5 +87,5 @@ Load Balancer Pool Member can be imported using the Pool ID and Member ID
 separated by a slash, e.g.:
 
 ```
-$ terraform import openstack_lb_member_v2.member_1 c22974d2-4c95-4bcb-9819-0afc5ed303d5/9563b79c-8460-47da-8a95-2711b746510f
+$ terraform import viettelidc_lb_member_v2.member_1 c22974d2-4c95-4bcb-9819-0afc5ed303d5/9563b79c-8460-47da-8a95-2711b746510f
 ```

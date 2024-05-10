@@ -1,7 +1,7 @@
 ---
 subcategory: "VPNaaS / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_vpnaas_service_v2"
+page_title: "OpenStack: viettelidc_vpnaas_service_v2"
 sidebar_current: "docs-openstack-resource-vpnaas-service-v2"
 description: |-
   Manages a V2 Neutron VPN service resource within OpenStack.
@@ -14,7 +14,7 @@ Manages a V2 Neutron VPN service resource within OpenStack.
 ## Example Usage
 
 ```hcl
-resource "openstack_vpnaas_service_v2" "service_1" {
+resource "viettelidc_vpnaas_service_v2" "service_1" {
   name           = "my_service"
   router_id      = "14a75700-fc03-4602-9294-26ee44f366b3"
   admin_state_up = "true"
@@ -69,5 +69,5 @@ The following attributes are exported:
 Services can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_vpnaas_service_v2.service_1 832cb7f3-59fe-40cf-8f64-8350ffc03272
+$ terraform import viettelidc_vpnaas_service_v2.service_1 832cb7f3-59fe-40cf-8f64-8350ffc03272
 ```

@@ -1,7 +1,7 @@
 ---
 subcategory: "Databases / Trove"
 layout: "openstack"
-page_title: "OpenStack: openstack_db_configuration_v1"
+page_title: "OpenStack: viettelidc_db_configuration_v1"
 sidebar_current: "docs-openstack-resource-db-configuration-v1"
 description: |-
   Manages a V1 DB configuration resource within OpenStack.
@@ -16,7 +16,7 @@ Manages a V1 DB configuration resource within OpenStack.
 ### Configuration
 
 ```hcl
-resource "openstack_db_configuration_v1" "test" {
+resource "viettelidc_db_configuration_v1" "test" {
   name        = "test"
   description = "description"
 

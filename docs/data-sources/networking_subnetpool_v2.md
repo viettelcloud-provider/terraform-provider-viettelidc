@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_networking_subnetpool_v2"
+page_title: "OpenStack: viettelidc_networking_subnetpool_v2"
 sidebar_current: "docs-openstack-datasource-networking-subnetpool-v2"
 description: |-
   Get information on an OpenStack Subnetpool.
@@ -14,7 +14,7 @@ Use this data source to get the ID of an available OpenStack subnetpool.
 ## Example Usage
 
 ```hcl
-data "openstack_networking_subnetpool_v2" "subnetpool_1" {
+data "viettelidc_networking_subnetpool_v2" "subnetpool_1" {
   name = "subnetpool_1"
 }
 ```

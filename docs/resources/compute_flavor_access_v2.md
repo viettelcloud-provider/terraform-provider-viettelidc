@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: openstack_compute_flavor_access_v2"
+page_title: "OpenStack: viettelidc_compute_flavor_access_v2"
 sidebar_current: "docs-openstack-resource-compute-flavor-access-v2"
 description: |-
   Manages a project access for flavor V2 resource within OpenStack.
@@ -19,11 +19,11 @@ this resource.
 ## Example Usage
 
 ```hcl
-resource "openstack_identity_project_v3" "project_1" {
+resource "viettelidc_identity_project_v3" "project_1" {
   name = "my-project"
 }
 
-resource "openstack_compute_flavor_v2" "flavor_1" {
+resource "viettelidc_compute_flavor_v2" "flavor_1" {
   name      = "my-flavor"
   ram       = "8096"
   vcpus     = "2"
@@ -31,9 +31,9 @@ resource "openstack_compute_flavor_v2" "flavor_1" {
   is_public = false
 }
 
-resource "openstack_compute_flavor_access_v2" "access_1" {
-  tenant_id = openstack_identity_project_v3.project_1.id
-  flavor_id = openstack_compute_flavor_v2.flavor_1.id
+resource "viettelidc_compute_flavor_access_v2" "access_1" {
+  tenant_id = viettelidc_identity_project_v3.project_1.id
+  flavor_id = viettelidc_compute_flavor_v2.flavor_1.id
 }
 ```
 
@@ -64,5 +64,5 @@ This resource can be imported by specifying all two arguments, separated
 by a forward slash:
 
 ```
-$ terraform import openstack_compute_flavor_access_v2.access_1 flavor_id/tenant_id
+$ terraform import viettelidc_compute_flavor_access_v2.access_1 flavor_id/tenant_id
 ```

@@ -1,7 +1,7 @@
 ---
 subcategory: "Container Infra / Magnum"
 layout: "openstack"
-page_title: "OpenStack: openstack_containerinfra_nodegroup_v1"
+page_title: "OpenStack: viettelidc_containerinfra_nodegroup_v1"
 sidebar_current: "docs-openstack-datasource-containerinfra-nodegroup-v1"
 description: |-
   Get information on an OpenStack Magnum node group.
@@ -14,7 +14,7 @@ Use this data source to get information of an available OpenStack Magnum node gr
 ## Example Usage
 
 ```hcl
-data "openstack_containerinfra_nodegroup_v1" "nodegroup_1" {
+data "viettelidc_containerinfra_nodegroup_v1" "nodegroup_1" {
   cluster_id = "cluster_1"
   name       = "nodegroup_1"
 }

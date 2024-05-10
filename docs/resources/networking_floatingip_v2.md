@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: openstack_networking_floatingip_v2"
+page_title: "OpenStack: viettelidc_networking_floatingip_v2"
 sidebar_current: "docs-openstack-resource-networking-floatingip-v2"
 description: |-
   Manages a V2 floating IP resource within OpenStack Neutron (networking).
@@ -19,7 +19,7 @@ but only compute floating IPs can be used with compute instances.
 ### Simple floating IP allocation
 
 ```hcl
-resource "openstack_networking_floatingip_v2" "floatip_1" {
+resource "viettelidc_networking_floatingip_v2" "floatip_1" {
   pool = "public"
 }
 ```
@@ -30,17 +30,17 @@ If one of the subnets in a list has an exhausted pool, terraform will try the
 next subnet ID from the list.
 
 ```hcl
-data "openstack_networking_network_v2" "ext_network" {
+data "viettelidc_networking_network_v2" "ext_network" {
   name = "public"
 }
 
-data "openstack_networking_subnet_ids_v2" "ext_subnets" {
-  network_id = data.openstack_networking_network_v2.ext_network.id
+data "viettelidc_networking_subnet_ids_v2" "ext_subnets" {
+  network_id = data.viettelidc_networking_network_v2.ext_network.id
 }
 
-resource "openstack_networking_floatingip_v2" "floatip_1" {
-  pool       = data.openstack_networking_network_v2.ext_network.name
-  subnet_ids = data.openstack_networking_subnet_ids_v2.ext_subnets.ids
+resource "viettelidc_networking_floatingip_v2" "floatip_1" {
+  pool       = data.viettelidc_networking_network_v2.ext_network.name
+  subnet_ids = data.viettelidc_networking_subnet_ids_v2.ext_subnets.ids
 }
 ```
 
@@ -119,5 +119,5 @@ The following attributes are exported:
 Floating IPs can be imported using the `id`, e.g.
 
 ```
-$ terraform import openstack_networking_floatingip_v2.floatip_1 2c7f39f3-702b-48d1-940c-b50384177ee1
+$ terraform import viettelidc_networking_floatingip_v2.floatip_1 2c7f39f3-702b-48d1-940c-b50384177ee1
 ```
