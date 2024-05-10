@@ -21,15 +21,15 @@ Use the navigation to the left to read about the available resources.
 terraform {
 required_version = ">= 0.14.0"
   required_providers {
-    openstack = {
-      source  = "terraform-provider-openstack/openstack"
-      version = "~> 1.53.0"
+    viettelidc = {
+      source  = "viettelcloud-provider/viettelidc"
+      version = "1.38.1"
     }
   }
 }
 
 # Configure the OpenStack Provider
-provider "openstack" {
+provider "viettelidc" {
   user_name   = "admin"
   tenant_name = "admin"
   password    = "pwd"
