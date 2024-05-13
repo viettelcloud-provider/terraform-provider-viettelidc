@@ -23,7 +23,7 @@ required_version = ">= 0.14.0"
   required_providers {
     viettelidc = {
       source  = "viettelcloud-provider/viettelidc"
-      version = "1.38.1"
+      version = "1.38.3"
     }
   }
 }
