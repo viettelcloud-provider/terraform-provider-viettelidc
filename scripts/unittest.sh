@@ -6,7 +6,7 @@ set -o pipefail
 failed=
 
 
-UNIT_TESTS=$(go test ./openstack/ -v -list 'Unit' | grep -i "Unit")
+UNIT_TESTS=$(go test ./viettelidc/ -v -list 'Unit' | grep -i "Unit")
 UNIT_TESTS=($UNIT_TESTS)
 
 
@@ -17,7 +17,7 @@ fi
 
 
 for unit_test in "${UNIT_TESTS[@]}"; do
-  go test ./openstack -v -count=5 -run $(echo "$unit_test" | tr " " "|")
+  go test ./viettelidc -v -count=5 -run $(echo "$unit_test" | tr " " "|")
   # Check the error code after each suite, but do not exit early if a suite failed.
   if [[ $? != 0 ]]; then
     failed=1
@@ -25,11 +25,11 @@ for unit_test in "${UNIT_TESTS[@]}"; do
 done
 
 # Run tests under openstack/internal
-UNIT_TESTS=$(go test ./openstack/internal/pathorcontents -v -list 'Unit' | grep -i "Unit")
+UNIT_TESTS=$(go test ./viettelidc/internal/pathorcontents -v -list 'Unit' | grep -i "Unit")
 UNIT_TESTS=($UNIT_TESTS)
 
 for unit_test in "${UNIT_TESTS[@]}"; do
-  go test ./openstack/internal/pathorcontents  -v -count=5 -run $(echo "$unit_test" | tr " " "|")
+  go test ./viettelidc/internal/pathorcontents  -v -count=5 -run $(echo "$unit_test" | tr " " "|")
   # Check the error code after each suite, but do not exit early if a suite failed.
   if [[ $? != 0 ]]; then
     failed=1

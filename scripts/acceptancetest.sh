@@ -12,7 +12,7 @@ mkdir -p ${LOG_DIR}
 if [[ -z "${ACCEPTANCE_TESTS_FILTER}" ]]; then
     ACCEPTANCE_TESTS=($(python <<< "print(' '.join($ACCEPTANCE_TESTS))"))
 else
-    ACCEPTANCE_TESTS=$(go test ./openstack/ -v -list 'Acc' | grep -i -E "$ACCEPTANCE_TESTS_FILTER")
+    ACCEPTANCE_TESTS=$(go test ./viettelidc/ -v -list 'Acc' | grep -i -E "$ACCEPTANCE_TESTS_FILTER")
     ACCEPTANCE_TESTS=($ACCEPTANCE_TESTS)
 fi
 
@@ -25,7 +25,7 @@ fi
 source `dirname $0`/stackenv.sh admin
 
 for acceptance_test in "${ACCEPTANCE_TESTS[@]}"; do
-  OS_DEBUG=1 TF_LOG=DEBUG TF_ACC=1 go test ./openstack -v -timeout 120m -run $(echo "$acceptance_test" | tr " " "|") |& tee -a ${LOG_DIR}/acceptance_tests.log
+  OS_DEBUG=1 TF_LOG=DEBUG TF_ACC=1 go test ./viettelidc -v -timeout 120m -run $(echo "$acceptance_test" | tr " " "|") |& tee -a ${LOG_DIR}/acceptance_tests.log
   # Check the error code after each suite, but do not exit early if a suite failed.
   if [[ $? != 0 ]]; then
     failed=1
@@ -36,7 +36,7 @@ done
 source `dirname $0`/stackenv.sh demo
 
 for acceptance_test in "${ACCEPTANCE_TESTS[@]}"; do
-  OS_DEBUG=1 TF_LOG=DEBUG TF_ACC=1 go test ./openstack -v -timeout 120m -run $(echo "$acceptance_test" | tr " " "|") |& tee -a ${LOG_DIR}/acceptance_tests.log
+  OS_DEBUG=1 TF_LOG=DEBUG TF_ACC=1 go test ./viettelidc -v -timeout 120m -run $(echo "$acceptance_test" | tr " " "|") |& tee -a ${LOG_DIR}/acceptance_tests.log
   # Check the error code after each suite, but do not exit early if a suite failed.
   if [[ $? != 0 ]]; then
     failed=1
