@@ -456,26 +456,26 @@ We recommend only running the acceptance tests related to the feature or bug
 you're working on. To do this, run:
 
 ```shell
-$ cd $GOPATH/src/github.com/terraform-providers/terraform-provider-openstack
-$ make testacc TEST=./openstack TESTARGS="-run=<keyword> -count=1"
+$ cd $GOPATH/src/github.com/viettelidc-provider-openstack/terraform-provider-openstack
+$ make testacc TEST=./viettelidc TESTARGS="-run=<keyword> -count=1"
 ```
 
 Where `<keyword>` is the full name or partial name of a test. For example:
 
 ```shell
-$ make testacc TEST=./openstack TESTARGS="-run=TestAccComputeV2Keypair_basic -count=1"
+$ make testacc TEST=./viettelidc TESTARGS="-run=TestAccComputeV2Keypair_basic -count=1"
 ```
 
 We recommend running tests with logging set to `DEBUG`:
 
 ```shell
-$ TF_LOG=DEBUG make testacc TEST=./openstack TESTARGS="-run=TestAccComputeV2Keypair_basic -count=1"
+$ TF_LOG=DEBUG make testacc TEST=./viettelidc TESTARGS="-run=TestAccComputeV2Keypair_basic -count=1"
 ```
 
 And you can even enable OpenStack debugging to see the actual HTTP API requests:
 
 ```shell
-$ TF_LOG=DEBUG OS_DEBUG=1 make testacc TEST=./openstack TESTARGS="-run=TestAccComputeV2Keypair_basic -count=1"
+$ TF_LOG=DEBUG OS_DEBUG=1 make testacc TEST=./viettelidc TESTARGS="-run=TestAccComputeV2Keypair_basic -count=1"
 ```
 
 ### Creating a Pull Request
