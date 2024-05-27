@@ -1,19 +1,19 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_identity_inherit_role_assignment_v3"
+page_title: "ViettelIdc: viettelidc_identity_inherit_role_assignment_v3"
 sidebar_current: "docs-openstack-resource-identity-inherit-role-assignment-v3"
 description: |-
-  Manages a V3 Inherit Role assignment within OpenStack Keystone.
+  Manages a V3 Inherit Role assignment within ViettelIdc Keystone.
 ---
 
 # viettelidc\_identity\_inherit\_role\_assignment\_v3
 
-Manages a V3 Inherit Role assignment within OpenStack Keystone. This uses the
+Manages a V3 Inherit Role assignment within ViettelIdc Keystone. This uses the
 Openstack keystone `OS-INHERIT` api to created inherit roles within domains
 and parent projects for users and groups.
 
-~> **Note:** You _must_ have admin privileges in your OpenStack cloud to use
+~> **Note:** You _must_ have admin privileges in your ViettelIdc cloud to use
 this resource.
 
 ## Example Usage

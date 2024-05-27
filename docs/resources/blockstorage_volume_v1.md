@@ -1,15 +1,15 @@
 ---
 subcategory: "Deprecated"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_blockstorage_volume_v1"
+page_title: "ViettelIdc: viettelidc_blockstorage_volume_v1"
 sidebar_current: "docs-openstack-resource-blockstorage-volume-v1"
 description: |-
-  Manages a V1 volume resource within OpenStack.
+  Manages a V1 volume resource within ViettelIdc.
 ---
 
 # viettelidc\_blockstorage\_volume\_v1
 
-Manages a V1 volume resource within OpenStack.
+Manages a V1 volume resource within ViettelIdc.
 
 ## Example Usage
 

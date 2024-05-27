@@ -426,6 +426,7 @@ func Provider() *schema.Provider {
 			"viettelidc_keymanager_secret_v1":                     resourceKeyManagerSecretV1(),
 			"viettelidc_keymanager_container_v1":                  resourceKeyManagerContainerV1(),
 			"viettelidc_keymanager_order_v1":                      resourceKeyManagerOrderV1(),
+			"viettelidc_server":                                   resourceServer(),
 		},
 	}
 

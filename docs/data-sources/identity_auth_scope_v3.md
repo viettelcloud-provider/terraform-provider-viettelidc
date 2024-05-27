@@ -1,7 +1,7 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_identity_auth_scope_v3"
+page_title: "ViettelIdc: viettelidc_identity_auth_scope_v3"
 sidebar_current: "docs-openstack-datasource-identity-auth-scope-v3"
 description: |-
   Get authentication information from the current authenticated scope.
@@ -89,7 +89,7 @@ output "containers" {
   export the current auth scope token ID. When set to `true`, the `token_id`
   attribute will contain an unencrypted token that can be used for further API
   calls. **Warning**: please note that the leaked token may allow unauthorized
-  access to other OpenStack services within the current auth scope, so use this
+  access to other ViettelIdc services within the current auth scope, so use this
   option with caution.
 
 ## Attributes Reference

@@ -1,15 +1,15 @@
 ---
 subcategory: "Block Storage / Cinder"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_blockstorage_qos_v3"
+page_title: "ViettelIdc: viettelidc_blockstorage_qos_v3"
 sidebar_current: "docs-openstack-resource-blockstorage-qos-v3"
 description: |-
-  Manages a V3 Quality-Of-Servirce (qos) resource within OpenStack.
+  Manages a V3 Quality-Of-Servirce (qos) resource within ViettelIdc.
 ---
 
 # viettelidc\_blockstorage\_qos\_v3
 
-Manages a V3 block storage Quality-Of-Servirce (qos) resource within OpenStack.
+Manages a V3 block storage Quality-Of-Servirce (qos) resource within ViettelIdc.
 
 ~> **Note:** This usually requires admin privileges.
 

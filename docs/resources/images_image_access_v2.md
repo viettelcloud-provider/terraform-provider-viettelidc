@@ -1,15 +1,15 @@
 ---
 subcategory: "Images / Glance"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_images_image_access_v2"
+page_title: "ViettelIdc: viettelidc_images_image_access_v2"
 sidebar_current: "docs-openstack-resource-images-image-access-v2"
 description: |-
-  Manages a V2 Image member resource within OpenStack Glance.
+  Manages a V2 Image member resource within ViettelIdc Glance.
 ---
 
 # viettelidc\_images\_image\_access\_v2
 
-Manages members for the shared OpenStack Glance V2 Image within the source
+Manages members for the shared ViettelIdc Glance V2 Image within the source
 project, which owns the Image.
 
 ## Example Usage

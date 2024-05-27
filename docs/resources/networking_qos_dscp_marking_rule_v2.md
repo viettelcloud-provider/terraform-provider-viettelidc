@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_qos_dscp_marking_rule_v2"
+page_title: "ViettelIdc: viettelidc_networking_qos_dscp_marking_rule_v2"
 sidebar_current: "docs-openstack-resource-networking-qos-dscp-marking-rule-v2"
 description: |-
-  Manages a V2 Neutron QoS DSCP marking rule resource within OpenStack.
+  Manages a V2 Neutron QoS DSCP marking rule resource within ViettelIdc.
 ---
 
 # viettelidc\_networking\_qos\_dscp\_marking\_rule\_v2
 
-Manages a V2 Neutron QoS DSCP marking rule resource within OpenStack.
+Manages a V2 Neutron QoS DSCP marking rule resource within ViettelIdc.
 
 ## Example Usage
 

@@ -6,7 +6,7 @@ We assume you already installed terraform using the following instructions: http
 
 ## Getting started
 
-First, download an openrc file from the OpenStack dashboard. If your cloud provider does not support downloading the openrc file from a dashboard, then you can use the openrc.sample file in this directory. Rename it to openrc and modify it using a text editor of your choice.
+First, download an openrc file from the ViettelIdc dashboard. If your cloud provider does not support downloading the openrc file from a dashboard, then you can use the openrc.sample file in this directory. Rename it to openrc and modify it using a text editor of your choice.
 
 After you have modified it, source it into your shell environment:
 

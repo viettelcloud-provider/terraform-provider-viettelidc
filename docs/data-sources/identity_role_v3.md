@@ -1,15 +1,15 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_identity_role_v3"
+page_title: "ViettelIdc: viettelidc_identity_role_v3"
 sidebar_current: "docs-openstack-datasource-identity-role-v3"
 description: |-
-  Get information on an OpenStack Role.
+  Get information on an ViettelIdc Role.
 ---
 
 # viettelidc\_identity\_role\_v3
 
-Use this data source to get the ID of an OpenStack role.
+Use this data source to get the ID of an ViettelIdc role.
 
 ## Example Usage
 

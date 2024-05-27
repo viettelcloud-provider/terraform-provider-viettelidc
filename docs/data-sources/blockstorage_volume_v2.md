@@ -1,10 +1,10 @@
 ---
 subcategory: "Deprecated"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_blockstorage_volume_v2"
+page_title: "ViettelIdc: viettelidc_blockstorage_volume_v2"
 sidebar_current: "docs-openstack-datasource-blockstorage-volume-v2"
 description: |-
-  Get information on an OpenStack Volume.
+  Get information on an ViettelIdc Volume.
 ---
 
 # viettelidc\_blockstorage\_volume\_v2

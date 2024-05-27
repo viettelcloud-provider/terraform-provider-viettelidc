@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_compute_aggregate_v2"
+page_title: "ViettelIdc: viettelidc_compute_aggregate_v2"
 sidebar_current: "docs-openstack-datasource-compute-aggregate-v2"
 description: |-
   Get information on Openstack Host Aggregate

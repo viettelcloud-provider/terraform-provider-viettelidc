@@ -1,15 +1,15 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_compute_servergroup_v2"
+page_title: "ViettelIdc: viettelidc_compute_servergroup_v2"
 sidebar_current: "docs-openstack-resource-compute-servergroup-v2"
 description: |-
-  Manages a V2 Server Group resource within OpenStack.
+  Manages a V2 Server Group resource within ViettelIdc.
 ---
 
 # viettelidc\_compute\_servergroup\_v2
 
-Manages a V2 Server Group resource within OpenStack.
+Manages a V2 Server Group resource within ViettelIdc.
 
 ## Example Usage
 
@@ -65,12 +65,12 @@ The following arguments are supported:
 * `soft-affinity` - All instances/servers launched in this group will be hosted
     on the same compute node if possible, but if not possible they
     still will be scheduled instead of failure. To use this policy your
-    OpenStack environment should support Compute service API 2.15 or above.
+    ViettelIdc environment should support Compute service API 2.15 or above.
 
 * `soft-anti-affinity` - All instances/servers launched in this group will be
     hosted on different compute nodes if possible, but if not possible they
     still will be scheduled instead of failure. To use this policy your
-    OpenStack environment should support Compute service API 2.15 or above.
+    ViettelIdc environment should support Compute service API 2.15 or above.
 
 ## Attributes Reference
 

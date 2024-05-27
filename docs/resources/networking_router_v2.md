@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_router_v2"
+page_title: "ViettelIdc: viettelidc_networking_router_v2"
 sidebar_current: "docs-openstack-resource-networking-router-v2"
 description: |-
-  Manages a V2 router resource within OpenStack.
+  Manages a V2 router resource within ViettelIdc.
 ---
 
 # viettelidc\_networking\_router\_v2
 
-Manages a V2 router resource within OpenStack.
+Manages a V2 router resource within ViettelIdc.
 
 ## Example Usage
 
@@ -58,7 +58,7 @@ The following arguments are supported:
   "true" or "false". An `external_network_id` has to be set in order to
   set this property. Changing this updates the `enable_snat` of the router.
   Setting this value **requires** an **ext-gw-mode** extension to be enabled
-  in OpenStack Neutron.
+  in ViettelIdc Neutron.
 
 * `external_fixed_ip` - (Optional) An external fixed IP for the router. This
   can be repeated. The structure is described below. An `external_network_id`

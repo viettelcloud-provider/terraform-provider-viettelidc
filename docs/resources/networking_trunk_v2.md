@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_trunk_v2"
+page_title: "ViettelIdc: viettelidc_networking_trunk_v2"
 sidebar_current: "docs-openstack-resource-networking-trunk-v2"
 description: |-
-  Manages a networking V2 trunk resource within OpenStack.
+  Manages a networking V2 trunk resource within ViettelIdc.
 ---
 
 # viettelidc\_networking\_trunk\_v2
 
-Manages a networking V2 trunk resource within OpenStack.
+Manages a networking V2 trunk resource within ViettelIdc.
 
 ## Example Usage
 

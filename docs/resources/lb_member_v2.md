@@ -1,15 +1,15 @@
 ---
 subcategory: "Load Balancing as a Service / Octavia"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_lb_member_v2"
+page_title: "ViettelIdc: viettelidc_lb_member_v2"
 sidebar_current: "docs-openstack-resource-lb-member-v2"
 description: |-
-  Manages a V2 member resource within OpenStack.
+  Manages a V2 member resource within ViettelIdc.
 ---
 
 # viettelidc\_lb\_member\_v2
 
-Manages a V2 member resource within OpenStack.
+Manages a V2 member resource within ViettelIdc.
 
 ## Example Usage
 

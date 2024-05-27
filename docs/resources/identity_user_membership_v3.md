@@ -1,17 +1,17 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_identity_user_membership_v3"
+page_title: "ViettelIdc: viettelidc_identity_user_membership_v3"
 sidebar_current: "docs-openstack-resource-identity-user-membership-v3"
 description: |-
-  Manages a user membership to group V3 resource within OpenStack.
+  Manages a user membership to group V3 resource within ViettelIdc.
 ---
 
 # viettelidc\_identity\_user\_membership\_v3
 
-Manages a user membership to group V3 resource within OpenStack.
+Manages a user membership to group V3 resource within ViettelIdc.
 
-~> **Note:** You _must_ have admin privileges in your OpenStack cloud to use
+~> **Note:** You _must_ have admin privileges in your ViettelIdc cloud to use
 this resource.
 
 ---

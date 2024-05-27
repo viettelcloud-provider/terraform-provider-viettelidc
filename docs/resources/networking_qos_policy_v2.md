@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_qos_policy_v2"
+page_title: "ViettelIdc: viettelidc_networking_qos_policy_v2"
 sidebar_current: "docs-openstack-resource-networking-qos-policy-v2"
 description: |-
-  Manages a V2 Neutron QoS policy resource within OpenStack.
+  Manages a V2 Neutron QoS policy resource within ViettelIdc.
 ---
 
 # viettelidc\_networking\_qos\_policy\_v2
 
-Manages a V2 Neutron QoS policy resource within OpenStack.
+Manages a V2 Neutron QoS policy resource within ViettelIdc.
 
 ## Example Usage
 

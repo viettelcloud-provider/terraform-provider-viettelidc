@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_compute_floatingip_associate_v2"
+page_title: "ViettelIdc: viettelidc_compute_floatingip_associate_v2"
 sidebar_current: "docs-openstack-resource-compute-floatingip-associate-v2"
 description: |-
   Associate a floating IP to an instance
@@ -79,7 +79,7 @@ The following arguments are supported:
 
 * `fixed_ip` - (Optional) The specific IP address to direct traffic to.
 
-* `wait_until_associated` - (Optional) In cases where the OpenStack environment
+* `wait_until_associated` - (Optional) In cases where the ViettelIdc environment
     does not automatically wait until the association has finished, set this
     option to have Terraform poll the instance until the floating IP has been
     associated. Defaults to false.

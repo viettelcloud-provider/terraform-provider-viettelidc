@@ -1,15 +1,15 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_identity_service_v3"
+page_title: "ViettelIdc: viettelidc_identity_service_v3"
 sidebar_current: "docs-openstack-resource-identity-service-v3"
 description: |-
-  Manages a V3 Service resource within OpenStack Keystone.
+  Manages a V3 Service resource within ViettelIdc Keystone.
 ---
 
 # viettelidc\_identity\_service\_v3
 
-Manages a V3 Service resource within OpenStack Keystone.
+Manages a V3 Service resource within ViettelIdc Keystone.
 
 ~> **Note:** This usually requires admin privileges.
 

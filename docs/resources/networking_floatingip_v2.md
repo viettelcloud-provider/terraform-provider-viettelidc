@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_floatingip_v2"
+page_title: "ViettelIdc: viettelidc_networking_floatingip_v2"
 sidebar_current: "docs-openstack-resource-networking-floatingip-v2"
 description: |-
-  Manages a V2 floating IP resource within OpenStack Neutron (networking).
+  Manages a V2 floating IP resource within ViettelIdc Neutron (networking).
 ---
 
 # viettelidc\_networking\_floatingip\_v2
 
-Manages a V2 floating IP resource within OpenStack Neutron (networking)
+Manages a V2 floating IP resource within ViettelIdc Neutron (networking)
 that can be used for load balancers.
 These are similar to Nova (compute) floating IP resources,
 but only compute floating IPs can be used with compute instances.
@@ -69,7 +69,7 @@ The following arguments are supported:
 
 * `address` - (Optional) The actual/specific floating IP to obtain. By default,
   non-admin users are not able to specify a floating IP, so you must either be
-  an admin user or have had a custom policy or role applied to your OpenStack
+  an admin user or have had a custom policy or role applied to your ViettelIdc
   user or project.
 
 * `fixed_ip` - Fixed IP of the port to associate with this floating IP. Required if

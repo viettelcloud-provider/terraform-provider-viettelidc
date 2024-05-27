@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_qos_dscp_marking_rule_v2"
+page_title: "ViettelIdc: viettelidc_networking_qos_dscp_marking_rule_v2"
 sidebar_current: "docs-openstack-datasource-networking-qos-dscp-marking-rule-v2"
 description: |-
-  Get information on an OpenStack QoS DSCP marking rule.
+  Get information on an ViettelIdc QoS DSCP marking rule.
 ---
 
 # viettelidc\_networking\_qos\_dscp\_marking\_rule\_v2
 
-Use this data source to get the ID of an available OpenStack QoS DSCP marking rule.
+Use this data source to get the ID of an available ViettelIdc QoS DSCP marking rule.
 
 ## Example Usage
 
