@@ -1,15 +1,15 @@
 ---
 subcategory: "Images / Glance"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_images_image_v2"
+page_title: "ViettelIdc: viettelidc_images_image_v2"
 sidebar_current: "docs-openstack-resource-images-image-v2"
 description: |-
-  Manages a V2 Image resource within OpenStack Glance.
+  Manages a V2 Image resource within ViettelIdc Glance.
 ---
 
 # viettelidc\_images\_image\_v2
 
-Manages a V2 Image resource within OpenStack Glance.
+Manages a V2 Image resource within ViettelIdc Glance.
 
 ~> **Note:** All arguments including the source image URL password will be
 stored in the raw state as plain-text. [Read more about sensitive data in
@@ -92,14 +92,14 @@ The following arguments are supported:
 
 * `visibility` - (Optional) The visibility of the image. Must be one of
    "public", "private", "community", or "shared". The ability to set the
-   visibility depends upon the configuration of the OpenStack cloud.
+   visibility depends upon the configuration of the ViettelIdc cloud.
 
 * `web_download` - (Optional) If true, the "web-download" import method will
     be used to let Openstack download the image directly from the remote source.
     Conflicts with `local_file_path`. Defaults to false.
 
 * `decompress` - (Optional) If true, this provider will decompress downloaded
-    image before uploading it to OpenStack. Decompression algorithm is chosen by
+    image before uploading it to ViettelIdc. Decompression algorithm is chosen by
     checking "Content-Type" header, supported algorithm are: gzip, bzip2 and xz.
     Defaults to false. Changing this creates a new Image.
 
@@ -144,7 +144,7 @@ This resource supports the ability to add properties to a resource during
 creation as well as add, update, and delete properties during an update of this
 resource.
 
-Newer versions of OpenStack are adding some read-only properties to each image.
+Newer versions of ViettelIdc are adding some read-only properties to each image.
 These properties start with the prefix `os_`. If these properties are detected,
 this resource will automatically reconcile these with the user-provided
 properties.

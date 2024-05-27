@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_compute_interface_attach_v2"
+page_title: "ViettelIdc: viettelidc_compute_interface_attach_v2"
 sidebar_current: "docs-openstack-resource-compute-interface-attach-v2"
 description: |-
   Attaches a Network Interface to an Instance.
@@ -9,7 +9,7 @@ description: |-
 
 # viettelidc\_compute\_interface\_attach\_v2
 
-Attaches a Network Interface (a Port) to an Instance using the OpenStack
+Attaches a Network Interface (a Port) to an Instance using the ViettelIdc
 Compute (Nova) v2 API.
 
 ## Example Usage

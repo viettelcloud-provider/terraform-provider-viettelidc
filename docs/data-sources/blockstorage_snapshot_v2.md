@@ -1,10 +1,10 @@
 ---
 subcategory: "Deprecated"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_blockstorage_snapshot_v2"
+page_title: "ViettelIdc: viettelidc_blockstorage_snapshot_v2"
 sidebar_current: "docs-openstack-datasource-blockstorage-snapshot-v2"
 description: |-
-  Get information on an OpenStack Snapshot.
+  Get information on an ViettelIdc Snapshot.
 ---
 
 # viettelidc\_blockstorage\_snapshot\_v2

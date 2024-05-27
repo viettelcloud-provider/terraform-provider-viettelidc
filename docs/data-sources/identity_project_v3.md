@@ -1,15 +1,15 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_identity_project_v3"
+page_title: "ViettelIdc: viettelidc_identity_project_v3"
 sidebar_current: "docs-openstack-datasource-identity-project-v3"
 description: |-
-  Get information on an OpenStack Project.
+  Get information on an ViettelIdc Project.
 ---
 
 # viettelidc\_identity\_project\_v3
 
-Use this data source to get the ID of an OpenStack project.
+Use this data source to get the ID of an ViettelIdc project.
 
 ## Example Usage
 

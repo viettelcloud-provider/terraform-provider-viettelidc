@@ -1,15 +1,15 @@
 ---
 subcategory: "Databases / Trove"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_db_user_v1"
+page_title: "ViettelIdc: viettelidc_db_user_v1"
 sidebar_current: "docs-openstack-resource-db-user-v1"
 description: |-
-  Manages a V1 database user resource within OpenStack.
+  Manages a V1 database user resource within ViettelIdc.
 ---
 
 # viettelidc\_db\_user\_v1
 
-Manages a V1 DB user resource within OpenStack.
+Manages a V1 DB user resource within ViettelIdc.
 
 ~> **Note:** All arguments including the database password will be stored in the
 raw state as plain-text. [Read more about sensitive data in

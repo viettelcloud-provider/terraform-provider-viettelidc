@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_port_secgroup_associate_v2"
+page_title: "ViettelIdc: viettelidc_networking_port_secgroup_associate_v2"
 sidebar_current: "docs-openstack-resource-networking-port-secgroup-associate-v2"
 description: |-
-  Manages a V2 port's security groups within OpenStack.
+  Manages a V2 port's security groups within ViettelIdc.
 ---
 
 # viettelidc\_networking\_port\_secgroup\_associate\_v2
 
-Manages a V2 port's security groups within OpenStack. Useful, when the port was
+Manages a V2 port's security groups within ViettelIdc. Useful, when the port was
 created not by Terraform (e.g. Manila or LBaaS). It should not be used, when the
 port was created directly within Terraform.
 

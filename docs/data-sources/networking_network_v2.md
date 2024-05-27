@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_network_v2"
+page_title: "ViettelIdc: viettelidc_networking_network_v2"
 sidebar_current: "docs-openstack-datasource-networking-network-v2"
 description: |-
-  Get information on an OpenStack Network.
+  Get information on an ViettelIdc Network.
 ---
 
 # viettelidc\_networking\_network\_v2
 
-Use this data source to get the ID of an available OpenStack network.
+Use this data source to get the ID of an available ViettelIdc network.
 
 ## Example Usage
 

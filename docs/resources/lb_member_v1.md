@@ -1,15 +1,15 @@
 ---
 subcategory: "Deprecated"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_lb_member_v1"
+page_title: "ViettelIdc: viettelidc_lb_member_v1"
 sidebar_current: "docs-openstack-resource-lb-member-v1"
 description: |-
-  Manages a V1 load balancer member resource within OpenStack.
+  Manages a V1 load balancer member resource within ViettelIdc.
 ---
 
 # viettelidc\_lb\_member\_v1
 
-Manages a V1 load balancer member resource within OpenStack.
+Manages a V1 load balancer member resource within ViettelIdc.
 
 ## Example Usage
 

@@ -1,7 +1,7 @@
 ---
 subcategory: "Images / Glance"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_images_image_ids_v2"
+page_title: "ViettelIdc: viettelidc_images_image_ids_v2"
 sidebar_current: "docs-openstack-datasource-images-image-ids-v2"
 description: |-
   Provides a list of Openstack Image IDs
@@ -40,14 +40,14 @@ data "viettelidc_images_image_ids_v2" "images" {
 
 * `name_regex` - (Optional) The regular expressian of the name of the image.
     Cannot be used simultaneously with `name`. Unlike filtering by `name` the    
-    `name_regex` filtering does by client on the result of OpenStack search
+    `name_regex` filtering does by client on the result of ViettelIdc search
     query.
 
 * `owner` - (Optional) The owner (UUID) of the image.
 
 * `properties` - (Optional) a map of key/value pairs to match an image with.
     All specified properties must be matched. Unlike other options filtering    
-    by `properties` does by client on the result of OpenStack search query.
+    by `properties` does by client on the result of ViettelIdc search query.
 
 * `size_min` - (Optional) The minimum size (in bytes) of the image to return.
 

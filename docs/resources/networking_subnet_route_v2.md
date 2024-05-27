@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_subnet_route_v2"
+page_title: "ViettelIdc: viettelidc_networking_subnet_route_v2"
 sidebar_current: "docs-openstack-resource-networking-subnet-route-v2"
 description: |-
-  Creates a routing entry on a OpenStack V2 subnet.
+  Creates a routing entry on a ViettelIdc V2 subnet.
 ---
 
 # viettelidc\_networking\_subnet\_route\_v2
 
-Creates a routing entry on a OpenStack V2 subnet.
+Creates a routing entry on a ViettelIdc V2 subnet.
 
 ## Example Usage
 

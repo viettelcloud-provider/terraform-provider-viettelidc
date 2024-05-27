@@ -1,15 +1,15 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_compute_instance_v2"
+page_title: "ViettelIdc: viettelidc_compute_instance_v2"
 sidebar_current: "docs-openstack-resource-compute-instance-v2"
 description: |-
-  Manages a V2 VM instance resource within OpenStack.
+  Manages a V2 VM instance resource within ViettelIdc.
 ---
 
 # viettelidc\_compute\_instance\_v2
 
-Manages a V2 VM instance resource within OpenStack.
+Manages a V2 VM instance resource within ViettelIdc.
 
 ~> **Note:** All arguments including the instance admin password will be stored
 in the raw state as plain-text. [Read more about sensitive data in
@@ -406,7 +406,7 @@ The following arguments are supported:
     before destroying it, thus giving chance for guest OS daemons to stop correctly.
     If instance doesn't stop within timeout, it will be destroyed anyway.
 
-* `force_delete` - (Optional) Whether to force the OpenStack instance to be
+* `force_delete` - (Optional) Whether to force the ViettelIdc instance to be
     forcefully deleted. This is useful for environments that have reclaim / soft
     deletion enabled.
 
@@ -471,7 +471,7 @@ The `block_device` block supports:
     new server.
 
 * `volume_type` - (Optional) The volume type that will be used, for example SSD
-    or HDD storage. The available options depend on how your specific OpenStack
+    or HDD storage. The available options depend on how your specific ViettelIdc
     cloud is configured and what classes of storage are provided. Changing this
     creates a new server.
 
@@ -526,7 +526,7 @@ The `vendor_options` block supports:
 
 * `ignore_resize_confirmation` - (Optional) Boolean to control whether
     to ignore manual confirmation of the instance resizing. This can be helpful
-    to work with some OpenStack clouds which automatically confirm resizing of
+    to work with some ViettelIdc clouds which automatically confirm resizing of
     instances after some timeout.
 
 * `detach_ports_before_destroy` - (Optional) Whether to try to detach all attached
@@ -609,7 +609,7 @@ resource "viettelidc_compute_instance_v2" "foo" {
 When referencing a security group resource in an instance resource, always
 use the _name_ of the security group. If you specify the ID of the security
 group, Terraform will remove and reapply the security group upon each call.
-This is because the OpenStack Compute API returns the names of the associated
+This is because the ViettelIdc Compute API returns the names of the associated
 security groups and not their IDs.
 
 Note the following example:
@@ -630,7 +630,7 @@ resource "viettelidc_compute_instance_v2" "foo" {
 Neutron Ports are a great feature and provide a lot of functionality. However,
 there are some notes to be aware of when mixing Instances and Ports:
 
-* In OpenStack environments prior to the Kilo release, deleting or recreating
+* In ViettelIdc environments prior to the Kilo release, deleting or recreating
 an Instance will cause the Instance's Port(s) to be deleted. One way of working
 around this is to taint any Port(s) used in Instances which are to be recreated.
 See [here](https://review.openstack.org/#/c/126309/) for further information.
@@ -638,7 +638,7 @@ See [here](https://review.openstack.org/#/c/126309/) for further information.
 * When attaching an Instance to one or more networks using Ports, place the
 security groups on the Port and not the Instance. If you place the security
 groups on the Instance, the security groups will not be applied upon creation,
-but they will be applied upon a refresh. This is a known OpenStack bug.
+but they will be applied upon a refresh. This is a known ViettelIdc bug.
 
 * Network IP information is not available within an instance for networks that
 are attached with Ports. This is mostly due to the flexibility Neutron Ports
@@ -688,7 +688,7 @@ Instances almost always require a network. Here are some notes to be aware of
 with how Instances and Networks relate:
 
 * In scenarios where you only have one network available, you can create an
-instance without specifying a `network` block. OpenStack will automatically
+instance without specifying a `network` block. ViettelIdc will automatically
 launch the instance on this network.
 
 * If you have access to more than one network, you will need to specify a network
@@ -696,7 +696,7 @@ with a `network` block. Not specifying a network will result in the following
 error:
 
 ```
-* viettelidc_compute_instance_v2.instance: Error creating OpenStack server:
+* viettelidc_compute_instance_v2.instance: Error creating ViettelIdc server:
 Expected HTTP response code [201 202] when accessing [POST https://example.com:8774/v2.1/servers], but got 409 instead
 {"conflictingRequest": {"message": "Multiple possible networks found, use a Network ID to be more specific.", "code": 409}}
 ```

@@ -1,15 +1,15 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_identity_application_credential_v3"
+page_title: "ViettelIdc: viettelidc_identity_application_credential_v3"
 sidebar_current: "docs-openstack-resource-identity-application-credential-v3"
 description: |-
-  Manages a V3 Application Credential resource within OpenStack Keystone.
+  Manages a V3 Application Credential resource within ViettelIdc Keystone.
 ---
 
 # viettelidc\_identity\_application\_credential\_v3
 
-Manages a V3 Application Credential resource within OpenStack Keystone.
+Manages a V3 Application Credential resource within ViettelIdc Keystone.
 
 ~> **Note:** All arguments including the application credential name and secret
 will be stored in the raw state as plain-text. [Read more about sensitive data

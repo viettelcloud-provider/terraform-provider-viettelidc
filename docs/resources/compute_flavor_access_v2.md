@@ -1,17 +1,17 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_compute_flavor_access_v2"
+page_title: "ViettelIdc: viettelidc_compute_flavor_access_v2"
 sidebar_current: "docs-openstack-resource-compute-flavor-access-v2"
 description: |-
-  Manages a project access for flavor V2 resource within OpenStack.
+  Manages a project access for flavor V2 resource within ViettelIdc.
 ---
 
 # viettelidc\_compute\_flavor\_access\_v2
 
-Manages a project access for flavor V2 resource within OpenStack.
+Manages a project access for flavor V2 resource within ViettelIdc.
 
-~> **Note:** You _must_ have admin privileges in your OpenStack cloud to use
+~> **Note:** You _must_ have admin privileges in your ViettelIdc cloud to use
 this resource.
 
 ---

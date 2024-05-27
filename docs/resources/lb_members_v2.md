@@ -1,15 +1,15 @@
 ---
 subcategory: "Load Balancing as a Service / Octavia"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_lb_members_v2"
+page_title: "ViettelIdc: viettelidc_lb_members_v2"
 sidebar_current: "docs-openstack-resource-lb-members-v2"
 description: |-
-  Manages a V2 members resource within OpenStack (batch members update).
+  Manages a V2 members resource within ViettelIdc (batch members update).
 ---
 
 # viettelidc\_lb\_members\_v2
 
-Manages a V2 members resource within OpenStack (batch members update).
+Manages a V2 members resource within ViettelIdc (batch members update).
 
 ~> **Note:** This resource has attributes that depend on octavia minor versions.
 Please ensure your Openstack cloud supports the required [minor version](../#octavia-api-versioning).

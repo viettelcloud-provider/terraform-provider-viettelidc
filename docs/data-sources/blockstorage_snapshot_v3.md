@@ -1,10 +1,10 @@
 ---
 subcategory: "Block Storage / Cinder"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_blockstorage_snapshot_v3"
+page_title: "ViettelIdc: viettelidc_blockstorage_snapshot_v3"
 sidebar_current: "docs-openstack-datasource-blockstorage-snapshot-v3"
 description: |-
-  Get information on an OpenStack Snapshot.
+  Get information on an ViettelIdc Snapshot.
 ---
 
 # viettelidc\_blockstorage\_snapshot\_v3

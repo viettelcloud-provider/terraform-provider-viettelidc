@@ -1,4 +1,4 @@
-Terraform OpenStack Provider
+Terraform ViettelIdc Provider
 ============================
 
 Documentation: [registry.terraform.io](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs)
@@ -15,7 +15,7 @@ Building The Provider
 Clone the repository
 
 ```sh
-$ git clone git@github.com:terraform-provider-openstack/terraform-provider-openstack.git
+$ git clone git@github.com:viettelcloud-provider/terraform-provider-viettelidc.git
 ```
 
 Enter the provider directory and build the provider
@@ -29,7 +29,7 @@ Using the provider
 ----------------------
 Please see the documentation at [registry.terraform.io](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs).
 
-Or you can browse the documentation within this repo [here](https://github.com/terraform-provider-openstack/terraform-provider-openstack/tree/main/website/docs).
+Or you can browse the documentation within this repo [here](https://github.com/viettelcloud-provider/terraform-provider-viettelidc/tree/main/website/docs).
 
 Developing the Provider
 ---------------------------
@@ -71,7 +71,7 @@ We'd like to extend special thanks and appreciation to the following:
 
 <a href="http://openlabtesting.org/"><img src="assets/openlab.png" width="600px"></a>
 
-OpenLab is providing a full CI environment to test each PR and merge for a variety of OpenStack releases.
+OpenLab is providing a full CI environment to test each PR and merge for a variety of ViettelIdc releases.
 
 ### VEXXHOST
 

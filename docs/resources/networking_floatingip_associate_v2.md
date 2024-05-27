@@ -1,7 +1,7 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_floatingip_associate_v2"
+page_title: "ViettelIdc: viettelidc_networking_floatingip_associate_v2"
 sidebar_current: "docs-openstack-resource-networking-floatingip-associate-v2"
 description: |-
   Associates a Floating IP to a Port

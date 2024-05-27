@@ -1,15 +1,15 @@
 ---
 subcategory: "Load Balancing as a Service / Octavia"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_lb_monitor_v2"
+page_title: "ViettelIdc: viettelidc_lb_monitor_v2"
 sidebar_current: "docs-openstack-resource-lb-monitor-v2"
 description: |-
-  Manages a V2 monitor resource within OpenStack.
+  Manages a V2 monitor resource within ViettelIdc.
 ---
 
 # viettelidc\_lb\_monitor\_v2
 
-Manages a V2 monitor resource within OpenStack.
+Manages a V2 monitor resource within ViettelIdc.
 
 ## Example Usage
 

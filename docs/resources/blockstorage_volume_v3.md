@@ -1,15 +1,15 @@
 ---
 subcategory: "Block Storage / Cinder"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_blockstorage_volume_v3"
+page_title: "ViettelIdc: viettelidc_blockstorage_volume_v3"
 sidebar_current: "docs-openstack-resource-blockstorage-volume-v3"
 description: |-
-  Manages a V3 volume resource within OpenStack.
+  Manages a V3 volume resource within ViettelIdc.
 ---
 
 # viettelidc\_blockstorage\_volume\_v3
 
-Manages a V3 volume resource within OpenStack.
+Manages a V3 volume resource within ViettelIdc.
 
 ## Example Usage
 
@@ -68,7 +68,7 @@ The following arguments are supported:
 * `multiattach` - (**Deprecated** - use multiattach enabled volume types instead) (Optional) Allow the volume to be attached to more than one Compute instance.
 
 * `scheduler_hints` - (Optional) Provide the Cinder scheduler with hints on where
-    to instantiate a volume in the OpenStack cloud. The available hints are described below.
+    to instantiate a volume in the ViettelIdc cloud. The available hints are described below.
     
 The `scheduler_hints` block supports:
 

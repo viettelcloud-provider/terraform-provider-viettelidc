@@ -1,15 +1,15 @@
 ---
 subcategory: "Block Storage / Cinder"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_blockstorage_availability_zones_v3"
+page_title: "ViettelIdc: viettelidc_blockstorage_availability_zones_v3"
 sidebar_current: "docs-openstack-datasource-blockstorage-availability-zones-v3"
 description: |-
-  Get a list of Block Storage availability zones from OpenStack
+  Get a list of Block Storage availability zones from ViettelIdc
 ---
 
 # viettelidc\_blockstorage\_availability\_zones\_v3
 
-Use this data source to get a list of Block Storage availability zones from OpenStack
+Use this data source to get a list of Block Storage availability zones from ViettelIdc
 
 ## Example Usage
 

@@ -1,21 +1,21 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_compute_floatingip_v2"
+page_title: "ViettelIdc: viettelidc_compute_floatingip_v2"
 sidebar_current: "docs-openstack-resource-compute-floatingip-v2"
 description: |-
-  Manages a V2 floating IP resource within OpenStack Nova (compute).
+  Manages a V2 floating IP resource within ViettelIdc Nova (compute).
 ---
 
 # viettelidc\_compute\_floatingip\_v2
 
-Manages a V2 floating IP resource within OpenStack Nova (compute)
+Manages a V2 floating IP resource within ViettelIdc Nova (compute)
 that can be used for compute instances.
 
-Please note that managing floating IPs through the OpenStack Compute API has
-been deprecated. Unless you are using an older OpenStack environment, it is
+Please note that managing floating IPs through the ViettelIdc Compute API has
+been deprecated. Unless you are using an older ViettelIdc environment, it is
 recommended to use the [`viettelidc_networking_floatingip_v2`](networking_floatingip_v2.html)
-resource instead, which uses the OpenStack Networking API.
+resource instead, which uses the ViettelIdc Networking API.
 
 ## Example Usage
 

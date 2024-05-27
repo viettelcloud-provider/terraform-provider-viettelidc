@@ -1,7 +1,7 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_compute_volume_attach_v2"
+page_title: "ViettelIdc: viettelidc_compute_volume_attach_v2"
 sidebar_current: "docs-openstack-resource-compute-volume-attach-v2"
 description: |-
   Attaches a Block Storage Volume to an Instance.
@@ -9,7 +9,7 @@ description: |-
 
 # viettelidc\_compute\_volume\_attach\_v2
 
-Attaches a Block Storage Volume to an Instance using the OpenStack
+Attaches a Block Storage Volume to an Instance using the ViettelIdc
 Compute (Nova) v2 API.
 
 ## Example Usage
@@ -96,7 +96,7 @@ output "volume_devices" {
 
 ### Using Multiattach-enabled volumes
 
-Multiattach Volumes are dependent upon your OpenStack cloud and not all
+Multiattach Volumes are dependent upon your ViettelIdc cloud and not all
 clouds support multiattach.
 
 ```hcl
@@ -163,7 +163,7 @@ The `vendor_options` block supports:
 
 * `ignore_volume_confirmation` - (Optional) Boolean to control whether
   to ignore volume status confirmation of the attached volume. This can be helpful
-  to work with some OpenStack clouds which don't have the Block Storage V3 API available.
+  to work with some ViettelIdc clouds which don't have the Block Storage V3 API available.
 
 ## Attributes Reference
 

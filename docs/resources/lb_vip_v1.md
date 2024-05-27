@@ -1,15 +1,15 @@
 ---
 subcategory: "Deprecated"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_lb_vip_v1"
+page_title: "ViettelIdc: viettelidc_lb_vip_v1"
 sidebar_current: "docs-openstack-resource-lb-vip-v1"
 description: |-
-  Manages a V1 load balancer vip resource within OpenStack.
+  Manages a V1 load balancer vip resource within ViettelIdc.
 ---
 
 # viettelidc\_lb\_vip\_v1
 
-Manages a V1 load balancer vip resource within OpenStack.
+Manages a V1 load balancer vip resource within ViettelIdc.
 
 ## Example Usage
 

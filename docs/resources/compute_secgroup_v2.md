@@ -1,21 +1,21 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_compute_secgroup_v2"
+page_title: "ViettelIdc: viettelidc_compute_secgroup_v2"
 sidebar_current: "docs-openstack-resource-compute-secgroup-v2"
 description: |-
-  Manages a V2 security group resource within OpenStack.
+  Manages a V2 security group resource within ViettelIdc.
 ---
 
 # viettelidc\_compute\_secgroup\_v2
 
-Manages a V2 security group resource within OpenStack.
+Manages a V2 security group resource within ViettelIdc.
 
-Please note that managing security groups through the OpenStack Compute API
-has been deprecated. Unless you are using an older OpenStack environment, it is
+Please note that managing security groups through the ViettelIdc Compute API
+has been deprecated. Unless you are using an older ViettelIdc environment, it is
 recommended to use the [`viettelidc_networking_secgroup_v2`](networking_secgroup_v2.html)
 and [`viettelidc_networking_secgroup_rule_v2`](networking_secgroup_rule_v2.html)
-resources instead, which uses the OpenStack Networking API.
+resources instead, which uses the ViettelIdc Networking API.
 
 ## Example Usage
 

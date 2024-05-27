@@ -1,15 +1,15 @@
 ---
 subcategory: "Compute / Nova"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_compute_flavor_v2"
+page_title: "ViettelIdc: viettelidc_compute_flavor_v2"
 sidebar_current: "docs-openstack-datasource-compute-flavor-v2"
 description: |-
-  Get information on an OpenStack Flavor.
+  Get information on an ViettelIdc Flavor.
 ---
 
 # viettelidc\_compute\_flavor\_v2
 
-Use this data source to get the ID of an available OpenStack flavor.
+Use this data source to get the ID of an available ViettelIdc flavor.
 
 ## Example Usage
 

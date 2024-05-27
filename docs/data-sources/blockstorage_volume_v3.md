@@ -1,10 +1,10 @@
 ---
 subcategory: "Block Storage / Cinder"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_blockstorage_volume_v3"
+page_title: "ViettelIdc: viettelidc_blockstorage_volume_v3"
 sidebar_current: "docs-openstack-datasource-blockstorage-volume-v3"
 description: |-
-  Get information on an OpenStack Volume.
+  Get information on an ViettelIdc Volume.
 ---
 
 # viettelidc\_blockstorage\_volume\_v3
@@ -44,4 +44,4 @@ are exported:
 * `size` - The size of the volume in GBs.
 * `source_volume_id` - The ID of the volume from which the current volume was created.
 * `multiattach` - Indicates if the volume can be attached to more then one server.
-* `host` - The OpenStack host on which the volume is located.
+* `host` - The ViettelIdc host on which the volume is located.

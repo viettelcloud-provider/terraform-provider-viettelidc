@@ -1,15 +1,15 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_identity_service_v3"
+page_title: "ViettelIdc: viettelidc_identity_service_v3"
 sidebar_current: "docs-openstack-datasource-identity-service-v3"
 description: |-
-  Get information on an OpenStack Service.
+  Get information on an ViettelIdc Service.
 ---
 
 # viettelidc\_identity\_service\_v3
 
-Use this data source to get the ID of an OpenStack service.
+Use this data source to get the ID of an ViettelIdc service.
 
 ~> **Note:** This usually requires admin privileges.
 

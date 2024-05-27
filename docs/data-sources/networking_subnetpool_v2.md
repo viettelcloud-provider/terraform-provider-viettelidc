@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_subnetpool_v2"
+page_title: "ViettelIdc: viettelidc_networking_subnetpool_v2"
 sidebar_current: "docs-openstack-datasource-networking-subnetpool-v2"
 description: |-
-  Get information on an OpenStack Subnetpool.
+  Get information on an ViettelIdc Subnetpool.
 ---
 
 # viettelidc\_networking\_subnetpool\_v2
 
-Use this data source to get the ID of an available OpenStack subnetpool.
+Use this data source to get the ID of an available ViettelIdc subnetpool.
 
 ## Example Usage
 

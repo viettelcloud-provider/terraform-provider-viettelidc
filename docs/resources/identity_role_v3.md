@@ -1,17 +1,17 @@
 ---
 subcategory: "Identity / Keystone"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_identity_role_v3"
+page_title: "ViettelIdc: viettelidc_identity_role_v3"
 sidebar_current: "docs-openstack-resource-identity-role-v3"
 description: |-
-  Manages a V3 Role resource within OpenStack Keystone.
+  Manages a V3 Role resource within ViettelIdc Keystone.
 ---
 
 # viettelidc\_identity\_role\_v3
 
-Manages a V3 Role resource within OpenStack Keystone.
+Manages a V3 Role resource within ViettelIdc Keystone.
 
-~> **Note:** You _must_ have admin privileges in your OpenStack cloud to use
+~> **Note:** You _must_ have admin privileges in your ViettelIdc cloud to use
 this resource.
 
 ## Example Usage

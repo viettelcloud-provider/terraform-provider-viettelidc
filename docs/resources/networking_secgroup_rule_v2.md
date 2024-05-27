@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_secgroup_rule_v2"
+page_title: "ViettelIdc: viettelidc_networking_secgroup_rule_v2"
 sidebar_current: "docs-openstack-resource-networking-secgroup-rule-v2"
 description: |-
-  Manages a V2 Neutron security group rule resource within OpenStack.
+  Manages a V2 Neutron security group rule resource within ViettelIdc.
 ---
 
 # viettelidc\_networking\_secgroup\_rule\_v2
 
-Manages a V2 neutron security group rule resource within OpenStack.
+Manages a V2 neutron security group rule resource within ViettelIdc.
 Unlike Nova security groups, neutron separates the group from the rules
 and also allows an admin to target a specific tenant_id.
 

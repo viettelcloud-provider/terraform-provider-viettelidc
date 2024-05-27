@@ -1,15 +1,15 @@
 ---
 subcategory: "Load Balancing as a Service / Octavia"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_lb_l7policy_v2"
+page_title: "ViettelIdc: viettelidc_lb_l7policy_v2"
 sidebar_current: "docs-openstack-resource-lb-l7policy-v2"
 description: |-
-  Manages a V2 L7 Policy resource within OpenStack.
+  Manages a V2 L7 Policy resource within ViettelIdc.
 ---
 
 # viettelidc\_lb\_l7policy\_v2
 
-Manages a Load Balancer L7 Policy resource within OpenStack.
+Manages a Load Balancer L7 Policy resource within ViettelIdc.
 
 ## Example Usage
 

@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_qos_minimum_bandwidth_rule_v2"
+page_title: "ViettelIdc: viettelidc_networking_qos_minimum_bandwidth_rule_v2"
 sidebar_current: "docs-openstack-resource-networking-qos-minimum-bandwidth-rule-v2"
 description: |-
-  Manages a V2 Neutron QoS minimum bandwidth rule resource within OpenStack.
+  Manages a V2 Neutron QoS minimum bandwidth rule resource within ViettelIdc.
 ---
 
 # viettelidc\_networking\_qos\_minimum\_bandwidth\_rule\_v2
 
-Manages a V2 Neutron QoS minimum bandwidth rule resource within OpenStack.
+Manages a V2 Neutron QoS minimum bandwidth rule resource within ViettelIdc.
 
 ## Example Usage
 

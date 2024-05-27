@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_port_v2"
+page_title: "ViettelIdc: viettelidc_networking_port_v2"
 sidebar_current: "docs-openstack-datasource-networking-port-v2"
 description: |-
-  Get information of an OpenStack Port.
+  Get information of an ViettelIdc Port.
 ---
 
 # viettelidc\_networking\_port\_v2
 
-Use this data source to get the ID of an available OpenStack port.
+Use this data source to get the ID of an available ViettelIdc port.
 
 ## Example Usage
 

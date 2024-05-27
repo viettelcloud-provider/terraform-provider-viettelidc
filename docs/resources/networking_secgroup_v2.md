@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_secgroup_v2"
+page_title: "ViettelIdc: viettelidc_networking_secgroup_v2"
 sidebar_current: "docs-openstack-resource-networking-secgroup-v2"
 description: |-
-  Manages a V2 Neutron security group resource within OpenStack.
+  Manages a V2 Neutron security group resource within ViettelIdc.
 ---
 
 # viettelidc\_networking\_secgroup\_v2
 
-Manages a V2 neutron security group resource within OpenStack.
+Manages a V2 neutron security group resource within ViettelIdc.
 Unlike Nova security groups, neutron separates the group from the rules
 and also allows an admin to target a specific tenant_id.
 
@@ -59,7 +59,7 @@ The following attributes are exported:
 
 ## Default Security Group Rules
 
-In most cases, OpenStack will create some egress security group rules for each
+In most cases, ViettelIdc will create some egress security group rules for each
 new security group. These security group rules will not be managed by
 Terraform, so if you prefer to have *all* aspects of your infrastructure
 managed by Terraform, set `delete_default_rules` to `true` and then create
@@ -80,8 +80,8 @@ resource "viettelidc_networking_secgroup_rule_v2" "secgroup_rule_v6" {
 ```
 
 Please note that this behavior may differ depending on the configuration of
-the OpenStack cloud. The above illustrates the current default Neutron
-behavior. Some OpenStack clouds might provide additional rules and some might
+the ViettelIdc cloud. The above illustrates the current default Neutron
+behavior. Some ViettelIdc clouds might provide additional rules and some might
 not provide any rules at all (in which case the `delete_default_rules` setting
 is moot).
 

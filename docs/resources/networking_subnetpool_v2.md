@@ -1,15 +1,15 @@
 ---
 subcategory: "Networking / Neutron"
 layout: "openstack"
-page_title: "OpenStack: viettelidc_networking_subnetpool_v2"
+page_title: "ViettelIdc: viettelidc_networking_subnetpool_v2"
 sidebar_current: "docs-openstack-resource-networking-subnetpool-v2"
 description: |-
-  Manages a V2 Neutron subnetpool resource within OpenStack.
+  Manages a V2 Neutron subnetpool resource within ViettelIdc.
 ---
 
 # viettelidc\_networking\_subnetpool\_v2
 
-Manages a V2 Neutron subnetpool resource within OpenStack.
+Manages a V2 Neutron subnetpool resource within ViettelIdc.
 
 ## Example Usage
 
