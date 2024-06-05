@@ -318,6 +318,7 @@ func Provider() *schema.Provider {
 			"viettelidc_sharedfilesystem_snapshot_v2":             dataSourceSharedFilesystemSnapshotV2(),
 			"viettelidc_keymanager_secret_v1":                     dataSourceKeyManagerSecretV1(),
 			"viettelidc_keymanager_container_v1":                  dataSourceKeyManagerContainerV1(),
+			"viettelidc_kubernetes_v1":                            dataSourceKubernetesV1(),
 		},
 
 		ResourcesMap: map[string]*schema.Resource{
@@ -426,7 +427,7 @@ func Provider() *schema.Provider {
 			"viettelidc_keymanager_secret_v1":                     resourceKeyManagerSecretV1(),
 			"viettelidc_keymanager_container_v1":                  resourceKeyManagerContainerV1(),
 			"viettelidc_keymanager_order_v1":                      resourceKeyManagerOrderV1(),
-			"viettelidc_server":                                   resourceServer(),
+			"viettelidc_kubernetes_v1":                            resourceKubernetesV1(),
 		},
 	}
 
