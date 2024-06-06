@@ -40,15 +40,18 @@ func resourceKubernetesV1() *schema.Resource {
 }
 
 func resourceKubernetesCreate(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {
-	//config := meta.(*Config)
-	// if config == nil {
-	// 	fmt.Println("Config is nil")
-	// } else {
-	// 	userName := config.Username
-	// 	region := config.Region
-	// 	fmt.Println("UserName: ", userName)
-	// 	fmt.Println("Region: ", region)
-	// }
+	config := meta.(*Config)
+	userName := ""
+
+	if config == nil {
+		fmt.Println("Config is nil")
+	} else {
+		//Ok con dê
+		userName = config.Username
+		region := config.Region
+		fmt.Println("UserName: ", userName)
+		fmt.Println("Region: ", region)
+	}
 
 	name := d.Get("name").(string)
 	account := d.Get("account").(string)
@@ -56,7 +59,8 @@ func resourceKubernetesCreate(ctx context.Context, d *schema.ResourceData, meta 
 	d.SetId(account)
 	fmt.Println("Name: ", name)
 
-	resp, err := http.Get("https://www.uuidtools.com/api/generate/v1/count/10")
+	//TODO: Call the real API with parameters
+	resp, err := http.Get("http://localhost:8088/k8s/parameters/" + userName)
 	if err != nil {
 		log.Fatal(err)
 	}
